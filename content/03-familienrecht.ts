@@ -25,10 +25,14 @@ Die Ehe ist ein **Vertrag zwischen zwei Personen**, die ihren Willen erklären, 
 **Formale Voraussetzungen**
 - Eheschließung vor einem/einer **Standesbeamten/Standesbeamtin**
 - beide Verlobte **gleichzeitig anwesend**
-- mindestens ein Ehegatte **über 18**; der andere kann **ab 16** heiraten, wenn **Eltern und Gericht zustimmen**
-- **keine Eheverbote** (z. B. Blutsverwandtschaft, noch aufrechte Ehe)
+- **beide Verlobte mindestens 18** (volljährig)
+- **keine Eheverbote** (z. B. Blutsverwandtschaft – seit 2025 auch **Cousin/Cousine**, also Verwandte bis zum 4. Grad der Seitenlinie –, noch aufrechte Ehe)
 
-Die Ehe wird ins **Familienbuch** eingetragen (geführt von den Gemeinden).
+> ⚠️ **Aktuell (seit 1. August 2025):** Ehe und eingetragene Partnerschaft sind **erst ab 18** möglich (Ehe- und Partnerschaftsrechts-Änderungsgesetz 2025). Die alte Ausnahme aus dem Buch – einer über 18, der andere ab 16 mit Zustimmung von Eltern und Gericht – gibt es **nicht mehr**. Der VfGH hat die neue Altersgrenze im Oktober 2026 bestätigt.
+
+Die Ehe wird heute im **Zentralen Personenstandsregister (ZPR)** eingetragen, das die alten Personenstandsbücher ersetzt hat *(im Buch: „Familienbuch“, geführt von den Gemeinden)*.
+
+**Trauzeugen** sind **nicht verpflichtend** – es können einer, zwei oder keine dabei sein.
 
 ### Persönliche Rechtswirkungen der Ehe (Rechte und Pflichten)
 | Wirkung | Inhalt |
@@ -52,8 +56,8 @@ Die Ehe endet durch den **Tod** eines Ehepartners oder durch **gerichtliche Sche
 | **im Einvernehmen** | Lebensgemeinschaft seit **mind. 6 Monaten** aufgehoben, **beide** sagen, die Ehe ist unheilbar zerrüttet, und es gibt eine **schriftliche Vereinbarung** über die wichtigsten Scheidungsfolgen |
 
 ### Eingetragene Partnerschaft
-Seit **2010** gibt es das **Eingetragene Partnerschafts-Gesetz (EPG)** für gleichgeschlechtliche Paare, seit **2019** für **alle Paare**. Unterschiede zur Ehe:
-- **keine Trauzeugen** nötig
+Seit **2010** gibt es das **Eingetragene Partnerschafts-Gesetz (EPG)** für gleichgeschlechtliche Paare, seit **2019** für **alle Paare**. Laut Buch unterscheidet sie sich von der Ehe so:
+- **keine Trauzeugen** nötig *(Hinweis: Auch bei der Ehe sind Trauzeugen heute nicht Pflicht)*
 - **keine Pflicht**, Kinder zu bekommen
 - **Regenbogenkinder**: gleichgeschlechtliche Paare dürfen gemeinsam adoptieren (Fremd- und Stiefkindadoption); bei lesbischen Paaren ist künstliche Befruchtung zulässig
 
@@ -113,10 +117,10 @@ Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontakt
 `,
   summary: `
 - **Verlobung** = Vorvertrag, Heirat nicht einklagbar; wer grundlos löst/Grund gibt → **schadenersatzpflichtig**.
-- **Ehe** = Vertrag (Lebensgemeinschaft, Kinder, Beistand); seit 2019 auch gleichgeschlechtlich. Voraussetzungen: vor **Standesbeamt/in**, beide **anwesend**, einer **über 18** (anderer ab 16 mit Zustimmung Eltern + Gericht), **keine Eheverbote**. Eintrag ins **Familienbuch**.
+- **Ehe** = Vertrag (Lebensgemeinschaft, Kinder, Beistand); seit 2019 auch gleichgeschlechtlich. Voraussetzungen: vor **Standesbeamt/in**, beide **anwesend**, **beide ab 18** (seit Aug. 2025; Buch: einer ab 16 mit Zustimmung), **keine Eheverbote** (auch Cousins). Eintrag ins **ZPR** (Buch: Familienbuch). Trauzeugen freiwillig.
 - **Ehewirkungen**: Lebensgemeinschaft (Wohnen, Treue, Beistand) · Unterhalt · Haushaltsführung · **Schlüsselgewalt** (Haushaltsführer ohne Einkommen vertritt bei Alltagsgeschäften) · Familienname (gemeinsam / Doppelname / eigener).
 - **Scheidung**: Verschulden · andere Gründe (Krankheit) · Auflösung häusl. Gemeinschaft (**3 J.** mit / **6 J.** ohne Härteklausel) · **einvernehmlich** (6 Monate getrennt + schriftliche Vereinbarung).
-- **EPG**: seit 2010 (gleichgeschlechtlich), seit 2019 für alle; keine Trauzeugen.
+- **EPG**: seit 2010 (gleichgeschlechtlich), seit 2019 für alle; ebenfalls erst ab 18.
 - **Kindeswohl** = Grundbegriff; Gewalt unzulässig; Gericht kann Obsorge entziehen.
 - **Mutter** = Gebärende; **Vater** = Ehemann bei Geburt / verstorben ≤ 300 Tage vorher / Anerkennung / gerichtliche Feststellung.
 - **Name**: gemeinsamer Name; keine Einigung → Name der **Mutter**; ab **14** selbst entscheiden.
@@ -128,7 +132,8 @@ Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontakt
     { id: "fr-familienrecht", term: "Familienrecht", definition: "Regelt die Rechtsbeziehung der Ehepartner zueinander sowie die Beziehung der Eltern zu ihren Kindern.", keywords: ["Ehepartner", "Kindern"] },
     { id: "fr-verlobung", term: "Verlobung", definition: "Vorvertrag zum Ehevertrag; die Heirat ist nicht einklagbar, aber wer grundlos löst, wird schadenersatzpflichtig.", keywords: ["Vorvertrag", "schadenersatzpflichtig"] },
     { id: "fr-ehe", term: "Ehe", definition: "Vertrag zwischen zwei Personen, die erklären, in unzertrennlicher Gemeinschaft zu leben, Kinder zu zeugen und zu erziehen und einander Beistand zu leisten.", keywords: ["Vertrag", "Beistand"] },
-    { id: "fr-familienbuch", term: "Familienbuch", definition: "Von den Gemeinden geführtes Verzeichnis, in das die geschlossene Ehe eingetragen wird.", keywords: ["Gemeinden", "Ehe"] },
+    { id: "fr-familienbuch", term: "Zentrales Personenstandsregister (ZPR)", definition: "Zentrales Register, in das Geburt, Eheschließung und Tod eingetragen werden; es hat die früheren Personenstandsbücher wie das Familienbuch ersetzt.", keywords: ["Eheschließung", "Familienbuch"] },
+    { id: "fr-ehealter", term: "Ehemündigkeit", definition: "Seit 1. August 2025 dürfen in Österreich nur Personen heiraten oder eine eingetragene Partnerschaft begründen, die das 18. Lebensjahr vollendet haben.", keywords: ["18", "eingetragene"] },
     { id: "fr-lebensgemeinschaft", group: "Ehewirkung", term: "Eheliche Lebensgemeinschaft", definition: "Pflicht der Ehegatten zum gemeinsamen Wohnen, zur Treue, zur anständigen Begegnung und zum Beistand.", keywords: ["Wohnen", "Treue"] },
     { id: "fr-schluesselgewalt", group: "Ehewirkung", term: "Schlüsselgewalt", definition: "Führt ein Ehepartner den Haushalt ohne eigenes Einkommen, vertritt er den anderen bei Geschäften des täglichen Lebens; der andere haftet dafür.", keywords: ["Haushalt", "täglichen"] },
     { id: "fr-unterhalt-ehe", group: "Ehewirkung", term: "Ehelicher Unterhalt", definition: "Beide Ehepartner tragen nach ihren Möglichkeiten zur Finanzierung des gemeinsamen Unterhalts wie Wohnung, Essen und Kleidung bei.", keywords: ["Möglichkeiten", "Wohnung"] },
@@ -137,7 +142,7 @@ Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontakt
     { id: "fr-sch-andere", group: "Scheidung", term: "Scheidung aus anderen Gründen", definition: "Scheidung wegen einer geistigen Störung, Geisteskrankheit oder ansteckenden bzw. ekelerregenden Krankheit des anderen, wenn keine Heilung absehbar ist.", keywords: ["Geisteskrankheit", "Heilung"] },
     { id: "fr-sch-haeuslich", group: "Scheidung", term: "Scheidung wegen Auflösung der häuslichen Gemeinschaft", definition: "Die häusliche Gemeinschaft ist seit drei Jahren aufgehoben und die Ehe unheilbar zerrüttet (Härteklausel), nach sechs Jahren ohne Härteklausel.", keywords: ["drei", "Härteklausel"] },
     { id: "fr-sch-einvernehmen", group: "Scheidung", term: "Einvernehmliche Scheidung", definition: "Die Lebensgemeinschaft ist seit mindestens sechs Monaten aufgehoben, beide halten die Ehe für unheilbar zerrüttet und schließen eine schriftliche Vereinbarung über die Scheidungsfolgen.", keywords: ["sechs Monaten", "schriftliche"] },
-    { id: "fr-epg", term: "Eingetragene Partnerschaft", definition: "Eheähnliche Partnerschaft nach dem EPG, seit 2010 für gleichgeschlechtliche und seit 2019 für alle Paare; ohne Trauzeugen.", keywords: ["EPG", "Trauzeugen"] },
+    { id: "fr-epg", term: "Eingetragene Partnerschaft", definition: "Eheähnliche Partnerschaft nach dem EPG, seit 2010 für gleichgeschlechtliche und seit 2019 für alle Paare.", keywords: ["EPG", "gleichgeschlechtliche"] },
     { id: "fr-kindeswohl", term: "Kindeswohl", definition: "Grundbegriff des Eltern-Kind-Verhältnisses: Eltern müssen das Wohl ihrer Kinder fördern; jede Gewalt ist unzulässig.", keywords: ["Eltern-Kind", "Gewalt"] },
     { id: "fr-mutter", group: "Abstammung", term: "Mutter (rechtlich)", definition: "Die Frau, die das Kind geboren hat.", keywords: ["geboren"] },
     { id: "fr-vater", group: "Abstammung", term: "Vater (rechtlich)", definition: "Der Mann, der bei der Geburt mit der Mutter verheiratet ist, als Ehemann höchstens 300 Tage vor der Geburt verstorben ist oder die Vaterschaft anerkannt hat bzw. gerichtlich festgestellt wurde.", keywords: ["verheiratet", "anerkannt"] },
@@ -150,9 +155,9 @@ Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontakt
   facts: [
     { id: "fr-f1", statement: "Nach einer Verlobung kann man die Heirat bei Gericht einklagen.", isTrue: false, correction: "Die Eheschließung ist **nicht einklagbar** – nur Schadenersatz bei grundloser Lösung." },
     { id: "fr-f2", statement: "Seit 1. Jänner 2019 können auch gleichgeschlechtliche Paare heiraten.", isTrue: true },
-    { id: "fr-f3", statement: "Eine 16-Jährige kann einen 20-Jährigen heiraten, wenn Eltern und Gericht zustimmen.", isTrue: true, correction: "Ein Partner über 18, der andere ab 16 mit Zustimmung von Eltern **und** Gericht." },
-    { id: "fr-f4", statement: "Zwei 17-Jährige dürfen mit Zustimmung ihrer Eltern heiraten.", isTrue: false, correction: "Mindestens **ein** Ehegatte muss **über 18** sein." },
-    { id: "fr-f5", statement: "Für eine eingetragene Partnerschaft braucht man Trauzeugen.", isTrue: false, correction: "Beim EPG sind **keine Trauzeugen** erforderlich." },
+    { id: "fr-f3", statement: "Eine 16-Jährige kann einen 20-Jährigen heiraten, wenn Eltern und Gericht zustimmen.", isTrue: false, correction: "**Seit 1. August 2025** gilt: Heiraten erst ab **18**, ohne Ausnahme. (Im Buch steht noch die alte Regel mit 16.)" },
+    { id: "fr-f4", statement: "Seit August 2025 ist in Österreich auch die Ehe zwischen Cousin und Cousine verboten.", isTrue: true, correction: "Das Eheverbot wurde auf Verwandte bis zum 4. Grad der Seitenlinie ausgedehnt." },
+    { id: "fr-f5", statement: "Für eine Eheschließung in Österreich sind zwei Trauzeugen Pflicht.", isTrue: false, correction: "Trauzeugen sind **nicht verpflichtend** – einer, zwei oder keiner. (Das gilt auch für die eingetragene Partnerschaft.)" },
     { id: "fr-f6", statement: "Bei einer einvernehmlichen Scheidung braucht es eine schriftliche Vereinbarung über die wichtigsten Scheidungsfolgen.", isTrue: true },
     { id: "fr-f7", statement: "Wenn sich Eltern nicht auf einen Familiennamen für das Kind einigen, bekommt es den Namen des Vaters.", isTrue: false, correction: "Bei fehlender Einigung bekommt das Kind den **Familiennamen der Mutter**." },
     { id: "fr-f8", statement: "Bei nicht verheirateten Eltern ist primär die Mutter mit der Obsorge betraut.", isTrue: true },
@@ -164,7 +169,7 @@ Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontakt
     { id: "fr-f14", statement: "Mutter ist rechtlich immer die Frau, die das Kind geboren hat.", isTrue: true },
   ],
   questions: [
-    { id: "fr-q1", type: "mc", question: "Welche Voraussetzungen gelten für die **Eheschließung**?", options: ["Vor einem/einer Standesbeamt/in", "Beide gleichzeitig anwesend", "Keine Eheverbote", "Zwei Trauzeugen über 21", "Beide über 18"], correct: [0, 1, 2], explanation: "Nur **einer** muss über 18 sein (der andere ab 16 mit Zustimmung)." },
+    { id: "fr-q1", type: "mc", question: "Welche Voraussetzungen gelten für die **Eheschließung**?", options: ["Vor einem/einer Standesbeamt/in", "Beide gleichzeitig anwesend", "Keine Eheverbote", "Zwei Trauzeugen", "Beide mindestens 18 Jahre alt"], correct: [0, 1, 2, 4], explanation: "Seit 1. August 2025 müssen **beide** volljährig sein (Buch noch: einer ab 16 mit Zustimmung). Trauzeugen sind freiwillig." },
     { id: "fr-q2", type: "mc", question: "Kathi ist Hausfrau ohne eigenes Einkommen und kauft im Supermarkt Lebensmittel für die Familie. Wer haftet für die Rechnung?", options: ["Ihr Ehemann – Schlüsselgewalt", "Nur Kathi", "Niemand, der Vertrag ist ungültig", "Der Supermarkt"], correct: [0], explanation: "Geschäft des **täglichen Lebens** → Schlüsselgewalt; der Partner mit Einkommen haftet." },
     { id: "fr-q3", type: "mc", question: "Ein Ehepaar lebt seit 7 Monaten getrennt, beide wollen die Scheidung und haben die Folgen schriftlich geregelt. Welche Scheidungsart?", options: ["Einvernehmliche Scheidung", "Scheidung wegen Verschulden", "Scheidung wegen Auflösung der häuslichen Gemeinschaft", "Scheidung aus anderen Gründen"], correct: [0] },
     { id: "fr-q4", type: "mc", question: "Die häusliche Gemeinschaft ist seit **6 Jahren** aufgehoben. Was gilt?", options: ["Scheidung möglich, keine Härteklausel mehr", "Scheidung nur einvernehmlich möglich", "Härteklausel gilt immer", "Nach 6 Jahren ist die Ehe automatisch geschieden"], correct: [0] },

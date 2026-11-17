@@ -12,7 +12,8 @@ const chapter: Chapter = {
 
 Recht sorgt dafür, dass das Zusammenleben **verlässlich** funktioniert: Man muss sich darauf verlassen können, dass sich andere an die Regeln halten (z. B. Rechtsfahrgebot, „Rechtskommende haben Vorrang“). Ohne diese Verlässlichkeit gäbe es große Unsicherheit, und das wäre auch für den **Wirtschaftsstandort** Österreich schlecht.
 
-- Beispiel aus dem Buch: Massen-SMS ohne Zustimmung sind nach dem **Telekommunikationsgesetz** verboten; Strafe bis **37.000 €**.
+- Beispiel aus dem Buch: Werbe-SMS/-E-Mails ohne Zustimmung sind nach dem **Telekommunikationsgesetz** verboten.
+  > ⚠️ **Aktuell:** Nach dem **TKG 2021** drohen dafür bis zu **50.000 €** Strafe (im Buch steht noch der alte Wert von 37.000 €).
 - Die aktuelle Rechtslage findet man im **Rechtsinformationssystem (RIS)** des Bundeskanzleramtes: www.ris.bka.gv.at
 
 **Recht ändert sich im Laufe der Zeit.** Beispiel: Die **Gurtanlegepflicht** gibt es seit **1976** (anfangs nur Vordersitze, seit **1990** auf allen Sitzen).
@@ -106,7 +107,7 @@ Fallbeispiel: Rauferei auf einem Waldfest, ein Bierkrug trifft den Kopf, Platzwu
 | **Entscheidungssammlungen der Höchstgerichte** (OGH, VwGH, VfGH) | einschätzen, ob man gute Chancen auf Durchsetzung hat |
 
 **Beratung durch Profis**
-- **Bezirksgerichte**: am **Gerichtstag kostenlose Rechtsauskunft**
+- **Bezirksgerichte**: am **Amtstag** (grundsätzlich **jeden Dienstag**, oft mit Voranmeldung) **kostenlose allgemeine Rechtsauskunft** *(im Buch „Gerichtstag“ genannt)*
 - **Verwaltungsbehörden** (z. B. Bezirkshauptmannschaft): kostenlose Auskünfte zu ihren Themen
 - **Arbeiterkammer**: kostenlose Beratung zu Konsumentenschutz, Wohn-/Mietrecht, Steuer- und Arbeitsrecht
 - **Wirtschaftskammer, Gewerkschaft, Vereine** (z. B. VKI, Mietervereinigungen): beraten ihre **Mitglieder**
@@ -124,7 +125,7 @@ Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, 
 - **Einzelfall**: Behörde → **Bescheid** · Gericht → **Urteil/Beschluss**.
 - **Rechtsanwendung**: Sachverhalt → Norm/**Tatbestand** → **Subsumtion** → **Rechtsfolge (Sanktion)**.
 - **Rechtsgebiete**: öffentliches Recht (Behörde übergeordnet) · Strafrecht (Teil davon, Staat straft) · Privatrecht (gleiche Augenhöhe, selbst klagen) + Sonderprivatrecht (Unternehmens-, Arbeits-, Miet-, Wertpapierrecht).
-- **Kostenlose Auskunft**: Gerichtstag am Bezirksgericht, Behörden, Arbeiterkammer; Kammern/Vereine nur für Mitglieder; Anwälte kosten (oft gratis Erstauskunft).
+- **Kostenlose Auskunft**: **Amtstag** (Dienstag) am Bezirksgericht, Behörden, Arbeiterkammer; Kammern/Vereine nur für Mitglieder; Anwälte kosten (oft gratis Erstauskunft).
 `,
   concepts: [
     { id: "gs-unwissenheit", term: "Unwissenheit schützt vor Strafe nicht", definition: "Grundsatz, dass sich jede Person selbst über das geltende Recht informieren muss und sich nicht darauf berufen kann, ein Verbot nicht gekannt zu haben.", keywords: ["informieren", "Verbot"] },
@@ -148,6 +149,7 @@ Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, 
     { id: "gs-tatbestand", group: "Rechtsanwendung", term: "Tatbestand", definition: "Die Beschreibung eines Verhaltens in einer Rechtsnorm, die regelt, was verboten oder erlaubt ist.", keywords: ["Rechtsnorm", "Verhaltens"], example: "§ 83 StGB: wer einen anderen am Körper verletzt …" },
     { id: "gs-subsumtion", group: "Rechtsanwendung", term: "Subsumtion", definition: "Prüfung, ob der festgestellte Sachverhalt unter den Tatbestand einer Rechtsnorm fällt.", keywords: ["Sachverhalt", "Tatbestand"] },
     { id: "gs-rechtsfolge", group: "Rechtsanwendung", term: "Rechtsfolge", definition: "Die im Gesetz festgelegte Konsequenz (Sanktion), die eintritt, wenn Sachverhalt und Tatbestand übereinstimmen.", keywords: ["Sanktion", "Konsequenz"], example: "Freiheitsstrafe bis 1 Jahr oder Geldstrafe" },
+    { id: "gs-amtstag", term: "Amtstag", definition: "Kostenloses Service der Bezirksgerichte, grundsätzlich jeden Dienstag, mit allgemeiner Rechtsauskunft und der Möglichkeit, Klagen mündlich zu Protokoll zu geben.", keywords: ["Dienstag", "Rechtsauskunft"] },
     { id: "gs-diversion", term: "Diversion", definition: "Möglichkeit der Staatsanwaltschaft oder des Gerichts, bei geklärtem Sachverhalt auf ein Strafverfahren zu verzichten.", keywords: ["Staatsanwaltschaft", "Strafverfahren"] },
     { id: "gs-rechtsanwender", term: "Rechtsanwender/in", definition: "Person, die einen konkreten Fall mit den rechtlichen Regelungen überprüft und die nötige Entscheidung trifft.", keywords: ["Fall", "Entscheidung"], example: "Richter/in, Finanzbeamter/-beamtin" },
     { id: "gs-oeffentlich", group: "Rechtsgebiet", term: "Öffentliches Recht", definition: "Rechtsgebiet, in dem eine Person einer Behörde untergeordnet gegenübersteht, die Aufträge und Bewilligungen erteilt und Fehlverhalten straft.", keywords: ["Behörde", "untergeordnet"], example: "Gewerbeanmeldung bei der Bezirksverwaltungsbehörde" },
@@ -170,7 +172,7 @@ Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, 
     { id: "gs-f8", statement: "Verwaltungsbehörden entscheiden Einzelfälle mittels Bescheid, Gerichte durch Urteil oder Beschluss.", isTrue: true },
     { id: "gs-f9", statement: "Das Strafrecht ist ein Teil des Privatrechts.", isTrue: false, correction: "Das Strafrecht ist ein Teil des **öffentlichen Rechts**." },
     { id: "gs-f10", statement: "Im Zivilrecht muss man selbst aktiv werden (z. B. klagen), wenn man einen Rechtsbruch nicht akzeptieren will.", isTrue: true },
-    { id: "gs-f11", statement: "Am Gerichtstag erteilen Bezirksgerichte kostenlose Rechtsauskunft.", isTrue: true },
+    { id: "gs-f11", statement: "Am Amtstag (grundsätzlich dienstags) erteilen Bezirksgerichte kostenlose allgemeine Rechtsauskunft.", isTrue: true },
     { id: "gs-f12", statement: "Die Wirtschaftskammer berät jede Person kostenlos, auch wenn sie kein Mitglied ist.", isTrue: false, correction: "Wirtschaftskammer, Gewerkschaft und Vereine beraten ihre **Mitglieder**." },
     { id: "gs-f13", statement: "Eine Gesamtänderung der Bundesverfassung braucht eine Volksabstimmung.", isTrue: true },
     { id: "gs-f14", statement: "Subsumtion bedeutet, die Strafe festzulegen.", isTrue: false, correction: "Subsumtion = prüfen, ob der Sachverhalt unter den Tatbestand fällt. Die Strafe ist die **Rechtsfolge**." },
@@ -183,7 +185,7 @@ Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, 
     { id: "gs-q4", type: "mc", question: "Welches dieser Gesetze ist ein **Landesgesetz**?", options: ["Allgemeines Bürgerliches Gesetzbuch (ABGB)", "Strafgesetzbuch (StGB)", "OÖ Jugendschutzgesetz", "Konsumentenschutzgesetz"], correct: [2] },
     { id: "gs-q5", type: "mc", question: "Fall: Du willst einen Webshop eröffnen und meldest bei der Bezirksverwaltungsbehörde ein Handelsgewerbe an. Welches Rechtsgebiet?", options: ["Öffentliches Recht", "Allgemeines Zivilrecht", "Sonderprivatrecht", "Strafrecht"], correct: [0], explanation: "Du stehst einer **Behörde** untergeordnet gegenüber → öffentliches Recht." },
     { id: "gs-q6", type: "mc", question: "Fall: Du kaufst bei einem Händler einen Laptop und zahlst nicht. Der Händler klagt. Welches Rechtsgebiet?", options: ["Allgemeines Zivilrecht", "Öffentliches Recht", "Strafrecht", "Verfassungsrecht"], correct: [0], explanation: "Vertragspartner auf gleicher Augenhöhe → Zivilrecht." },
-    { id: "gs-q7", type: "mc", question: "Wo bekommst du **kostenlos** eine Rechtsauskunft?", options: ["Am Gerichtstag beim Bezirksgericht", "Bei der Arbeiterkammer (z. B. Mietrecht)", "Bei jedem Notar", "Bei der Verwaltungsbehörde zu ihren Themen"], correct: [0, 1, 3], explanation: "Notare und Anwälte sind grundsätzlich kostenpflichtig (Anwälte oft mit gratis Erstauskunft)." },
+    { id: "gs-q7", type: "mc", question: "Wo bekommst du **kostenlos** eine Rechtsauskunft?", options: ["Am Amtstag beim Bezirksgericht", "Bei der Arbeiterkammer (z. B. Mietrecht)", "Bei jedem Notar", "Bei der Verwaltungsbehörde zu ihren Themen"], correct: [0, 1, 3], explanation: "Notare und Anwälte sind grundsätzlich kostenpflichtig (Anwälte oft mit gratis Erstauskunft)." },
     { id: "gs-q8", type: "mc", question: "Was gehört zum **sekundären** Gemeinschaftsrecht der EU?", options: ["EU-Verordnungen", "Richtlinien", "Gründungsverträge", "Vertrag über die Europäische Union"], correct: [0, 1], explanation: "Gründungsverträge und EU-Vertrag = **primäres** Gemeinschaftsrecht." },
     { id: "gs-q9", type: "mc", question: "Warum werden manche Regeln als **Verordnung** statt als Gesetz erlassen?", options: ["Sie können ohne langwieriges Verfahren rasch angepasst werden.", "Sie stehen im Stufenbau über den Gesetzen.", "Nur Verordnungen können vom Verfassungsgerichtshof geprüft werden.", "Verordnungen gelten nur für Unternehmen."], correct: [0] },
     { id: "gs-q10", type: "open", question: "Erkläre den **Stufenbau der Rechtsordnung** und warum man von einem Stufenbau spricht.", answer: "Normen sind hierarchisch geordnet: leitende Verfassungsprinzipien → EU-Recht → Bundes-/Landesverfassung → einfache Gesetze → Verordnungen → Einzelfallentscheidungen. Jede höhere Norm ist Fundament der niedrigeren; eine niedrigere darf der höheren nicht widersprechen, sonst kann sie (vom VfGH) aufgehoben werden.", keywords: ["Hierarchie", "Verfassung", "EU-Recht", "Gesetze", "Verordnungen", "widersprechen"] },

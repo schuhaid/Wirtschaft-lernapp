@@ -31,14 +31,14 @@ Eine Sache ist **mangelfrei**, wenn sie
 | Kaffeeautomat dosiert falsch, Neuwagen mit defekten Bremsen | Ein **Dieb** kann kein Eigentum verschaffen |
 
 ### Gewährleistungsfristen
-Nach Ablauf der Frist erlöschen die Rechte – dann musst du die Reparatur selbst zahlen.
+Der Mangel muss **innerhalb** der Gewährleistungsfrist auftreten. Danach bleiben noch **3 Monate**, um die Ansprüche bei Gericht einzuklagen (**Verjährungsfrist**, seit 2022). Danach sind die Rechte weg – dann zahlst du die Reparatur selbst.
 
 | Sache | Frist |
 |---|---|
 | **neue bewegliche** Sachen | **2 Jahre** |
 | **gebrauchte bewegliche** Sachen | 2 Jahre – die Partner können sie einvernehmlich auf **1 Jahr verkürzen** |
 | **unbewegliche** Sachen (Grundstücke, Häuser, Eingebautes wie Fenster, Böden) | **3 Jahre** |
-| **arglistig verschwiegene** Mängel | **30 Jahre** (laut Buch) |
+| **arglistig verschwiegene** Mängel | **30 Jahre** (Vertragsanfechtung wegen **List**) |
 
 Bei **Verbrauchergeschäften** (Unternehmen verkauft an Konsumenten) ist eine Verkürzung bei **Neuwaren ausgeschlossen**; bei Gebrauchtwaren auf 1 Jahr möglich.
 
@@ -47,7 +47,13 @@ Die Fristen beginnen ab **Übergabe** der Ware. Wer beweisen muss, hängt vom Ze
 - **Am Anfang** muss der **Verkäufer** beweisen, dass bei der Übergabe **kein Mangel** vorlag (**Beweislastumkehr**).
 - **Danach** muss der **Käufer** beweisen, dass der Mangel **schon bei der Übergabe** bestand.
 
-Laut Buch-Grafik gilt die Beweislastumkehr in den ersten **6 Monaten** (ABGB). Bei **Verbrauchergeschäften** gilt nach dem **Verbrauchergewährleistungsgesetz (VGG)** **12 Monate** *(Notiz im Buch)*.
+| Geschäft | Vermutungsfrist (Verkäufer muss beweisen) |
+|---|---|
+| **Verbraucher kauft Ware** vom Unternehmen (**VGG**, seit 1.1.2022) | **1 Jahr** |
+| Unternehmen ↔ Unternehmen, Privat ↔ Privat (**ABGB**) | **6 Monate** |
+| **unbewegliche** Sachen, Werkverträge | **6 Monate** |
+
+*(Die Grafik im Buch zeigt nur die 6 Monate nach ABGB – deine Notiz „12 Monate VGG“ stimmt.)*
 
 ### Rechte aus der Gewährleistung
 **Primäre** Gewährleistungsansprüche:
@@ -59,7 +65,9 @@ Laut Buch-Grafik gilt die Beweislastumkehr in den ersten **6 Monaten** (ABGB). B
 - vom Übergeber **verweigert** werden oder
 - **nicht in angemessener Frist** erfolgen:
   - **Preisminderung** – die Sache ist wegen des Mangels weniger wert
-  - **Wandlung** – der Vertrag wird **aufgehoben**, wenn der Mangel **nicht nur geringfügig** ist
+  - **Vertragsauflösung** (früher **Wandlung**) – der Vertrag wird **aufgehoben**, wenn der Mangel **nicht nur geringfügig** ist
+
+> ⚠️ **Aktuell:** Seit 2022 heißt die „Wandlung“ im Gesetz **„Auflösung des Vertrages“**. Das Buch verwendet noch den alten Begriff – beide meinen dasselbe.
 
 ### Gewährleistung vs. Garantie
 | Gewährleistung | Garantie |
@@ -72,7 +80,7 @@ Laut Buch-Grafik gilt die Beweislastumkehr in den ersten **6 Monaten** (ABGB). B
 ## Verkürzung über die Hälfte des wahren Wertes
 Bekommt ein Vertragspartner eine Gegenleistung, die **nicht einmal die Hälfte** seiner eigenen Leistung wert ist, darf er den **Vertrag aufheben** lassen. Der andere kann die Aufhebung verhindern, indem er die **Differenz aufzahlt**.
 
-Kein Recht auf Aufhebung hat, wer aus **Liebhaberei** in vollem Bewusstsein des wahren Wertes kauft.
+Kein Recht auf Aufhebung hat, wer aus **Liebhaberei** in vollem Bewusstsein des wahren Wertes kauft. Unter Privaten kann man dieses Recht **nicht vertraglich ausschließen**; **zulasten eines Unternehmers** schon (§ 351 UGB).
 
 *Beispiel:* Max kauft beim Trödler ein Kaffeeservice um 400 €. Ein Sammler sagt, es ist höchstens 160 € wert → weniger als die Hälfte → Max kann gegen Rückgabe die 400 € zurückverlangen.
 
@@ -92,8 +100,8 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
 - **Mangelfrei** = entspricht Vertrag + üblichen Eigenschaften + Werbung/Beschreibung.
 - **Sachmangel** (körperlich) vs. **Rechtsmangel** (rechtliche Position fehlt, z. B. Dieb verkauft).
 - **Fristen**: neu beweglich **2 J.** · gebraucht beweglich 2 J. (auf 1 J. verkürzbar) · unbeweglich **3 J.** · arglistig verschwiegen **30 J.** (Buch). Bei Verbrauchern Neuware nicht verkürzbar.
-- **Beweislast**: zuerst Verkäufer (ABGB **6 Monate**, VGG/Verbraucher **12 Monate**), danach Käufer.
-- **Primär**: Verbesserung, Austausch → **Sekundär** (wenn unmöglich/verweigert/zu langsam): Preisminderung, **Wandlung** (nur bei nicht geringfügigem Mangel).
+- **Beweislast**: zuerst Verkäufer (Verbraucher/VGG **1 Jahr**, sonst ABGB **6 Monate**), danach Käufer. Nach Ende der Frist noch **3 Monate** zum Einklagen.
+- **Primär**: Verbesserung, Austausch → **Sekundär** (wenn unmöglich/verweigert/zu langsam): Preisminderung, **Vertragsauflösung** (= alte „Wandlung“, nur bei nicht geringfügigem Mangel).
 - **Garantie** = **freiwillig/vertraglich** (Garantieschein) ≠ Gewährleistung (gesetzlich).
 - **Verkürzung über die Hälfte**: Gegenleistung < ½ wert → Aufhebung; Gegner kann Differenz zahlen; nicht bei **Liebhaberei**.
 - **Spätere Unmöglichkeit**: niemand haftet für **Zufall/höhere Gewalt**.
@@ -108,12 +116,14 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-verbesserung", group: "Gewährleistungsrecht", term: "Verbesserung", definition: "Primärer Gewährleistungsanspruch: Reparatur oder Nachtrag des Fehlenden.", keywords: ["Reparatur", "Fehlenden"] },
     { id: "ls-austausch", group: "Gewährleistungsrecht", term: "Austausch", definition: "Primärer Gewährleistungsanspruch: Die mangelhafte Sache wird gegen eine mangelfreie getauscht.", keywords: ["mangelfreie", "getauscht"] },
     { id: "ls-preisminderung", group: "Gewährleistungsrecht", term: "Preisminderung", definition: "Sekundärer Gewährleistungsanspruch: Weil die Sache wegen des Mangels weniger wert ist, wird der Preis gesenkt.", keywords: ["Mangels", "Preis"] },
-    { id: "ls-wandlung", group: "Gewährleistungsrecht", term: "Wandlung", definition: "Sekundärer Gewährleistungsanspruch: Der Vertrag wird aufgehoben; nur möglich, wenn der Mangel nicht nur geringfügig ist.", keywords: ["aufgehoben", "geringfügig"] },
+    { id: "ls-wandlung", group: "Gewährleistungsrecht", term: "Vertragsauflösung (Wandlung)", definition: "Sekundärer Gewährleistungsanspruch: Der Vertrag wird aufgehoben; nur möglich, wenn der Mangel nicht nur geringfügig ist.", keywords: ["aufgehoben", "geringfügig"] },
     { id: "ls-sekundaer", term: "Sekundäre Gewährleistungsansprüche", definition: "Preisminderung und Wandlung; sie stehen erst zu, wenn Verbesserung und Austausch unmöglich, zu aufwendig, verweigert oder nicht in angemessener Frist erfolgt sind.", keywords: ["Preisminderung", "Wandlung"] },
     { id: "ls-frist-neu", group: "Frist", term: "Gewährleistungsfrist neue bewegliche Sachen", definition: "Für neue bewegliche Sachen beträgt die Gewährleistungsfrist zwei Jahre ab Übergabe.", keywords: ["zwei Jahre"] },
     { id: "ls-frist-unbeweglich", group: "Frist", term: "Gewährleistungsfrist unbewegliche Sachen", definition: "Für Grundstücke, Häuser und alles darin Eingebaute beträgt die Gewährleistungsfrist drei Jahre.", keywords: ["drei Jahre"] },
     { id: "ls-frist-gebraucht", group: "Frist", term: "Gewährleistungsfrist gebrauchte bewegliche Sachen", definition: "Grundsätzlich zwei Jahre, die Vertragspartner können die Frist aber einvernehmlich auf ein Jahr verkürzen.", keywords: ["ein Jahr", "verkürzen"] },
-    { id: "ls-beweislast", term: "Beweislastumkehr", definition: "In der ersten Zeit nach der Übergabe muss der Verkäufer beweisen, dass kein Mangel vorlag (ABGB 6 Monate, bei Verbrauchern nach VGG 12 Monate); danach der Käufer.", keywords: ["Verkäufer", "Käufer"] },
+    { id: "ls-beweislast", term: "Beweislastumkehr", definition: "In der ersten Zeit nach der Übergabe muss der Verkäufer beweisen, dass kein Mangel vorlag (bei Verbrauchern nach VGG 1 Jahr, sonst nach ABGB 6 Monate); danach der Käufer.", keywords: ["Verkäufer", "Käufer"] },
+    { id: "ls-verjaehrung", group: "Frist", term: "Verjährungsfrist der Gewährleistung", definition: "Nach Ende der Gewährleistungsfrist bleiben noch drei Monate, um die Gewährleistungsansprüche bei Gericht einzuklagen.", keywords: ["drei Monate", "einzuklagen"] },
+    { id: "ls-vgg", term: "Verbrauchergewährleistungsgesetz (VGG)", definition: "Gilt seit 1. Jänner 2022 für Verbraucher, die Waren oder digitale Leistungen von Unternehmen kaufen; die Vermutungsfrist beträgt hier ein Jahr.", keywords: ["Verbraucher", "ein Jahr"] },
     { id: "ls-laesio", term: "Verkürzung über die Hälfte des wahren Wertes", definition: "Ist die Gegenleistung nicht einmal die Hälfte der eigenen Leistung wert, kann der Vertrag aufgehoben werden, außer der Partner zahlt die Differenz auf.", keywords: ["Hälfte", "Differenz"], example: "Kaffeeservice um 400 €, wert nur 160 €" },
     { id: "ls-liebhaberei", term: "Liebhaberei", definition: "Kauft jemand eine Sache in vollem Bewusstsein ihres wahren Wertes aus Liebhaberei, steht ihm keine Aufhebung wegen Verkürzung über die Hälfte zu.", keywords: ["Bewusstsein", "Aufhebung"] },
     { id: "ls-unmoeglich", term: "Spätere Unmöglichkeit", definition: "Geht die versprochene Sache nach Vertragsabschluss unter, haftet niemand für Zufall oder höhere Gewalt.", keywords: ["Zufall", "höhere Gewalt"] },
@@ -128,7 +138,9 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-f4", statement: "Für ein Haus beträgt die Gewährleistungsfrist 2 Jahre.", isTrue: false, correction: "Unbewegliche Sachen: **3 Jahre**." },
     { id: "ls-f5", statement: "Bei einem Verbrauchergeschäft darf die Gewährleistungsfrist für Neuwaren auf 1 Jahr verkürzt werden.", isTrue: false, correction: "Bei Neuwaren ist eine Verkürzung gegenüber Verbrauchern **ausgeschlossen**; nur bei Gebrauchtwaren auf 1 Jahr möglich." },
     { id: "ls-f6", statement: "Zuerst kann man immer sofort Preisminderung oder Wandlung verlangen.", isTrue: false, correction: "Zuerst **primär**: Verbesserung oder Austausch. Preisminderung/Wandlung erst sekundär." },
-    { id: "ls-f7", statement: "Wandlung bedeutet, dass der Vertrag aufgehoben wird.", isTrue: true },
+    { id: "ls-f7", statement: "Wandlung (heute: Vertragsauflösung) bedeutet, dass der Vertrag aufgehoben wird.", isTrue: true },
+    { id: "ls-f15", statement: "Kauft ein Verbraucher bei einem Händler, muss in den ersten 12 Monaten der Händler beweisen, dass die Ware bei der Übergabe mangelfrei war.", isTrue: true, correction: "Vermutungsfrist nach dem VGG: 1 Jahr (unter Unternehmen oder Privaten nach ABGB: 6 Monate)." },
+    { id: "ls-f16", statement: "Nach Ablauf der zweijährigen Gewährleistungsfrist kann man einen davor aufgetretenen Mangel noch 3 Monate lang einklagen.", isTrue: true },
     { id: "ls-f8", statement: "Bei einem nur geringfügigen Mangel kann man Wandlung verlangen.", isTrue: false, correction: "Wandlung nur, wenn der Mangel **nicht nur geringfügig** ist – sonst Preisminderung." },
     { id: "ls-f9", statement: "Ein Dieb, der eine gestohlene Sache verkauft, liefert eine Sache mit Rechtsmangel.", isTrue: true },
     { id: "ls-f10", statement: "Wer ein Bild aus Liebhaberei in Kenntnis des wahren Wertes überteuert kauft, kann wegen Verkürzung über die Hälfte aufheben.", isTrue: false, correction: "Bei **Liebhaberei** im vollen Bewusstsein des wahren Wertes besteht dieses Recht **nicht**." },
@@ -148,7 +160,7 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-q8", type: "open", question: "Erkläre den Unterschied zwischen **Gewährleistung und Garantie**.", answer: "Gewährleistung ist gesetzlich (§§ 922 ff ABGB) und betrifft nur Mängel, die bei der Übergabe schon vorhanden waren. Garantie ist eine freiwillige vertragliche Zusage (meist des Herstellers); die Ansprüche richten sich nach dem Garantieschein und können auch später entstandene Fehler umfassen.", keywords: ["gesetzlich", "Übergabe", "vertraglich", "Garantieschein"] },
     { id: "ls-q9", type: "mc", question: "Oma Schulz wurde eine Office-Vollversion zugesagt, installiert sind nur Demoversionen. Was liegt vor?", options: ["Ein Mangel – die Sache entspricht nicht der Vereinbarung", "Kein Mangel, Demoversionen sind üblich", "Ein Rechtsmangel", "Verkürzung über die Hälfte"], correct: [0] },
     { id: "ls-q10", type: "mc", question: "Welche sind **Leistungsstörungen**?", options: ["Gewährleistung", "Verkürzung über die Hälfte des wahren Wertes", "Spätere Unmöglichkeit der Leistung", "Verzug", "Eigentumsvorbehalt"], correct: [0, 1, 2, 3] },
-    { id: "ls-q11", type: "open", question: "Wer muss beweisen, dass ein Mangel schon bei der Übergabe vorlag?", answer: "In der ersten Zeit nach der Übergabe (laut ABGB 6 Monate, bei Verbrauchergeschäften nach dem VGG 12 Monate) muss der Verkäufer beweisen, dass kein Mangel vorlag. Danach muss der Käufer beweisen, dass der Mangel schon bei der Übergabe bestand.", keywords: ["Verkäufer", "Käufer", "Monate"] },
+    { id: "ls-q11", type: "open", question: "Wer muss beweisen, dass ein Mangel schon bei der Übergabe vorlag?", answer: "In der ersten Zeit nach der Übergabe (bei Verbrauchergeschäften nach dem VGG 1 Jahr, sonst nach ABGB 6 Monate) muss der Verkäufer beweisen, dass kein Mangel vorlag. Danach muss der Käufer beweisen, dass der Mangel schon bei der Übergabe bestand.", keywords: ["Verkäufer", "Käufer", "Jahr"] },
   ],
 };
 

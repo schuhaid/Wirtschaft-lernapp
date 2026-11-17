@@ -49,7 +49,7 @@ Grundsätzlich gilt **Formfreiheit**: Verträge können **mündlich** oder schri
 
 **Ausnahmen:**
 - **Kontrahierungszwang**: Wenige Gesetze verpflichten zum Vertragsabschluss (z. B. Nahversorgungsgesetz, Telekommunikationsgesetz).
-- **Formvorschriften** zum Schutz der Partner oder anderer: Bei Verträgen, die in **öffentliche Bücher** (Grundbuch, Firmenbuch) eingetragen werden, reicht mündlich nicht. Eine **Schenkung unter Ehegatten** braucht einen schriftlichen Vertrag; manchmal ist sogar ein **Notar** nötig.
+- **Formvorschriften** zum Schutz der Partner oder anderer: Bei Verträgen, die in **öffentliche Bücher** (Grundbuch, Firmenbuch) eingetragen werden, reicht mündlich nicht. Manche Verträge brauchen sogar einen **Notariatsakt**: z. B. **Kauf-, Tausch- und Darlehensverträge zwischen Ehegatten** sowie **Schenkungen ohne wirkliche Übergabe** (nur versprochen, nicht gleich übergeben). *(Im Buch vereinfacht: „Schenkung unter Ehegatten schriftlich“.)*
   *Beispiel:* Eine **Bürgschaftserklärung** ist **nur schriftlich** gültig – eine mündliche Bürgschaft verpflichtet den Bruder also nicht.
 
 ## Wie kommt ein Vertrag zustande?
@@ -127,7 +127,7 @@ Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, 
 - **Gültiger Vertrag**: 1) Geschäftsfähigkeit 2) Willenserklärung **frei, ernstlich, bestimmt** 3) **möglich** 4) **erlaubt** (nicht gegen Gesetz/gute Sitten → sonst **nichtig**).
 - List/Drohung/Zwang → Vertrag auflösbar. **Wesentlicher Irrtum** → Auflösung · **unwesentlicher** → Anpassung.
 - **Relative Unmöglichkeit** (nur für diesen Partner unmöglich) → Schadenersatz.
-- **Vertragsfreiheit** = Abschluss- + Gestaltungsfreiheit; **Formfreiheit**. Ausnahmen: **Kontrahierungszwang**, **Formvorschriften** (Grundbuch, Schenkung unter Ehegatten, **Bürgschaft schriftlich**).
+- **Vertragsfreiheit** = Abschluss- + Gestaltungsfreiheit; **Formfreiheit**. Ausnahmen: **Kontrahierungszwang**, **Formvorschriften** (Grundbuch, **Bürgschaft schriftlich**, Notariatsakt z. B. für Schenkung ohne Übergabe).
 - Vertrag = **Angebot + Annahme**; Willenserklärung **ausdrücklich** (mündlich, schriftlich, elektronisch, Geste) oder **schlüssig** (aus Handlung). **Schweigen** = grundsätzlich kein Vertrag; unbestellte Ware darf man wegwerfen.
 - **Bedingung** (ungewiss) · **Befristung** (sicher) · **Auflage** (Pflicht aus Testament/Schenkung).
 - **Erfüllung**: Ort (B2B: Übergabe an Frachtführer · B2C: Übergabe an Käufer), Zeit (ohne Vereinbarung **prompt**), Weise (**Zug um Zug**). Geldschulden = **Bringschulden**. Hinterlegung bei Gericht möglich.
@@ -147,7 +147,8 @@ Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, 
     { id: "vr-gestaltungsfreiheit", group: "Vertragsfreiheit", term: "Gestaltungsfreiheit", definition: "Teil der Vertragsfreiheit: selbst bestimmen, zu welchen Bedingungen man einen Vertrag abschließt.", keywords: ["Bedingungen"] },
     { id: "vr-formfreiheit", group: "Vertragsfreiheit", term: "Formfreiheit", definition: "Grundsatz, dass Verträge nicht nur schriftlich, sondern auch mündlich abgeschlossen werden können.", keywords: ["mündlich", "schriftlich"] },
     { id: "vr-kontrahierungszwang", term: "Kontrahierungszwang", definition: "Ausnahme von der Vertragsfreiheit: Einige wenige Gesetze verpflichten zum Abschluss eines Vertrags.", keywords: ["verpflichten", "Abschluss"], example: "Nahversorgungsgesetz, Telekommunikationsgesetz" },
-    { id: "vr-formvorschrift", term: "Formvorschrift", definition: "Ausnahme von der Formfreiheit zum Schutz der Partner: Manche Verträge sind nur in einer bestimmten Form gültig.", keywords: ["Form", "Schutz"], example: "Bürgschaft schriftlich, Schenkung unter Ehegatten schriftlich" },
+    { id: "vr-formvorschrift", term: "Formvorschrift", definition: "Ausnahme von der Formfreiheit zum Schutz der Partner: Manche Verträge sind nur in einer bestimmten Form gültig.", keywords: ["Form", "Schutz"], example: "Bürgschaft schriftlich; Notariatsakt für Schenkung ohne wirkliche Übergabe" },
+    { id: "vr-notariatsakt", term: "Notariatsakt", definition: "Vom Notar aufgenommene Urkunde, ohne die bestimmte Verträge ungültig sind, etwa Kaufverträge zwischen Ehegatten oder Schenkungen ohne wirkliche Übergabe.", keywords: ["Notar", "Schenkungen"] },
     { id: "vr-ausdruecklich", group: "Erklärungsart", term: "Ausdrückliche Willenserklärung", definition: "Willenserklärung, die schriftlich, mündlich, elektronisch oder durch Gebärden wie Kopfnicken abgegeben wird.", keywords: ["mündlich", "Kopfnicken"] },
     { id: "vr-schluessig", group: "Erklärungsart", term: "Schlüssige Willenserklärung", definition: "Willenserklärung, bei der sich der Wille zum Vertragsabschluss aus der Handlung selbst ergibt.", keywords: ["Handlung"], example: "Münze in den Kaffeeautomaten werfen" },
     { id: "vr-stillschweigen", term: "Stillschweigen", definition: "Durch bloßes Schweigen kommt grundsätzlich kein Vertrag zustande; unbestellt zugesandte Ware muss man weder aufbewahren noch zurücksenden.", keywords: ["Vertrag", "unbestellt"] },

@@ -95,6 +95,8 @@ Der **Wohnungsinhaber** haftet, wenn
   - **Hersteller** ist, wer das Endprodukt, einen Grundstoff oder ein Teilprodukt erzeugt, wer seinen Namen/seine Marke anbringt, sowie der **Importeur** und jeder, der das Produkt **in Verkehr gebracht** hat.
   - **Solidarhaftung**: Mehrere Hersteller haften **gemeinsam zur ungeteilten Hand**; untereinander gibt es **Regressansprüche**. Hersteller müssen vorsorgen (Versicherung oder Rücklagen).
   - **Verjährung**: **3 Jahre ab Kenntnis** von Schaden und Ersatzpflichtigem; **10 Jahre nach Inverkehrbringen** kann der Unternehmer nicht mehr in Anspruch genommen werden.
+
+> ⚠️ **Demnächst neu:** Die EU-Produkthaftungsrichtlinie 2024/2853 muss bis **9. Dezember 2026** umgesetzt sein. Österreich plant dafür ein **Produkthaftungsgesetz 2026**: Dann gilt die Produkthaftung auch für **Software und KI-Systeme**, für Produkte, die ab diesem Tag in Verkehr gebracht werden. Stand Mitte November 2026 ist das noch ein Entwurf. Für den Test zählt der Stoff aus dem Buch oben.
 `,
   summary: `
 - Zweck: Geschädigten **entschädigen** + **Prävention** (abschrecken). In Österreich keine US-Millionensummen.
