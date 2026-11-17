@@ -97,19 +97,55 @@ Der **Wohnungsinhaber** haftet, wenn
   - **Verjährung**: **3 Jahre ab Kenntnis** von Schaden und Ersatzpflichtigem; **10 Jahre nach Inverkehrbringen** kann der Unternehmer nicht mehr in Anspruch genommen werden.
 
 > ⚠️ **Demnächst neu:** Die EU-Produkthaftungsrichtlinie 2024/2853 muss bis **9. Dezember 2026** umgesetzt sein. Österreich plant dafür ein **Produkthaftungsgesetz 2026**: Dann gilt die Produkthaftung auch für **Software und KI-Systeme**, für Produkte, die ab diesem Tag in Verkehr gebracht werden. Stand Mitte November 2026 ist das noch ein Entwurf. Für den Test zählt der Stoff aus dem Buch oben.
+
+## Fälle aus dem Buch – mit Lösung
+| Fall | Lösung |
+|---|---|
+| Herr Schacht zerstört den Laptop seines Chefs aus Ärger | **Vorsatz** → volle Genugtuung |
+| Paul wirft an der Tankstelle eine brennende Zigarette weg | **grobe Fahrlässigkeit** |
+| Anna telefoniert mit Freisprechanlage und verursacht einen Unfall | **leichte Fahrlässigkeit** → nur positiver Schaden |
+| Lukas beschädigt einen Klein-Lkw, der dann nicht fahren kann | Reparatur = **positiver Schaden**, ausgefallene Fuhren = **entgangener Gewinn** |
+| Frau Steiner wehrt sich mit einem Stock gegen einen Handtaschenräuber | **Notwehr** – nicht rechtswidrig |
+| Max bricht vor dem Unwetter eine Almhütte auf | **Notstand** – kann für das Türschloss haften |
+| Lieferanten beschädigen beim TV-Liefern die Glastür der Kundin | **Erfüllungsgehilfen** – Unternehmer haftet wie für eigenes Verschulden |
+| Nicht schwindelfreier Gehilfe lässt einen Hammer auf eine Passantin fallen | **Besorgungsgehilfe**, untüchtig → Dachdecker haftet |
+| Ein Fernseher explodiert wegen eines Produktfehlers | **Produkthaftung**, auch ohne Verschulden |
+
+**Pfefferspray bei Notwehr?** Erlaubt, soweit es zur Abwehr des Angriffs **erforderlich** ist.
 `,
   summary: `
-- Zweck: Geschädigten **entschädigen** + **Prävention** (abschrecken). In Österreich keine US-Millionensummen.
-- **4 Voraussetzungen**: **Schaden** (Handlung/Unterlassung) · **Kausalität** (notwendige Bedingung) · **Rechtswidrigkeit** (gegen Gesetz/Vertrag/gute Sitten) · **Verschulden** (vorwerfbar).
-- Zuerst **Naturalrestitution**, sonst **Geld**.
-- **Positiver Schaden** (vorhandenes Vermögen, objektiver Verkehrswert) vs. **entgangener Gewinn** (Erwerbschance).
-- Körperverletzung: **Schmerzengeld**, Heilungskosten, Verdienstentgang, Rente (bleibender Schaden), Rente an Hinterbliebene (Tod).
-- Keine Rechtswidrigkeit bei **Notwehr** (Abwehr eines rechtswidrigen Angriffs, § 3 StGB) und **Notstand** (Rechtsgut eines Dritten zum Schutz verletzt).
-- **Vorsatz** = böse Absicht → **volle Genugtuung**. **Grobe Fahrlässigkeit** (passiert Sorgfältigen nie) → positiver Schaden + entgangener Gewinn = volle Genugtuung. **Leichte Fahrlässigkeit** (passiert auch Sorgfältigen) → nur **positiver Schaden**.
-- Schuldlos: Notstand → evtl. Ersatz; **Unmündige/Geisteskranke** haften grundsätzlich nicht, außer **unbillig**.
-- **Erfüllungsgehilfe** (Vertragsverhältnis) → Unternehmer haftet **wie für eigenes**. **Besorgungsgehilfe** (kein Vertrag) → nur wenn **untüchtig oder wissentlich gefährlich**.
-- **Wohnungsinhaber** haftet für Herabfallendes/Herausgeworfenes.
-- **Gefährdungshaftung**: Bauwerke, Tierhalter, **Produkthaftung** (verschuldensunabhängig; Hersteller/Importeur; **solidarisch**; Verjährung 3 J. ab Kenntnis, max. 10 J. ab Inverkehrbringen).
+### Grundgedanke
+- Geschädigten **entschädigen** + **Prävention** (abschrecken). In Österreich **keine** US-Millionensummen (Philip Morris).
+
+### Haftung für eigenes Verschulden – 4 Voraussetzungen
+1. **Schaden** – durch **Handlung** (bei Rot fahren) oder **Unterlassung** (Schnee nicht räumen). Vermögensschaden = **positiver Schaden** (vorhandenes Vermögen) + **entgangener Gewinn** (Erwerbschance); **ideeller** Schaden (Schmerzen).
+2. **Kausalität** – wäre der Schaden ohne das Verhalten ausgeblieben?
+3. **Rechtswidrigkeit** – gegen Gesetz, Vertrag, gute Sitten. **Nicht** bei **Notwehr** (Abwehr eines rechtswidrigen Angriffs, § 3 StGB) und **Notstand** (Rechtsgut eines Dritten zum Schutz verletzt).
+4. **Verschulden** – vorwerfbar.
+
+Zuerst **Naturalrestitution**, sonst **Geld**. Körperverletzung: **Schmerzengeld**, **Heilungskosten**, **Verdienstentgang**, **Rente** (bleibender Schaden), Rente an Hinterbliebene (Tod).
+
+### Verschuldensgrade
+| Grad | Beschreibung | Ersatz |
+|---|---|---|
+| **Vorsatz** | sieht Schaden voraus, billigt ihn | **volle Genugtuung** |
+| **grobe Fahrlässigkeit** | passiert einem Sorgfältigen **nie** | positiver Schaden + entgangener Gewinn (= volle Genugtuung) |
+| **leichte Fahrlässigkeit** | passiert auch Sorgfältigen | nur **positiver Schaden** |
+
+Volle Genugtuung = subjektive Verhältnisse · positiver Schaden = **objektiver Verkehrswert**.
+
+### Ohne eigenes Verschulden
+- **Notstand** → Ersatz möglich. **Unmündige/Geisteskranke** haften nicht – außer **unbillig**.
+
+### Fremdes Verschulden
+- **Erfüllungsgehilfe** (Vertrag besteht) → Unternehmer haftet **wie für eigenes**.
+- **Besorgungsgehilfe** (kein Vertrag) → nur wenn **untüchtig** oder **wissentlich gefährlich**.
+- **Wohnungsinhaber** haftet für Herabfallendes oder Hinausgeworfenes.
+
+### Gefährdungshaftung
+- **Bauwerk**: Besitzer haftet für Einsturz/Ablösung, außer er beweist alle Vorkehrungen.
+- **Tierhalter**: bei mangelnder Sorgfalt; auch wer das Tier reizt.
+- **Produkthaftung**: **verschuldensunabhängig**, Personen- und Sachschäden. Hersteller = Erzeuger (auch Teilprodukt), Markenanbringer, **Importeur**, Inverkehrbringer. **Solidarisch** + Regress, Vorsorge (Versicherung). Verjährung **3 Jahre** ab Kenntnis, max. **10 Jahre** nach Inverkehrbringen. (Neu ab 9.12.2026 geplant: auch Software/KI.)
 `,
   concepts: [
     { id: "se-praevention", term: "Grundsatz der Vorbeugung", definition: "Zweck des Schadenersatzrechts (Prävention): Die Schadenersatzpflicht soll vor schädigendem Verhalten abschrecken.", keywords: ["Prävention", "abschrecken"] },
@@ -139,6 +175,21 @@ Der **Wohnungsinhaber** haftet, wenn
     { id: "se-hersteller", term: "Hersteller (Produkthaftung)", definition: "Wer ein Endprodukt, einen Grundstoff oder ein Teilprodukt erzeugt oder seine Marke anbringt; außerdem der Importeur und wer das Produkt in Verkehr gebracht hat.", keywords: ["Importeur", "Marke"] },
     { id: "se-solidar", term: "Solidarhaftung", definition: "Mehrere Hersteller haften gemeinsam zur ungeteilten Hand und haben untereinander Regressansprüche.", keywords: ["ungeteilten", "Regressansprüche"] },
     { id: "se-verjaehrung", term: "Verjährung bei Produkthaftung", definition: "Drei Jahre ab Kenntnis von Schaden und Ersatzpflichtigem; zehn Jahre nach dem Inverkehrbringen haftet der Unternehmer nicht mehr.", keywords: ["Drei", "zehn"] },
+    { id: "se-tragung", term: "Schadenstragung", definition: "Die Frage, ob und in welchem Ausmaß jemand für einen eingetretenen Schaden haftet.", keywords: ["Ausmaß", "haftet"] },
+    { id: "se-handlung", group: "Schadensursache", term: "Schaden durch Handlung", definition: "Der Schaden entsteht durch ein aktives Tun.", keywords: ["aktives"], example: "Lukas fährt bei Rot und rammt ein Auto." },
+    { id: "se-unterlassung", group: "Schadensursache", term: "Schaden durch Unterlassung", definition: "Der Schaden entsteht, weil jemand etwas Gebotenes nicht getan hat.", keywords: ["nicht getan"], example: "Gehweg nicht vom Schnee geräumt – Ruth stürzt." },
+    { id: "se-vermoegen", term: "Vermögensschaden", definition: "Schaden am Vermögen; er kann ein positiver Schaden oder ein entgangener Gewinn sein.", keywords: ["positiver", "entgangener"] },
+    { id: "se-ideell", term: "Ideeller Schaden", definition: "Schaden, der nicht direkt das Vermögen betrifft, etwa Schmerzen; dafür gibt es z. B. Schmerzengeld.", keywords: ["Schmerzen", "Schmerzengeld"] },
+    { id: "se-heilung", group: "Körperverletzung", term: "Heilungskosten", definition: "Anspruch bei Körperverletzung auf Ersatz der Behandlungskosten, etwa für einen Reha-Aufenthalt.", keywords: ["Körperverletzung", "Reha"] },
+    { id: "se-verdienst", group: "Körperverletzung", term: "Verdienstentgang", definition: "Anspruch bei Körperverletzung auf Ersatz des Einkommens, das man durch die Verletzung verliert.", keywords: ["Einkommens", "Verletzung"] },
+    { id: "se-rente", group: "Körperverletzung", term: "Rente bei Personenschaden", definition: "Bei bleibenden Schäden gibt es eine Rente für den Verdienstentgang, bei Tod eine Rente an die Unterhaltsberechtigten.", keywords: ["bleibenden", "Unterhaltsberechtigten"] },
+    { id: "se-oesterreich", term: "Schadenersatz in Österreich", definition: "Anders als in den USA gibt es in Österreich wegen der Rechtsordnung keine so horrenden Schadenersatzsummen.", keywords: ["USA", "horrenden"], example: "Philip Morris: rund 60 Mio. € in den USA" },
+    { id: "se-notstand-haft", term: "Haftung im Notstand", definition: "Wer im Notstand einen Schaden anrichtet, kann trotzdem zum Ersatz herangezogen werden; die Umstände werden berücksichtigt.", keywords: ["Notstand", "Umstände"], example: "Türschloss der aufgebrochenen Almhütte" },
+    { id: "se-geisteskrank", term: "Haftung bei Unbilligkeit", definition: "Ein Geisteskranker oder Unmündiger muss ausnahmsweise zahlen, wenn es ungerecht wäre, dass der Geschädigte leer ausgeht.", keywords: ["ungerecht", "Geschädigte"], example: "Der reich gewordene Karl" },
+    { id: "se-gefaehrdung", term: "Gefährdungshaftung", definition: "Haftung für gefährliche Sachen wie Bauwerke, Tiere oder fehlerhafte Produkte, teils ohne Verschulden.", keywords: ["Bauwerke", "Verschulden"] },
+    { id: "se-regress", term: "Regressanspruch", definition: "Zahlt einer von mehreren solidarisch haftenden Herstellern, kann er sich den Anteil der anderen zurückholen.", keywords: ["solidarisch", "zurückholen"] },
+    { id: "se-vorsorge", term: "Vorsorgepflicht der Hersteller", definition: "Hersteller müssen für Produkthaftungsfälle vorsorgen, etwa durch eine Versicherung oder Rücklagen.", keywords: ["Versicherung", "Rücklagen"] },
+    { id: "se-10jahre", term: "Ausschlussfrist der Produkthaftung", definition: "Zehn Jahre nach dem Inverkehrbringen kann der Hersteller aus der Produkthaftung nicht mehr in Anspruch genommen werden.", keywords: ["Zehn", "Inverkehrbringen"] },
   ],
   facts: [
     { id: "se-f1", statement: "Für Schadenersatz müssen Schaden, Kausalität, Rechtswidrigkeit und Verschulden vorliegen.", isTrue: true },

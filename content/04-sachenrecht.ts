@@ -86,18 +86,53 @@ Erst wenn **beides** erfüllt ist, ist das Eigentum übergegangen. Wer einen Lap
 **Dienstbarkeiten** (Servitute) sind z. B. das Recht, ein fremdes Grundstück zu überqueren, Vieh darüber zu treiben, mit Fahrzeugen zu fahren, Wasserleitungsrechte oder Wasser aus einer fremden Quelle zu beziehen.
 
 Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **lastenfrei** ist oder z. B. Dienstbarkeiten bestehen.
+
+## Fälle aus dem Buch – mit Lösung
+**Max in der Bücherei:** Er leiht ein Buch (Inhaber), gibt es zurück und lässt es dann heimlich mitgehen (**Besitzer**, aber nie Eigentümer). Kathrins Bücher trägt er nur (**Inhaber**).
+
+| Fall | Max ist … |
+|---|---|
+| leiht sich von Egon eine DVD | Inhaber |
+| mietet für 3 Jahre eine Wohnung und zieht ein | Besitzer |
+| kauft beim Möbelhaus einen Schreibtisch und stellt ihn auf | Eigentümer |
+| ist vor 2 Monaten in seine Eigentumswohnung gezogen, steht noch nicht im Grundbuch | Besitzer (Eigentümer erst mit Eintragung) |
+| kauft einen PC und nimmt ihn gleich mit | Eigentümer |
+
+**Zugeparkte Garage:** Abschleppen auf Kosten des Nachbarn nur, wenn behördliche Hilfe zu spät käme (Notfall wie die Wehen im Buch). Sonst: **Besitzstörungsklage** binnen 30 Tagen.
+
+**Petras Auto:** Mit der Unterschrift unter den Kaufvertrag ist sie **noch nicht Eigentümerin** – erst mit der Übergabe (Titel + Modus).
+
+**Grundstückskauf mit Kredit (120.000 €):** Änderungen im **B-Blatt** (Max neuer Eigentümer) und im **C-Blatt** (Pfandrecht/Hypothek der Bank).
+
+**Grillen:** Der Nachbar kann es nur verbieten, wenn Rauch und Geruch das **ortsübliche Maß** überschreiten und die Benützung **wesentlich** beeinträchtigen – einmal pro Woche eher nicht, jeden Abend eher schon.
 `,
   summary: `
-- **Sache** (§ 285 ABGB) = alles, was von der Person unterschieden ist und dem Gebrauch der Menschen dient. Auch Strom/Rechte an Werken; **nicht**: Menschen, Luft, Meer. **Tiere** sind keine Sachen, werden aber meist so behandelt.
-- **Beweglich** (ohne Substanzverlust versetzbar) vs. **unbeweglich** (fest mit dem Boden verbunden).
-- **Typenzwang**: Eigentum, Dienstbarkeit, Reallast, Pfandrecht, Baurecht (Schuldrecht dagegen: Gestaltungsfreiheit).
-- **Inhaber** = hat die Sache, **kein Besitzwille** · **Besitzer** = hat sie **mit Besitzwillen** (auch der Dieb!) · **Eigentümer** = **absolutes**, stärkstes Recht.
-- **Besitzstörungsklage** binnen **30 Tagen**; **Selbsthilfe** nur, wenn Behörde zu spät käme, mit angemessenen Mitteln.
-- Eigentum ist **eingeschränkt** (Straßenbau, Denkmal-, Umweltschutz, Nachbarrecht) bis zur **Enteignung** gegen Entschädigung.
-- **Titel + Modus**: Rechtsgrund (Kaufvertrag, Schenkung, Urteil) + Übertragungsakt (beweglich: **Übergabe**, unbeweglich: **Grundbuch**). Eigentum erst mit beidem!
-- Niemand kann **mehr Rechte übertragen**, als er selbst hat.
-- **Eigentumsklage** (Herausgabe) · **Eigentumsfreiheitsklage** (Unterlassung von Störungen).
-- **Grundbuch**: öffentlich, **Bezirksgericht**, jede/r darf einsehen. **A** = Grundstück · **B** = Eigentümer · **C** = Lasten (Hypothek, Dienstbarkeit).
+### Sache
+- **§ 285 ABGB**: alles, was von der Person unterschieden ist und dem **Gebrauch der Menschen** dient – auch Strom und Rechte an Werken.
+- **Keine Sachen**: Menschen, Unbeherrschbares (Luft, Meer). **Tiere** sind keine Sachen, werden aber meist so behandelt.
+- **Beweglich** (Stift, Laptop, Auto) vs. **unbeweglich** (Haus, Grundstück, Sträucher).
+- **Typenzwang**: nur **Eigentum, Dienstbarkeit, Reallast, Pfandrecht, Baurecht** (im Schuldrecht: Gestaltungsfreiheit).
+
+### Innehabung – Besitz – Eigentum
+| | hat die Sache | Wille | Beispiel |
+|---|---|---|---|
+| **Inhaber** | ja | **kein** Besitzwille | Bücher für Kathrin tragen, geliehene DVD |
+| **Besitzer** | ja | **Besitzwille** | Mieter, **Dieb** |
+| **Eigentümer** | – | **absolutes**, stärkstes Recht | gekaufter und übergebener PC |
+
+- **Besitzstörung** → Klage binnen **30 Tagen**. **Selbsthilfe** nur, wenn Behörde zu spät käme, mit angemessenen Mitteln.
+- **Eigentum** (§ 354): nach Belieben, solange andere nicht beeinträchtigt. **Eingeschränkt** durch Straßenbau, Denkmal-, Umweltschutz, Nachbarrecht (ortsübliches Maß) – bis zur **Enteignung** gegen Entschädigung.
+
+### Eigentumserwerb und Schutz
+- **Titel** (Kaufvertrag, Schenkung, Urteil) **+ Modus** (beweglich: **Übergabe**, unbeweglich: **Grundbuch**). Kaufvertrag allein macht **nicht** zum Eigentümer.
+- Niemand überträgt **mehr Rechte**, als er hat.
+- **Eigentumsklage** = Herausgabe · **Eigentumsfreiheitsklage** = Unterlassung von Störungen (Nachbarrecht: zuerst **Schlichtungsversuch**).
+
+### Grundbuch
+- Öffentlich, **Bezirksgericht**, Einsicht für jede/n. Hauptbuch + Urkundensammlung.
+- Rechte entstehen durch **Eintragung**; Vertrauen auf Richtigkeit.
+- **A-Blatt**: Grundstück (Nummer, Nutzung) · **B-Blatt**: **Eigentümer** · **C-Blatt**: **Lasten** (Hypothek, Dienstbarkeit).
+- **Dienstbarkeiten**: Geh-/Fahrrecht, Wasserleitung, fremde Quelle nutzen.
 `,
   concepts: [
     { id: "sr-sache", term: "Sache", definition: "Nach § 285 ABGB alles, was von der Person unterschieden ist und zum Gebrauch der Menschen dient.", keywords: ["Person", "Gebrauch"], example: "Laptop, Strom, Rechte an einem Werk – nicht aber Luft oder Meer" },
@@ -121,6 +156,18 @@ Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **laste
     { id: "sr-cblatt", group: "Grundbuchblatt", term: "C-Blatt (Lastenblatt)", definition: "Teil des Grundbuchs mit Belastungen wie Hypotheken und Dienstbarkeiten.", keywords: ["Belastungen", "Hypotheken"] },
     { id: "sr-dienstbarkeit", group: "Sachenrecht-Typ", term: "Dienstbarkeit", definition: "Recht, eine fremde Sache in bestimmter Weise zu nutzen, etwa ein fremdes Grundstück zu überqueren oder Wasser aus einer fremden Quelle zu beziehen.", keywords: ["fremde", "überqueren"], example: "Gehrecht, Fahrrecht, Wasserleitungsrecht" },
     { id: "sr-hypothek", group: "Sachenrecht-Typ", term: "Hypothek", definition: "Im Grundbuch eingetragenes Pfandrecht an einem Grundstück zur Absicherung einer Forderung, etwa eines Kredits.", keywords: ["Pfandrecht", "Grundbuch"] },
+    { id: "sr-reallast", group: "Sachenrecht-Typ", term: "Reallast", definition: "Sachenrecht, bei dem ein Grundstück mit wiederkehrenden Leistungen an einen Berechtigten belastet ist.", keywords: ["Grundstück", "wiederkehrenden"] },
+    { id: "sr-baurecht", group: "Sachenrecht-Typ", term: "Baurecht", definition: "Sachenrecht, auf oder unter einem fremden Grundstück ein Bauwerk zu haben.", keywords: ["fremden", "Bauwerk"] },
+    { id: "sr-tiere", term: "Tiere im Sachenrecht", definition: "Tiere sind keine Sachen, werden im Zivilrecht aber meist wie Sachen behandelt, man kann sie also verkaufen oder verschenken.", keywords: ["keine Sachen", "verkaufen"] },
+    { id: "sr-absolut", term: "Absolutes Recht", definition: "Recht, das gegenüber jedermann wirkt und von jedem beachtet werden muss, wie das Eigentum.", keywords: ["jedermann", "Eigentum"] },
+    { id: "sr-354", term: "§ 354 ABGB", definition: "Der Eigentümer darf mit seiner Sache grundsätzlich nach Belieben verfahren, solange er andere nicht beeinträchtigt.", keywords: ["Belieben", "beeinträchtigt"] },
+    { id: "sr-einschraenkung", term: "Einschränkungen des Eigentums", definition: "Rücksicht auf die Gesellschaft, etwa bei Straßen- und Bahnbau, Lärmschutz, Denkmalschutz, Natur- und Umweltschutz, Telekommunikationsnetzen und Nachbarschaftsrechten.", keywords: ["Denkmalschutz", "Nachbarschaftsrechten"] },
+    { id: "sr-weitergabe", term: "Weitergabe von Rechten", definition: "Niemand kann mehr Rechte übertragen, als er selbst hat; Einschränkungen gehen auf den Käufer über.", keywords: ["übertragen", "Käufer"], example: "Grundstück mit Gehrecht des Nachbarn" },
+    { id: "sr-kauf-eigentum", term: "Eigentum beim Kauf", definition: "Der Kaufvertrag verpflichtet nur zur Leistung; Eigentümer wird man erst mit der Übergabe bzw. der Grundbucheintragung.", keywords: ["verpflichtet", "Übergabe"] },
+    { id: "sr-schlichtung", term: "Schlichtungsversuch", definition: "Vor einer Klage im Nachbarschaftsrecht ist ein verpflichtender Schlichtungsversuch vorgesehen.", keywords: ["Klage", "verpflichtender"] },
+    { id: "sr-hauptbuch", term: "Hauptbuch und Urkundensammlung", definition: "Die beiden Teile des Grundbuchs; dazu kommen Hilfseinrichtungen wie Grundbuchsmappe und Verzeichnisse.", keywords: ["Grundbuchs", "Hilfseinrichtungen"] },
+    { id: "sr-gb-bedeutung", term: "Bedeutung des Grundbuchs", definition: "Dingliche Rechte werden durch die Eintragung erworben und jede/r darf auf Richtigkeit und Vollständigkeit des Grundbuchs vertrauen.", keywords: ["Eintragung", "vertrauen"] },
+    { id: "sr-dinglich", term: "Dingliches Recht", definition: "Recht an einer Sache, das gegenüber jedermann wirkt und bei Grundstücken im Grundbuch eingetragen wird.", keywords: ["Sache", "Grundbuch"], example: "Eigentum, Pfandrecht, Dienstbarkeit" },
   ],
   facts: [
     { id: "sr-f1", statement: "Tiere sind nach dem ABGB Sachen.", isTrue: false, correction: "Tiere sind **keine Sachen**, werden im Zivilrecht aber meist wie Sachen behandelt." },

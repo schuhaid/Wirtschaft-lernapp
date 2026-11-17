@@ -7,26 +7,38 @@ import { newCard, previewLabel, review, type Rating } from "@/lib/srs";
 import { load, setCard, type CardState } from "@/lib/storage";
 import { shuffle } from "@/lib/rng";
 
-type Card = { id: string; chapterId: string; front: string; back: string; reverse: boolean };
+type Kind = "begriff" | "fakt" | "frage";
+type Card = { id: string; chapterId: string; front: string; back: string; reverse: boolean; kind: Kind; prompt: string };
 
 function allCards(): Card[] {
-  return chapters.flatMap((ch) =>
-    ch.concepts.flatMap((c) => {
+  return chapters.flatMap((ch) => {
+    const out: Card[] = [];
+    for (const c of ch.concepts) {
       const back = c.definition + (c.example ? `\n\n*Beispiel:* ${c.example}` : "");
-      return [
-        { id: `card:${c.id}`, chapterId: ch.id, front: c.term, back, reverse: false },
-        { id: `card-r:${c.id}`, chapterId: ch.id, front: c.definition, back: `**${c.term}**`, reverse: true },
-      ];
-    }),
-  );
+      out.push({ id: `card:${c.id}`, chapterId: ch.id, front: c.term, back, reverse: false, kind: "begriff", prompt: "Was bedeutet …?" });
+      out.push({ id: `card-r:${c.id}`, chapterId: ch.id, front: c.definition, back: `**${c.term}**`, reverse: true, kind: "begriff", prompt: "Welcher Begriff?" });
+    }
+    for (const f of ch.facts) {
+      out.push({ id: `card-f:${f.id}`, chapterId: ch.id, front: f.statement, back: `**${f.isTrue ? "Richtig" : "Falsch"}.**` + (f.correction ? `\n\n${f.correction}` : ""), reverse: true, kind: "fakt", prompt: "Richtig oder falsch?" });
+    }
+    for (const q of ch.questions) {
+      if (q.type === "open") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, back: q.answer, reverse: true, kind: "frage", prompt: "Beantworte die Frage" });
+      else if (q.type === "order") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, back: q.items.map((x, i) => `${i + 1}. ${x}`).join("\n"), reverse: true, kind: "frage", prompt: "Nenne die Reihenfolge" });
+      else if (q.type === "mc") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question.replace(/\n\n\*\(Mehrere Antworten richtig\)\*/, ""), back: q.correct.map((i) => `- ${q.options[i]}`).join("\n") + (q.explanation ? `\n\n${q.explanation}` : ""), reverse: true, kind: "frage", prompt: "Was ist richtig?" });
+    }
+    return out;
+  });
 }
 
-const NEW_PER_SESSION = 20;
+const KIND_LABEL: Record<Kind, string> = { begriff: "Begriffe", fakt: "Richtig/Falsch", frage: "Fragen & Fälle" };
+
+const NEW_PER_SESSION = 25;
 
 export default function KartenPage() {
   const cards = useMemo(allCards, []);
   const [chs, setChs] = useState<string[]>([]);
   const [withReverse, setWithReverse] = useState(true);
+  const [kinds, setKinds] = useState<Kind[]>(["begriff", "fakt", "frage"]);
   const [cram, setCram] = useState(false);
   const [queue, setQueue] = useState<Card[] | null>(null);
   const [states, setStates] = useState<Record<string, CardState>>({});
@@ -35,7 +47,7 @@ export default function KartenPage() {
 
   useEffect(() => setStates(load().cards), []);
 
-  const pool = cards.filter((c) => (!chs.length || chs.includes(c.chapterId)) && (withReverse || !c.reverse));
+  const pool = cards.filter((c) => (!chs.length || chs.includes(c.chapterId)) && kinds.includes(c.kind) && (withReverse || c.kind !== "begriff" || !c.reverse));
   const now = Date.now();
   const due = pool.filter((c) => states[c.id] && states[c.id].due <= now);
   const fresh = pool.filter((c) => !states[c.id]);
@@ -81,6 +93,15 @@ export default function KartenPage() {
         </div>
         <div className="card stack">
           <b>Kapitel</b><ChapterPicker value={chs} onChange={setChs} />
+          <b>Kartenarten</b>
+          <div className="row">
+            {(Object.keys(KIND_LABEL) as Kind[]).map((k) => (
+              <button key={k} className={"chip" + (kinds.includes(k) ? " on" : "")}
+                onClick={() => setKinds(kinds.includes(k) ? (kinds.length > 1 ? kinds.filter((x) => x !== k) : kinds) : [...kinds, k])}>
+                {KIND_LABEL[k]} ({cards.filter((c) => c.kind === k && (!chs.length || chs.includes(c.chapterId))).length})
+              </button>
+            ))}
+          </div>
           <div className="row">
             <button className={"chip" + (withReverse ? " on" : "")} onClick={() => setWithReverse(!withReverse)}>↔ Auch umgekehrt (Erklärung → Begriff)</button>
             <button className={"chip" + (cram ? " on" : "")} onClick={() => setCram(!cram)}>⚡ Alle durchgehen (ohne Planung)</button>
@@ -108,8 +129,8 @@ export default function KartenPage() {
     <div className="stack">
       <div className="row between small muted"><span>{ch?.title}</span><span>noch {queue.length} · erledigt {done}</span></div>
       <div className="card flash" onClick={() => setFlipped(!flipped)}>
-        <div className="small muted" style={{ marginBottom: 10 }}>{card.reverse ? "Welcher Begriff?" : "Was bedeutet …?"}</div>
-        <div className={card.reverse ? "" : "front"}><Md>{card.front}</Md></div>
+        <div className="small muted" style={{ marginBottom: 10 }}>{card.prompt}</div>
+        <div className={card.kind === "begriff" && !card.reverse ? "front" : ""}><Md>{card.front}</Md></div>
         {flipped ? <div style={{ borderTop: "1px solid var(--line)", marginTop: 18, paddingTop: 18 }}><Md>{card.back}</Md></div>
           : <div className="small muted" style={{ marginTop: 20 }}>Tippen oder Leertaste zum Umdrehen</div>}
       </div>

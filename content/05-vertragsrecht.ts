@@ -121,18 +121,64 @@ Grundstruktur eines schriftlichen Vertrags:
 Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, wendet man die Regeln der **ähnlichsten** an. Musterverträge nur aus **seriösen Quellen** (ÖAMTC, AK, WKO) verwenden.
 
 **Beispiel ÖAMTC-KFZ-Kaufvertrag** (nur zwischen **Privatpersonen** – kauft man vom Händler, gilt das Konsumentenschutzgesetz): Angaben zu Verkäufer, Käufer und Fahrzeug, Preis, ob die **Gewährleistung ausgeschlossen** wird, Zusicherungen (z. B. **unbelastetes Eigentum**, garantierter Kilometerstand, keine Vorschäden), Übergabe (Schlüssel, „Pickerl“-Gutachten, Typenschein), Zahlungsbedingungen (Raten mit **Terminsverlust** = bei Verzug mit einer Rate wird alles sofort fällig), Zahlungssicherung (Typenschein bleibt bis zur Bezahlung beim Verkäufer), Rücktritt/Storno (Stornogebühr, empfohlen max. 10 %).
+
+## Fälle aus dem Buch – mit Lösung
+**Max' Tag:** iPhone im Webshop bestellt (**Kaufvertrag**), Schokoschnecke beim Bäcker (**Kaufvertrag**, schlüssig), Mittagessen, zu dem ihn Patrick einlädt (**Schenkung**), Katze Minki zurückgebracht und die Belohnung abgelehnt (**Auslobung** – Max verzichtet auf die 50 €).
+
+| Situation | Willenserklärung |
+|---|---|
+| Du verlangst am Schulbuffet ein Pizzaweckerl | mündlich |
+| Herr Mayer bestellt eine Bauernplatte, bekommt Schweinsbraten und isst ihn auf | schlüssig (nimmt das geänderte Angebot an) |
+| Manner schickt dem Stammkunden wie jedes Jahr Osterhasen | schlüssig (laufende Geschäftsbeziehung) |
+| Max nimmt eine Dose aus dem Regal, geht zur Kassa und zahlt | schlüssig |
+
+**Bürgschaft des Bruders:** Max meint, sein Bruder müsse für seine Schulden zahlen, weil er mündlich gebürgt hat. → **Falsch**, eine Bürgschaft ist nur **schriftlich** gültig.
+
+**Unbestellte DVDs:** Ein Verlag schickt „Natural Killers“-DVDs. → Man darf sie behalten, wegwerfen oder zurückschicken – es entsteht **kein Vertrag**.
+
+**Nachhilfe:** Der Musiker kann die versprochene Rechnungswesen-Nachhilfe nicht geben (**relative Unmöglichkeit**) → er ersetzt die Mehrkosten von 20 €/Stunde.
 `,
   summary: `
-- **Schuldrecht** = **relatives** Recht (nur gegenüber Vertragspartner). **Schuldner** = Pflicht zur Leistung (Schuld) · **Gläubiger** = Recht auf Leistung (Forderung).
-- **Gültiger Vertrag**: 1) Geschäftsfähigkeit 2) Willenserklärung **frei, ernstlich, bestimmt** 3) **möglich** 4) **erlaubt** (nicht gegen Gesetz/gute Sitten → sonst **nichtig**).
-- List/Drohung/Zwang → Vertrag auflösbar. **Wesentlicher Irrtum** → Auflösung · **unwesentlicher** → Anpassung.
-- **Relative Unmöglichkeit** (nur für diesen Partner unmöglich) → Schadenersatz.
-- **Vertragsfreiheit** = Abschluss- + Gestaltungsfreiheit; **Formfreiheit**. Ausnahmen: **Kontrahierungszwang**, **Formvorschriften** (Grundbuch, **Bürgschaft schriftlich**, Notariatsakt z. B. für Schenkung ohne Übergabe).
-- Vertrag = **Angebot + Annahme**; Willenserklärung **ausdrücklich** (mündlich, schriftlich, elektronisch, Geste) oder **schlüssig** (aus Handlung). **Schweigen** = grundsätzlich kein Vertrag; unbestellte Ware darf man wegwerfen.
-- **Bedingung** (ungewiss) · **Befristung** (sicher) · **Auflage** (Pflicht aus Testament/Schenkung).
-- **Erfüllung**: Ort (B2B: Übergabe an Frachtführer · B2C: Übergabe an Käufer), Zeit (ohne Vereinbarung **prompt**), Weise (**Zug um Zug**). Geldschulden = **Bringschulden**. Hinterlegung bei Gericht möglich.
-- **Absicherung**: **Angeld** (behalten bzw. doppelt zurück) · **Reugeld/Storno** (Rücktritt gegen Zahlung) · **Pönale** (Vertragsstrafe, Vertrag bleibt aufrecht) · **Eigentumsvorbehalt** (vorher im Vertrag!) · **Pfandrecht** (Hypothek) · **Bürgschaft** (Ausfalls- / einfache / Bürge und Zahler).
-- **Vertragsarten**: Kauf (Entgelt), Leihe (unentgeltlich), Tausch (Sache gegen Sache), Miete (entgeltlich), Dienstvertrag, Lizenz, Nutzung.
+### Schuldrecht
+- **Relatives Recht** – nur gegen den Vertragspartner. **Schuldner** = Pflicht (Schuld) · **Gläubiger** = Recht (Forderung).
+
+### Gültiger Vertrag – 4 Voraussetzungen
+1. **Geschäftsfähigkeit**
+2. **Willenserklärung**: frei (kein Zwang), ernstlich (kein Scherz), bestimmt (klarer Inhalt). List/Drohung/Zwang → **auflösbar**. Irrtum: **wesentlich → Auflösung**, **unwesentlich → Anpassung**.
+3. **Möglichkeit**: absolut unmöglich → kein Vertrag; **relativ unmöglich** → Schadenersatz.
+4. **Erlaubtheit**: gegen Gesetz/gute Sitten → **nichtig** (Drogenverkauf).
+
+### Vertragsfreiheit
+- **Abschlussfreiheit** (ob, mit wem) · **Gestaltungsfreiheit** (wie) · **Formfreiheit** (auch mündlich).
+- Ausnahmen: **Kontrahierungszwang** · **Formvorschriften**: Grundbuch/Firmenbuch, **Bürgschaft schriftlich**, **Notariatsakt** (Kauf zwischen Ehegatten, Schenkung ohne Übergabe).
+
+### Zustandekommen
+- **Angebot + Annahme**, deckungsgleich (sonst Gegenangebot = Verhandlungen).
+- **Ausdrücklich** (mündlich, schriftlich, elektronisch, Kopfnicken) oder **schlüssig** (Münze in Automat).
+- **Schweigen = kein Vertrag**; unbestellte Ware darf man wegwerfen (außer erkennbar irrtümlich zugeschickt).
+- Nebenbestimmungen: **Bedingung** (ungewiss) · **Befristung** (sicher) · **Auflage** (Pflicht aus Testament/Schenkung).
+
+### Erfüllung
+- **Ort** (§ 905): ohne Vereinbarung, wo der Verkäufer übergibt. Versendungskauf: **B2B** = Übergabe an Frachtführer · **B2C** = Übergabe an Käufer. Übergabe körperlich, symbolisch (Lagerschein) oder elektronisch.
+- **Zeit**: ohne Vereinbarung **prompt**. **Weise**: **Zug um Zug**. **Geldschulden = Bringschulden**.
+- Gläubiger nimmt nicht an → **Hinterlegung** beim Bezirksgericht (§ 1425).
+
+### Absicherung
+| Mittel | Merksatz |
+|---|---|
+| **Angeld** | Geber erfüllt nicht → weg; Empfänger erfüllt nicht → **doppelt** zurück |
+| **Reugeld / Storno** | zahlen und **zurücktreten** |
+| **Pönale** | Vertragsstrafe, Vertrag **bleibt** aufrecht |
+| **Eigentumsvorbehalt** | Eigentum bis zur Zahlung, **vor Lieferung vereinbaren** |
+| **Pfandrecht** | Sache als Sicherheit; Grundstück → **Hypothek** |
+| **Bürgschaft** | Dritter zahlt; **Ausfalls-** (nach Exekution) · **einfache** (nach Mahnung) · **Bürge und Zahler** (Gläubiger wählt) |
+
+Bei Zahlungsverzug: **Mahnung → Inkasso → Klage → Exekution**.
+
+### Vertragstechnik und Vertragsarten
+- Aufbau: **Titel + Parteien → Vertragsgegenstand → Rechte/Pflichten → Nebenbestimmungen**.
+- **Kauf** (gegen Geld) · **Leihe** (gratis) · **Tausch** (Sache gegen Sache) · **Miete** (gegen Geld) · **Dienstvertrag** (Arbeit gegen Lohn) · **Lizenz** (Patent/Marke gegen Gebühr) · **Nutzung** (Car-Sharing, Cloud).
+- Keine vollständige Liste – sonst ähnlichste Kategorie. Muster nur von ÖAMTC, AK, WKO.
 `,
   concepts: [
     { id: "vr-schuldrecht", term: "Schuldrecht", definition: "Relatives Recht, das nicht gegenüber jedermann, sondern nur gegenüber dem Vertragspartner durchgesetzt werden kann.", keywords: ["relatives", "Vertragspartner"] },
@@ -180,6 +226,26 @@ Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, 
     { id: "vr-lizenz", group: "Vertragsart", term: "Lizenzvertrag", definition: "Der Inhaber eines Patent-, Urheber- oder Markenrechts räumt einem Dritten gegen Lizenzgebühren eine Nutzungsmöglichkeit ein.", keywords: ["Patent", "Lizenzgebühren"] },
     { id: "vr-nutzung", group: "Vertragsart", term: "Nutzungsvertrag", definition: "Regelt ein zeitlich begrenztes oder dauerhaftes Recht zur Nutzung, etwa bei Car-Sharing oder Cloud-Computing.", keywords: ["Nutzung", "Car-Sharing"] },
     { id: "vr-terminsverlust", term: "Terminsverlust", definition: "Vereinbarung bei Ratenzahlung: Gerät der Schuldner mit einer Rate in Verzug, wird die gesamte offene Forderung sofort fällig.", keywords: ["Rate", "sofort"] },
+    { id: "vr-angebot", group: "Vertragsschluss", term: "Angebot", definition: "Erste Willenserklärung beim Vertragsabschluss; wird es sofort angenommen, ist der Vertrag geschlossen.", keywords: ["Willenserklärung", "angenommen"] },
+    { id: "vr-annahme", group: "Vertragsschluss", term: "Annahme", definition: "Zustimmung zu einem Angebot; ist sie mit dem Angebot deckungsgleich, kommt der Vertrag zustande.", keywords: ["Angebot", "deckungsgleich"] },
+    { id: "vr-verhandlung", group: "Vertragsschluss", term: "Vertragsverhandlungen", definition: "Wird ein Angebot abgeändert, entsteht ein Gegenangebot; das geht hin und her, bis Angebot und Annahme übereinstimmen.", keywords: ["Gegenangebot", "übereinstimmen"] },
+    { id: "vr-willensmangel", term: "List, Drohung und Zwang", definition: "Wer durch List, Drohung oder Zwang zu einer Willenserklärung gebracht wurde, kann den Vertrag auflösen.", keywords: ["Drohung", "auflösen"] },
+    { id: "vr-abs-unmoeglich", term: "Absolute Unmöglichkeit", definition: "Was für niemanden möglich ist, kann nicht Gegenstand eines Vertrags sein.", keywords: ["niemanden", "Gegenstand"], example: "Grundstück auf dem Mars" },
+    { id: "vr-nichtig", term: "Nichtigkeit", definition: "Ein Vertrag gegen ein gesetzliches Verbot oder die guten Sitten ist von Anfang an ungültig, wenn das Gesetz ihn verhindern will.", keywords: ["Verbot", "ungültig"] },
+    { id: "vr-aufklaerung", term: "Aufklärungspflicht", definition: "Ein Vertragspartner muss den anderen über wesentliche Umstände informieren; verschweigt er sie, kann ein wesentlicher Irrtum vorliegen.", keywords: ["informieren", "Irrtum"], example: "Oldtimer, der nicht mehr fahrtüchtig zu machen ist" },
+    { id: "vr-uebergabe-koerper", group: "Übergabeart", term: "Körperliche Übergabe", definition: "Die Ware wird tatsächlich übergeben.", keywords: ["tatsächlich"], example: "Kamera wird ausgehändigt." },
+    { id: "vr-uebergabe-symbol", group: "Übergabeart", term: "Symbolische Übergabe", definition: "Übergabe durch Dokumente, mit denen man über die Ware verfügen kann.", keywords: ["Dokumente", "verfügen"], example: "Lagerschein, Frachtpapiere" },
+    { id: "vr-uebergabe-elektro", group: "Übergabeart", term: "Elektronische Übergabe", definition: "Bei Downloads gilt die Ware als übergeben, sobald die Daten auf der Festplatte des Käufers gespeichert sind.", keywords: ["Festplatte", "Downloads"], example: "Musik, Software, E-Books" },
+    { id: "vr-erfuellung", term: "Vertragserfüllung", definition: "Ein Vertrag ist ordentlich erfüllt, wenn am Erfüllungsort, zur Erfüllungszeit und auf die vereinbarte Art und Weise geleistet wird.", keywords: ["Erfüllungsort", "Erfüllungszeit"] },
+    { id: "vr-annahmeverzug", term: "Annahmeverzug", definition: "Der Gläubiger nimmt eine ordnungsgemäß angebotene Leistung nicht an; der Schuldner kann sie dann bei Gericht hinterlegen.", keywords: ["Gläubiger", "hinterlegen"] },
+    { id: "vr-registrierkasse", term: "Registrierkassenpflicht", definition: "Bei Bargeschäften gilt seit 2016 die Registrierkassen- und Belegerteilungspflicht.", keywords: ["Bargeschäften", "2016"] },
+    { id: "vr-zahlungsverzug", term: "Zahlungsverzug", definition: "Der Schuldner zahlt nicht rechtzeitig; mögliche Schritte sind Mahnschreiben, Inkassobüro, Klage und Exekution.", keywords: ["Mahnschreiben", "Exekution"] },
+    { id: "vr-inkasso", term: "Inkassobüro", definition: "Unternehmen, das im Auftrag des Gläubigers offene Forderungen eintreibt.", keywords: ["Forderungen", "Gläubigers"] },
+    { id: "vr-vertragsgegenstand", term: "Vertragsgegenstand", definition: "Wichtigster Bestandteil eines Vertrags; er muss möglichst genau beschrieben werden.", keywords: ["Bestandteil", "beschrieben"] },
+    { id: "vr-agb", term: "Allgemeine Geschäftsbedingungen (AGB)", definition: "Vorformulierte Vertragsbedingungen eines Unternehmens, in denen z. B. der Erfüllungsort festgelegt sein kann.", keywords: ["Vertragsbedingungen", "Erfüllungsort"] },
+    { id: "vr-mustervertrag", term: "Mustervertrag", definition: "Vorlage für einen Vertrag; man sollte sie nur aus seriösen Quellen wie ÖAMTC, Arbeiterkammer oder Wirtschaftskammer nehmen.", keywords: ["Vorlage", "seriösen"], example: "ÖAMTC-KFZ-Kaufvertrag für Privatpersonen" },
+    { id: "vr-gewausschluss", term: "Gewährleistungsausschluss", definition: "Beim Kauf zwischen Privatpersonen kann die Gewährleistung vertraglich ausgeschlossen werden, etwa im ÖAMTC-KFZ-Kaufvertrag.", keywords: ["Privatpersonen", "ausgeschlossen"] },
+    { id: "vr-atypisch", term: "Atypischer Vertrag", definition: "Vertrag, der in keine gesetzliche Kategorie passt; man wendet die Regeln der ähnlichsten Vertragsart an.", keywords: ["Kategorie", "ähnlichsten"] },
   ],
   facts: [
     { id: "vr-f1", statement: "Das Schuldrecht ist – wie das Eigentum – ein absolutes Recht.", isTrue: false, correction: "Das Schuldrecht ist ein **relatives** Recht (nur gegenüber dem Vertragspartner)." },

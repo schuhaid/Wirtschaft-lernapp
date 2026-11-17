@@ -43,7 +43,7 @@ export default function Home() {
   });
   const totalPct = Math.round(mastery.reduce((a, m) => a + m.pct * m.total, 0) / Math.max(1, mastery.reduce((a, m) => a + m.total, 0)));
   const dueCards = Object.values(s.cards).filter((c) => c.due <= Date.now()).length;
-  const totalCards = chapters.reduce((n, c) => n + c.concepts.length * 2, 0);
+  const totalCards = chapters.reduce((n, c) => n + c.concepts.length * 2 + c.facts.length + c.questions.length, 0);
   const newCards = totalCards - Object.keys(s.cards).length;
   const daysLeft = s.testDate ? Math.ceil((new Date(s.testDate).getTime() - new Date().setHours(0, 0, 0, 0)) / 86400000) : null;
   const weakest = [...mastery].sort((a, b) => a.pct - b.pct)[0];

@@ -93,19 +93,46 @@ Geht die versprochene Sache **nach Vertragsabschluss** unter und wird die Leistu
 Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten Ort oder auf die vereinbarte Weise** erfüllt wird.
 - **Schuldnerverzug**: Der Schuldner erfüllt nicht (**Lieferverzug** oder **Zahlungsverzug**).
 - **Gläubigerverzug**: Der Gläubiger **nimmt die korrekt angebotene Leistung nicht an**.
+
+## Fälle aus dem Buch – mit Lösung
+**Kaffeevollautomat (1.300 €):** Milch und Espresso kommen nicht wie beworben. → **Sachmangel**. Max verlangt zuerst **Verbesserung oder Austausch**; erst wenn das scheitert, Preisminderung oder Vertragsauflösung.
+
+**Dichtung nach drei Monaten kaputt:** Verschleiß, der bei Übergabe noch nicht bestand → **kein Gewährleistungsfall**, eventuell aber **Garantie** des Herstellers.
+
+**Oma Schulz' Computer:** Office-Vollversion zugesagt, nur Demoversionen installiert → **Mangel** (entspricht nicht der Vereinbarung).
+
+**Kaffeeservice beim Trödler:** 400 € bezahlt, wert höchstens 160 € → **Verkürzung über die Hälfte**: Max kann gegen Rückgabe die 400 € zurückverlangen. Der Trödler kann das nur verhindern, indem er die **Differenz** aufzahlt.
+
+**Überraschungsei-Figuren um 750 €:** Wer sie als Sammler im vollen Bewusstsein des wahren Werts kauft, kann nicht wegen Verkürzung über die Hälfte aufheben (**Liebhaberei**).
+
+**Bild im Keller:** Ein Jahrhunderthochwasser zerstört das verkaufte Bild vor der Abholung → **höhere Gewalt**, Max haftet nicht.
 `,
   summary: `
-- **Leistungsstörungen**: Gewährleistung · Verkürzung über die Hälfte · spätere Unmöglichkeit · Verzug.
-- **Gewährleistung** = **gesetzliche** Pflicht des Verkäufers für Mängel, die **bei Übergabe** schon da waren.
-- **Mangelfrei** = entspricht Vertrag + üblichen Eigenschaften + Werbung/Beschreibung.
-- **Sachmangel** (körperlich) vs. **Rechtsmangel** (rechtliche Position fehlt, z. B. Dieb verkauft).
-- **Fristen**: neu beweglich **2 J.** · gebraucht beweglich 2 J. (auf 1 J. verkürzbar) · unbeweglich **3 J.** · arglistig verschwiegen **30 J.** (Buch). Bei Verbrauchern Neuware nicht verkürzbar.
-- **Beweislast**: zuerst Verkäufer (Verbraucher/VGG **1 Jahr**, sonst ABGB **6 Monate**), danach Käufer. Nach Ende der Frist noch **3 Monate** zum Einklagen.
-- **Primär**: Verbesserung, Austausch → **Sekundär** (wenn unmöglich/verweigert/zu langsam): Preisminderung, **Vertragsauflösung** (= alte „Wandlung“, nur bei nicht geringfügigem Mangel).
-- **Garantie** = **freiwillig/vertraglich** (Garantieschein) ≠ Gewährleistung (gesetzlich).
-- **Verkürzung über die Hälfte**: Gegenleistung < ½ wert → Aufhebung; Gegner kann Differenz zahlen; nicht bei **Liebhaberei**.
-- **Spätere Unmöglichkeit**: niemand haftet für **Zufall/höhere Gewalt**.
-- **Verzug**: **Schuldnerverzug** (Liefer-/Zahlungsverzug) · **Gläubigerverzug** (nimmt nicht an).
+### Leistungsstörungen
+**Gewährleistung** · **Verkürzung über die Hälfte** · **spätere Unmöglichkeit** · **Verzug**.
+
+### Gewährleistung
+- **Gesetzliche** Pflicht des Verkäufers für Mängel, die **schon bei Übergabe** da waren.
+- **Mangelfrei** = wie vereinbart + übliche Eigenschaften + wie in **Werbung/Beschreibung**.
+- **Sachmangel** (körperlich: Kaffeeautomat, Bremsen) · **Rechtsmangel** (kein Eigentum: Dieb).
+
+| Frist (ab **Übergabe**) | |
+|---|---|
+| neue bewegliche Sachen | **2 Jahre** |
+| gebrauchte bewegliche | 2 Jahre, auf **1 Jahr** verkürzbar |
+| unbewegliche (Haus, Fenster) | **3 Jahre** |
+| arglistig verschwiegen | **30 Jahre** (Anfechtung wegen List) |
+| danach Klagefrist | **+ 3 Monate** |
+
+- Verbraucher: Neuware **nicht** verkürzbar.
+- **Beweislast**: zuerst Verkäufer – Verbraucher (VGG) **1 Jahr**, sonst (ABGB) **6 Monate** –, danach Käufer.
+- **Reihenfolge**: zuerst **Verbesserung/Austausch** → erst wenn unmöglich, zu teuer, verweigert oder zu langsam: **Preisminderung** oder **Vertragsauflösung** (früher Wandlung; nicht bei geringfügigem Mangel).
+- **Garantie** = **freiwillig/vertraglich** (Garantieschein), kann auch später entstandene Fehler abdecken.
+
+### Weitere Störungen
+- **Verkürzung über die Hälfte**: Gegenleistung < **½** wert → Aufhebung; Gegner kann **Differenz zahlen**. Nicht bei **Liebhaberei**; gegen Unternehmer ausschließbar.
+- **Spätere Unmöglichkeit**: Sache nach Vertragsschluss untergegangen → **Zufall/höhere Gewalt**, niemand haftet.
+- **Verzug**: nicht zur richtigen Zeit, am richtigen Ort, auf richtige Weise. **Schuldnerverzug** (Liefer- oder Zahlungsverzug) · **Gläubigerverzug** (nimmt nicht an).
 `,
   concepts: [
     { id: "ls-gewaehrleistung", group: "Haftung Verkäufer", term: "Gewährleistung", definition: "Die gesetzliche Pflicht des Verkäufers, für Mängel einzustehen, die bereits bei der Übergabe vorhanden waren.", keywords: ["gesetzliche", "Übergabe"] },
@@ -130,6 +157,16 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-verzug", term: "Verzug", definition: "Ein Vertrag wird nicht zur vereinbarten Zeit, am vereinbarten Ort oder auf die vereinbarte Weise erfüllt.", keywords: ["Zeit", "Ort"] },
     { id: "ls-schuldnerverzug", group: "Verzugsart", term: "Schuldnerverzug", definition: "Der Schuldner erfüllt den Vertrag nicht ordnungsgemäß, etwa durch Lieferverzug oder Zahlungsverzug.", keywords: ["Lieferverzug", "Zahlungsverzug"] },
     { id: "ls-glaeubigerverzug", group: "Verzugsart", term: "Gläubigerverzug", definition: "Der Gläubiger nimmt die korrekt angebotene Leistung nicht an.", keywords: ["korrekt", "Leistung"] },
+    { id: "ls-leistungsstoerung", term: "Leistungsstörung", definition: "Problem bei der Durchführung eines Vertrags: Gewährleistung, Verkürzung über die Hälfte, spätere Unmöglichkeit oder Verzug.", keywords: ["Gewährleistung", "Verzug"] },
+    { id: "ls-fristbeginn", term: "Beginn der Gewährleistungsfrist", definition: "Die Gewährleistungsfristen beginnen grundsätzlich mit der Übergabe der Ware.", keywords: ["Übergabe"] },
+    { id: "ls-arglist", term: "Arglistig verschwiegener Mangel", definition: "Hat der Verkäufer einen Mangel bewusst verschwiegen, kann der Käufer den Vertrag wegen List bis zu 30 Jahre lang anfechten.", keywords: ["bewusst", "30"] },
+    { id: "ls-primaer", term: "Primäre Gewährleistungsansprüche", definition: "Verbesserung (Reparatur, Nachtrag) und Austausch; sie müssen zuerst geltend gemacht werden.", keywords: ["Verbesserung", "Austausch"] },
+    { id: "ls-verbraucher-frist", term: "Fristverkürzung bei Verbrauchern", definition: "Bei Verbrauchergeschäften darf die Gewährleistungsfrist für neue Waren nicht verkürzt werden; bei gebrauchten auf ein Jahr.", keywords: ["neue", "gebrauchten"] },
+    { id: "ls-unternehmer-laesio", term: "Verkürzung über die Hälfte bei Unternehmern", definition: "Zulasten eines Unternehmers kann das Recht zur Aufhebung wegen Verkürzung über die Hälfte vertraglich ausgeschlossen werden (§ 351 UGB).", keywords: ["Unternehmers", "ausgeschlossen"] },
+    { id: "ls-differenz", term: "Aufzahlung der Differenz", definition: "Bei Verkürzung über die Hälfte kann der Vertragspartner die Aufhebung verhindern, indem er den Unterschied zum wahren Wert aufzahlt.", keywords: ["Aufhebung", "wahren Wert"] },
+    { id: "ls-lieferverzug", term: "Lieferverzug", definition: "Schuldnerverzug, bei dem der Verkäufer die Ware nicht rechtzeitig, am richtigen Ort oder wie vereinbart liefert.", keywords: ["rechtzeitig", "liefert"] },
+    { id: "ls-zufall", term: "Zufall und höhere Gewalt", definition: "Für Schäden durch Zufall oder höhere Gewalt haftet niemand.", keywords: ["niemand", "haftet"], example: "Jahrhunderthochwasser zerstört das verkaufte Bild." },
+    { id: "ls-mangel-vereinb", term: "Mangel durch Abweichung vom Vertrag", definition: "Eine Sache ist mangelhaft, wenn sie nicht hat, was vertraglich vereinbart wurde.", keywords: ["vertraglich", "vereinbart"], example: "Office-Demo statt zugesagter Vollversion" },
   ],
   facts: [
     { id: "ls-f1", statement: "Die Gewährleistung ist eine freiwillige Leistung des Herstellers.", isTrue: false, correction: "Gewährleistung ist **gesetzlich** (§§ 922 ff ABGB). Freiwillig/vertraglich ist die **Garantie**." },

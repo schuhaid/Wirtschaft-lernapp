@@ -72,17 +72,51 @@ Wer wegen einer geistigen Behinderung oder psychischen Erkrankung seine Angelege
 - Meist reicht die Vertretung durch **einen Elternteil**. Bei Widerspruch gilt die **erste Handlung** (Mutter genehmigt den Fahrradkauf, der Vater widerspricht später → Vertrag gültig).
 - **Beide Elternteile** müssen zustimmen bei: Änderung von **Name, Religion oder Staatsbürgerschaft**, **vorzeitiger Auflösung eines Lehr- oder Arbeitsvertrags**, Anerkennung der **Vaterschaft** eines unehelichen Kindes von unter 18-Jährigen.
 - Bei **außergewöhnlichen Geldangelegenheiten** braucht es die Einigkeit der Eltern **und** die Zustimmung des **Pflegschaftsgerichts** (z. B. 17-Jähriger will Schmerzengeld einklagen – Prozesskostenrisiko).
+
+## Fälle aus dem Buch – mit Lösung
+| Fall | Ergebnis | Warum |
+|---|---|---|
+| 9-Jährige bekommt ein Pferd geschenkt | heikel – im Zweifel **schwebend unwirksam** | Geschenke darf sie annehmen, ein Pferd verursacht aber laufende Kosten (nicht nur Vorteil) |
+| 6-Jähriger kauft im Freibad Chips vom Taschengeld | **wirksam** | Taschengeldgeschäft |
+| 17-jähriger Schüler kauft nach der Führerscheinprüfung ein Auto | **schwebend unwirksam** | übersteigt Taschengeld/Verdienst |
+| 18-Jähriger kauft einen BMW, den er sich nicht leisten kann | **wirksam** | voll geschäftsfähig |
+| 13-Jährige kauft im Webshop eine Spielkonsole um 380 € | **schwebend unwirksam** | nicht geringfügig |
+| 16-Jähriger unterschreibt einen Lehrvertrag | **schwebend unwirksam** | braucht die Zustimmung der gesetzlichen Vertreter |
+
+**Tante Gundi** will Enkel Robert, dem Verein „Kinderlachen“ und ihrem Dackel etwas vererben → Robert (natürliche Person) und der Verein (juristische Person) können erben, der **Dackel nicht**.
 `,
   summary: `
-- **Zivilrecht** = Privatrecht, regelt v. a. das **ABGB**; Bereiche: Personen-, Schuld-, Sachenrecht.
-- Nur **Personen** haben Rechte/Pflichten – **Tiere nicht**. Natürliche Personen = Menschen; juristische = künstliche Gebilde (GmbH, AG, Verein, Republik, Land, Gemeinde).
-- **Rechtsfähigkeit** = Rechte und Pflichten haben können (Mensch: Geburt bis Tod; jur. Person: Gründung bis Liquidation). Ungeborene: Rechte, wenn **lebend geboren**.
-- **Handlungsfähigkeit** = **Geschäftsfähigkeit** (sich durch eigenes Handeln verpflichten) + **Deliktsfähigkeit** (für verschuldete Schäden haften, ab **14**).
-- **Altersstufen**: unter 7 gänzlich geschäftsunfähig (nur Taschengeldgeschäfte) · 7–14 beschränkt (altersübliche, geringfügige Geschäfte, Vorteile) · 14–18 erweitert beschränkt (Taschengeld/Verdienst, Lebensunterhalt nicht gefährden) · ab 18 voll.
-- Zu teures Geschäft eines Minderjährigen → **schwebend unwirksam** bis zur Zustimmung der Eltern.
-- Juristische Person handelt durch **Organe**; Vertragspartner ist die juristische Person selbst.
-- Vertretung: ehelich → Eltern, unehelich → Mutter; meist reicht **ein** Elternteil (**erste Handlung zählt**); **beide** nötig bei Name, Religion, Staatsbürgerschaft, Lehr-/Arbeitsvertrag-Auflösung, Vaterschaftsanerkennung; außergewöhnliche Geldsachen + **Pflegschaftsgericht**.
-- **Erwachsenenvertretung** für Menschen, die ihre Angelegenheiten nicht selbst regeln können (4 Säulen).
+### Zivilrecht allgemein
+- **Privatrecht** = viele Freiheiten (heiraten ja/nein, Verträge, eigene Sachen). Wichtigstes Gesetz: **ABGB**.
+- Bereiche: **Personen-, Familien-, Sachen-, Schuldrecht**.
+
+### Personen
+- Nur **Personen** haben Rechte und Pflichten – **Tiere nicht** (Lagerfelds Katze konnte nicht erben).
+- **Natürliche Personen** = Menschen · **juristische Personen** = künstliche Gebilde (GmbH, AG, Verein, Republik, Land, Gemeinde).
+
+### Fähigkeiten
+| | Mensch | juristische Person |
+|---|---|---|
+| **Rechtsfähigkeit** (Rechte/Pflichten haben) | Geburt bis Tod (Ungeborene, wenn **lebend geboren**) | Gründung bis **Liquidation** |
+| **Geschäftsfähigkeit** (sich verpflichten) | nach Alter/geistigem Zustand | durch ihre **Organe** |
+| **Deliktsfähigkeit** (Schadenersatz) | ab **14** | haftet für ihre Organe |
+
+Beispiel: 2-Jähriger erbt ein Sparbuch (rechtsfähig), Eltern verwalten es (er ist nicht geschäftsfähig).
+
+### Geschäftsfähigkeit nach Alter
+- **unter 7**: gänzlich geschäftsunfähig – nur **Taschengeldgeschäfte**, keine Geschenke
+- **7 bis unter 14**: beschränkt – **altersübliche, geringfügige** Geschäfte + Geschäfte zum **Vorteil** (Geschenk)
+- **14 bis unter 18**: erweitert beschränkt – bis zur Höhe von Taschengeld/Geldgeschenk/**eigenem Verdienst**, **Lebensunterhalt nicht gefährden**
+- **ab 18**: voll geschäftsfähig
+- Darüber hinaus → **schwebend unwirksam** bis die Eltern zustimmen; sonst Rückabwicklung.
+
+### Haftung und Vertretung
+- **Deliktsfähig ab 14**; Eltern haften nur bei verletzter **Aufsichtspflicht**. Strafmündig ebenfalls ab 14.
+- **Erwachsenenvertretung** (4 Säulen) für Menschen, die ihre Angelegenheiten nicht selbst regeln können.
+- Vertretung: ehelich → **Eltern**, unehelich → **Mutter**; sonst Großeltern, **Jugendamt**, Pflegeeltern.
+- Meist reicht **ein Elternteil** – bei Widerspruch zählt die **erste Handlung**.
+- **Beide Eltern**: Name, Religion, Staatsbürgerschaft, Auflösung Lehr-/Arbeitsvertrag, Vaterschaftsanerkennung.
+- **Außergewöhnliche Geldsachen**: beide Eltern + **Pflegschaftsgericht**.
 `,
   concepts: [
     { id: "pr-abgb", term: "ABGB", definition: "Das Allgemeine Bürgerliche Gesetzbuch, das die wesentlichsten Teile des Privatrechts regelt.", keywords: ["Privatrechts", "Bürgerliche"] },
@@ -102,6 +136,19 @@ Wer wegen einer geistigen Behinderung oder psychischen Erkrankung seine Angelege
     { id: "pr-erwachsenenvertretung", term: "Erwachsenenvertretung", definition: "Vertretung für Menschen, die wegen geistiger Behinderung oder psychischer Erkrankung ihre Angelegenheiten nicht ohne Nachteil selbst erledigen können; beruht auf vier Säulen.", keywords: ["psychischer", "vier"] },
     { id: "pr-gesvertreter", term: "Gesetzliche Vertretung", definition: "Vertretung Minderjähriger: eheliche Kinder durch die Eltern, uneheliche grundsätzlich durch die Mutter; ersatzweise z. B. durch das Jugendamt.", keywords: ["Eltern", "Mutter"] },
     { id: "pr-pflegschaft", term: "Pflegschaftsgericht", definition: "Gericht, das bei außergewöhnlichen Geldangelegenheiten eines Kindes zusätzlich zur Einigkeit der Eltern zustimmen muss.", keywords: ["außergewöhnlichen", "Eltern"], example: "17-Jähriger will Schmerzengeld einklagen" },
+    { id: "pr-zivilrecht", term: "Zivilrecht (Privatrecht)", definition: "Rechtsgebiet, in dem man selbst entscheidet, ob und mit wem man rechtliche Beziehungen eingeht; geregelt vor allem im ABGB.", keywords: ["selbst", "ABGB"], example: "Heiraten oder nicht, Verträge frei schließen" },
+    { id: "pr-bereiche", term: "Bereiche des Zivilrechts", definition: "Das Zivilrecht umfasst vor allem Personenrecht, Familienrecht, Sachenrecht und Schuldrecht.", keywords: ["Personenrecht", "Schuldrecht"] },
+    { id: "pr-taschengeld", term: "Taschengeldgeschäft", definition: "Geschäft des täglichen Lebens, das sogar Kinder unter 7 mit Bargeld abschließen dürfen.", keywords: ["Kinder", "Bargeld"], example: "Eis oder Jause kaufen" },
+    { id: "pr-vorteil", term: "Geschäft zum Vorteil", definition: "Unmündige Minderjährige (7–14) dürfen Geschäfte abschließen, die ihnen nur Vorteile bringen, etwa ein Geschenk annehmen.", keywords: ["Vorteile", "Geschenk"] },
+    { id: "pr-lebensunterhalt", term: "Gefährdung des Lebensunterhalts", definition: "Bei mündigen Minderjährigen wird so gerechnet, als müssten sie sich ohne Eltern selbst versorgen; ein Geschäft darf das nicht gefährden.", keywords: ["ohne Eltern", "selbst"] },
+    { id: "pr-aufsicht", term: "Aufsichtspflicht", definition: "Eltern haften für Schäden ihrer Kinder grundsätzlich nur, wenn sie ihre Aufsichtspflicht vernachlässigt haben.", keywords: ["Schäden", "vernachlässigt"] },
+    { id: "pr-strafmuendig", term: "Strafmündigkeit", definition: "Im Strafrecht werden Personen erst ab 14 Jahren für Delikte wie Körperverletzung bestraft.", keywords: ["14", "Delikte"] },
+    { id: "pr-eltern-zustimmung", term: "Zustimmung beider Elternteile", definition: "Nötig bei Änderung von Name, Religion oder Staatsbürgerschaft, vorzeitiger Auflösung eines Lehr- oder Arbeitsvertrags und Anerkennung der Vaterschaft durch Minderjährige.", keywords: ["Religion", "Lehr"] },
+    { id: "pr-erste-handlung", term: "Vorrang der ersten Handlung", definition: "Widersprechen sich die Eltern, gilt die zuerst gesetzte Vertretungshandlung eines Elternteils.", keywords: ["zuerst", "Elternteils"], example: "Mutter genehmigt den Fahrradkauf, Vater widerspricht später – gültig." },
+    { id: "pr-geldsachen", term: "Außergewöhnliche Geldangelegenheiten", definition: "Brauchen die Einigkeit beider Eltern und die Zustimmung des Pflegschaftsgerichts.", keywords: ["Einigkeit", "Pflegschaftsgerichts"], example: "Schmerzengeldklage eines 17-Jährigen" },
+    { id: "pr-vertreter-ersatz", term: "Ersatz-Vertreter", definition: "Können die Eltern ein Kind nicht vertreten, übernehmen das z. B. Großeltern, das Jugendamt oder Pflegeeltern.", keywords: ["Großeltern", "Jugendamt"] },
+    { id: "pr-liquidation", term: "Ende der juristischen Person", definition: "Die Rechtsfähigkeit einer juristischen Person endet mit ihrer Liquidation, also ihrer Auflösung.", keywords: ["Liquidation"] },
+    { id: "pr-jur-haftung", term: "Haftung der juristischen Person", definition: "Eine juristische Person haftet für das Handeln ihrer Organe; sie ist dadurch deliktsfähig.", keywords: ["Organe", "haftet"] },
   ],
   facts: [
     { id: "pr-f1", statement: "Tiere können Erben sein, wenn das im Testament steht.", isTrue: false, correction: "Tiere können **keine Rechte** erwerben und haben keine Pflichten – sie sind keine Personen." },

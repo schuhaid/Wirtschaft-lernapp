@@ -114,18 +114,53 @@ Fallbeispiel: Rauferei auf einem Waldfest, ein Bierkrug trifft den Kopf, Platzwu
 - **Rechtsanwälte, Notare, Steuerberater**: **kostenpflichtig** – viele Anwälte geben aber eine kostenlose Erstauskunft
 
 Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, arbeiterkammer.at, wko.at, konsument.at (VKI), dsb.gv.at (Datenschutzbehörde), eur-lex.europa.eu (EU-Recht).
+
+## Fälle aus dem Buch – mit Lösung
+**Massen-SMS:** Ein Unternehmer verschickt Werbe-SMS ohne Zustimmung und wusste nicht, dass das verboten ist. → Er wird trotzdem bestraft: *Unwissenheit schützt vor Strafe nicht.*
+
+**Waldfest:** Max schlägt Stefan einen Bierkrug auf den Kopf. → Sachverhalt: Platzwunde am Kopf. Tatbestand: § 83 StGB (Körperverletzung). Subsumtion: Der Schlag verletzt Stefan am Körper. Rechtsfolge: bis 1 Jahr Freiheitsstrafe oder Geldstrafe bis 720 Tagessätze.
+
+**Zuordnen:** Konsumentenschutzgesetz → Bundesgesetz · NÖ Kindergartengesetz → Landesgesetz · Bundesverfassungsgesetz → Verfassungsrecht · Strafgesetzbuch → Bundesgesetz · Schulunterrichtsgesetz → Bundesgesetz.
+
+**Herr Huber:** Er kannte die Fahrradverordnung nicht → keine Ausrede. Ein Blumentopf fällt einer Wohnungsinhaberin vom Fensterbrett und verletzt ihn → sie haftet als Wohnungsinhaberin (§ 1318 ABGB) und muss Schadenersatz bzw. Schmerzengeld zahlen (siehe Kapitel 7).
 `,
   summary: `
-- **Unwissenheit schützt vor Strafe nicht** – jede/r muss sich selbst informieren (RIS: ris.bka.gv.at).
-- **Stufenbau** (oben → unten): leitende Verfassungsprinzipien → EU-Recht → Bundes-/Landesverfassung → einfache Gesetze → Verordnungen → Einzelfallentscheidungen. Niedrigere Norm darf höherer **nicht widersprechen**; der **VfGH** hebt rechtswidrige Normen auf.
-- **6 Verfassungsprinzipien**: demokratisch, republikanisch, gewaltenteilend, rechtsstaatlich, bundesstaatlich, liberal. Gesamtänderung → **Volksabstimmung** (EU-Beitritt: Abstimmung 1994, Beitritt 1995).
-- **EU-Recht** verdrängt österr. Recht – außer die leitenden Verfassungsprinzipien. Primär = Gründungsverträge · Sekundär = von EU-Organen erlassen (Verordnungen, Richtlinien …).
-- **Bundesgesetzgeber** = Nationalrat + Bundesrat · **Landesgesetzgeber** = Landtage.
-- **Verordnung** = präzisiert ein Gesetz, wird rasch von einem **Organ** erlassen.
-- **Einzelfall**: Behörde → **Bescheid** · Gericht → **Urteil/Beschluss**.
-- **Rechtsanwendung**: Sachverhalt → Norm/**Tatbestand** → **Subsumtion** → **Rechtsfolge (Sanktion)**.
-- **Rechtsgebiete**: öffentliches Recht (Behörde übergeordnet) · Strafrecht (Teil davon, Staat straft) · Privatrecht (gleiche Augenhöhe, selbst klagen) + Sonderprivatrecht (Unternehmens-, Arbeits-, Miet-, Wertpapierrecht).
-- **Kostenlose Auskunft**: **Amtstag** (Dienstag) am Bezirksgericht, Behörden, Arbeiterkammer; Kammern/Vereine nur für Mitglieder; Anwälte kosten (oft gratis Erstauskunft).
+### Grundlagen
+- **Unwissenheit schützt vor Strafe nicht** – jede/r muss sich selbst informieren. Recht schafft **Verlässlichkeit** (gut für Zusammenleben und Wirtschaftsstandort).
+- Aktuelle Rechtslage im **RIS** (ris.bka.gv.at). Recht **ändert sich** (Gurtpflicht seit 1976, alle Sitze seit 1990).
+- Beispiel: Werbe-SMS ohne Zustimmung → verboten (TKG 2021: bis **50.000 €**; Buch noch 37.000 €).
+
+### Stufenbau der Rechtsordnung (oben → unten)
+1. **Leitende Verfassungsprinzipien** – demokratisch, republikanisch, gewaltenteilend, rechtsstaatlich, bundesstaatlich, liberal. Gesamtänderung → **Volksabstimmung** (1994 vor EU-Beitritt 1995). Stehen **über dem EU-Recht**.
+2. **EU-Recht** – primär: Gründungsverträge, EU-Vertrag · sekundär: Verordnungen, Richtlinien, Entscheidungen, Empfehlungen der EU-Organe. EU-Verordnung wirkt wie ein Gesetz. **EU-Recht verdrängt österreichisches Recht.**
+3. **Bundes-/Landesverfassung** – wer Gesetze macht, Kontrolle der Vollziehung, **Grund- und Freiheitsrechte**. Landesverfassung: Landtag, Landesregierung; darf der Bundesverfassung nicht widersprechen.
+4. **Einfache Gesetze** – Bund (**Nationalrat + Bundesrat**: ABGB, StGB, KSchG) oder Länder (**Landtage**: Bauordnung, Jugendschutz).
+5. **Verordnungen** – präzisieren Gesetze, rasch von einem **Organ** erlassen (Fahrradverordnung).
+6. **Einzelfallentscheidungen** – Behörde: **Bescheid** · Gericht: **Urteil/Beschluss**; durchsetzbar per **Exekution**.
+
+Niedrigere Norm darf höherer **nie widersprechen** → sonst hebt der **VfGH** sie auf.
+
+### Rechtsanwendung
+1. **Sachverhalt** feststellen (Beweisaufnahme, Beweiswürdigung)
+2. **Norm** suchen, **Tatbestand** auslegen (z. B. § 83 StGB)
+3. **Subsumtion** – passt der Sachverhalt unter den Tatbestand?
+4. **Rechtsfolge/Sanktion** (Erschwerungs- und Milderungsgründe; **Diversion** möglich)
+
+Jede Entscheidung nennt die **Rechtsmittel**. § 24 Abs. 3 **lit.** d StVO = Paragraf, Absatz, Buchstabe.
+
+### Einteilung des Rechts
+| Gebiet | Kennzeichen |
+|---|---|
+| Öffentliches Recht | Behörde **übergeordnet** (Gewerbeanmeldung) |
+| Strafrecht | Teil des öff. Rechts, **Staat straft** |
+| Privatrecht | **gleiche Augenhöhe**, selbst klagen (Vertrag, Ehe, Erbe, Schadenersatz) |
+| Sonderprivatrecht | Unternehmens-, Arbeits-, Wertpapier-, Mietrecht |
+
+**Rechtssubjekte**: Menschen und juristische Personen – **Tiere nicht**.
+
+### Information und Beratung
+- **Quellen**: Gesetzesblätter · Gesetzesausgaben (Kodex) · kommentierte Ausgaben · Lehrbücher/Zeitschriften · Entscheidungssammlungen (OGH, VwGH, VfGH).
+- **Kostenlos**: **Amtstag** am Bezirksgericht (dienstags), Verwaltungsbehörden, **Arbeiterkammer**. Nur für **Mitglieder**: WKO, Gewerkschaft, Vereine (VKI). **Kostet**: Anwalt, Notar, Steuerberater (oft gratis Erstauskunft).
 `,
   concepts: [
     { id: "gs-unwissenheit", term: "Unwissenheit schützt vor Strafe nicht", definition: "Grundsatz, dass sich jede Person selbst über das geltende Recht informieren muss und sich nicht darauf berufen kann, ein Verbot nicht gekannt zu haben.", keywords: ["informieren", "Verbot"] },
@@ -160,6 +195,32 @@ Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, 
     { id: "gs-kommentar", group: "Quelle", term: "Kommentierte Gesetzesausgabe", definition: "Enthält neben dem Gesetzestext auch Erklärungen und Zusammenfassungen von Gerichtsentscheidungen zu den Paragrafen.", keywords: ["Erklärungen", "Gerichtsentscheidungen"] },
     { id: "gs-gesetzesausgabe", group: "Quelle", term: "Gesetzesausgabe", definition: "Fasst die Gesetze zu einem Themenbereich zusammen, etwa ein Kodex zum bürgerlichen Recht.", keywords: ["Themenbereich", "Kodex"] },
     { id: "gs-entscheidungssammlung", group: "Quelle", term: "Entscheidungssammlung der Höchstgerichte", definition: "Sammlung von Entscheidungen von OGH, VwGH und VfGH, mit der man die Chancen einer Rechtsdurchsetzung einschätzen kann.", keywords: ["OGH", "Chancen"] },
+    { id: "gs-republik", group: "Prinzip", term: "Republikanisches Prinzip", definition: "Das Staatsoberhaupt wird für eine begrenzte Zeit gewählt und ist kein Monarch.", keywords: ["gewählt", "Staatsoberhaupt"], example: "Bundespräsident/in" },
+    { id: "gs-gewaltenteilung", group: "Prinzip", term: "Gewaltenteilendes Prinzip", definition: "Gesetzgebung, Verwaltung und Gerichtsbarkeit sind auf verschiedene, voneinander unabhängige Organe aufgeteilt.", keywords: ["Gesetzgebung", "Gerichtsbarkeit"] },
+    { id: "gs-bundesstaat", group: "Prinzip", term: "Bundesstaatliches Prinzip", definition: "Die staatlichen Aufgaben sind zwischen dem Bund und den Bundesländern aufgeteilt.", keywords: ["Bund", "Bundesländern"] },
+    { id: "gs-liberal", group: "Prinzip", term: "Liberales Prinzip", definition: "Die Grund- und Freiheitsrechte schützen die Menschen vor Eingriffen des Staates.", keywords: ["Freiheitsrechte", "Staates"] },
+    { id: "gs-gesamtaenderung", term: "Gesamtänderung der Bundesverfassung", definition: "Wesentliche Änderung oder Abschaffung eines leitenden Verfassungsprinzips; dafür ist eine Volksabstimmung nötig.", keywords: ["Verfassungsprinzips", "Volksabstimmung"], example: "Volksabstimmung 1994 vor dem EU-Beitritt" },
+    { id: "gs-vfgh", term: "Verfassungsgerichtshof (VfGH)", definition: "Höchstgericht, das verfassungswidrige Gesetze und gesetzwidrige Verordnungen aufheben kann.", keywords: ["verfassungswidrige", "aufheben"], example: "2020: Teile der Corona-Verordnungen aufgehoben" },
+    { id: "gs-grundrechte", term: "Grund- und Freiheitsrechte", definition: "In der Bundesverfassung garantierte Rechte der Menschen gegenüber dem Staat.", keywords: ["Bundesverfassung", "Staat"], example: "Kommunikationsfreiheit, persönliche Freiheit, Verbot der Folter" },
+    { id: "gs-eu-verordnung", group: "EU-Recht", term: "EU-Verordnung", definition: "Teil des sekundären Gemeinschaftsrechts, der in allen Mitgliedstaaten unmittelbar wie ein Gesetz wirkt.", keywords: ["sekundären", "Gesetz"], example: "Europäischer Standardführerschein seit Jänner 2013" },
+    { id: "gs-einfgesetz", group: "Stufenbau", term: "Einfaches Gesetz", definition: "Gesetz unterhalb der Verfassung, das die meisten Regeln für das Zusammenleben enthält; beschlossen vom Bund oder von den Ländern.", keywords: ["Verfassung", "Regeln"], example: "ABGB, StGB, NÖ Bauordnung" },
+    { id: "gs-einzelfall", group: "Stufenbau", term: "Einzelfallentscheidung", definition: "Unterste Stufe des Stufenbaus: Entscheidung eines konkreten Falls durch Bescheid einer Behörde oder Urteil bzw. Beschluss eines Gerichts.", keywords: ["Bescheid", "Urteil"] },
+    { id: "gs-exekution", term: "Exekution", definition: "Durchsetzung einer Entscheidung mit staatlichem Zwang, etwa indem ein Exekutor Sachen pfändet und versteigert.", keywords: ["Zwang", "pfändet"], example: "Schuldner zahlt das eingeklagte Honorar nicht." },
+    { id: "gs-beweis", group: "Rechtsanwendung", term: "Beweisaufnahme und Beweiswürdigung", definition: "Feststellung des Sachverhalts durch Vernehmungen und Protokolle und die Prüfung, ob die Beweismittel glaubwürdig und bedeutend sind.", keywords: ["Sachverhalts", "glaubwürdig"] },
+    { id: "gs-erschwerung", term: "Erschwerungs- und Milderungsgründe", definition: "Umstände, nach denen sich die Höhe der Strafe richtet, etwa Vorstrafen, Brutalität oder Reue.", keywords: ["Strafe", "Reue"] },
+    { id: "gs-rechtsmittel", term: "Rechtsmittel", definition: "Möglichkeit, sich gegen eine Entscheidung zu wehren; im Rechtsstaat enthält jede Entscheidung eine Auskunft darüber und über die Frist.", keywords: ["Entscheidung", "Frist"] },
+    { id: "gs-p83", term: "§ 83 StGB (Körperverletzung)", definition: "Wer einen anderen am Körper verletzt oder an der Gesundheit schädigt, wird mit Freiheitsstrafe bis zu einem Jahr oder Geldstrafe bis zu 720 Tagessätzen bestraft.", keywords: ["Körper", "Tagessätzen"] },
+    { id: "gs-p95", term: "Unterlassung der Hilfeleistung (§ 95 StGB)", definition: "Wer bei einem Unglücksfall die nötige und zumutbare Hilfe nicht leistet, macht sich strafbar.", keywords: ["Unglücksfall", "zumutbare"] },
+    { id: "gs-paragraf", term: "Zitieren von Paragrafen", definition: "Gesetzesstellen werden mit Paragraf, Absatz, litera (Buchstabe) und Gesetz angegeben.", keywords: ["Absatz", "litera"], example: "§ 24 Abs. 3 lit. d StVO" },
+    { id: "gs-gesetzblatt", group: "Quelle", term: "Gesetzesblätter", definition: "Amtliche Veröffentlichung der Gesetze: Bundesgesetzblätter für Bundesrecht, Landesgesetzblätter für Landesrecht.", keywords: ["Bundesrecht", "Landesrecht"] },
+    { id: "gs-lehrbuch", group: "Quelle", term: "Juristische Lehrbücher und Zeitschriften", definition: "Rechtsinformationsquelle, die tieferes Verständnis eines Spezialgebiets vermittelt.", keywords: ["Spezialgebiets"] },
+    { id: "gs-ak", group: "Beratung", term: "Arbeiterkammer (Rechtsberatung)", definition: "Bietet kostenlose Beratung zu Konsumentenschutz, Wohn- und Mietrecht, Steuer- und Arbeitsrecht.", keywords: ["Konsumentenschutz", "Arbeitsrecht"] },
+    { id: "gs-kammern", group: "Beratung", term: "Wirtschaftskammer, Gewerkschaft, Vereine", definition: "Beraten ihre Mitglieder in Rechtsfragen, z. B. VKI, Mieter- oder Vermietervereine.", keywords: ["Mitglieder"] },
+    { id: "gs-anwalt", group: "Beratung", term: "Rechtsanwälte, Notare, Steuerberater", definition: "Professionelle Beratung, die grundsätzlich etwas kostet; viele Anwälte geben eine kostenlose Erstauskunft.", keywords: ["kostenlose", "Erstauskunft"] },
+    { id: "gs-unternehmensrecht", group: "Sonderprivatrecht", term: "Unternehmensrecht", definition: "Sonderprivatrecht für Unternehmer; das Unternehmensgesetzbuch regelt z. B., wie weit ein Prokurist vertreten darf.", keywords: ["Unternehmer", "Prokurist"] },
+    { id: "gs-arbeitsrecht", group: "Sonderprivatrecht", term: "Arbeitsrecht", definition: "Sonderprivatrecht, das Rechte und Pflichten aus dem Arbeitsverhältnis regelt.", keywords: ["Arbeitsverhältnis"] },
+    { id: "gs-mietrecht", group: "Sonderprivatrecht", term: "Mietrecht", definition: "Sonderprivatrecht mit besonderen Regeln für Mietverhältnisse.", keywords: ["Mietverhältnisse"] },
+    { id: "gs-tkg", term: "Unerbetene Werbenachrichten (TKG)", definition: "Werbe-E-Mails und -SMS ohne vorherige Zustimmung sind nach dem Telekommunikationsgesetz verboten; nach dem TKG 2021 drohen bis zu 50.000 € Strafe.", keywords: ["Zustimmung", "50.000"] },
   ],
   facts: [
     { id: "gs-f1", statement: "Wer ein Gesetz nicht kennt, kann dafür nicht bestraft werden.", isTrue: false, correction: "**Unwissenheit schützt vor Strafe nicht** – jede/r muss sich selbst informieren." },
