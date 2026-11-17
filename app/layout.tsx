@@ -9,8 +9,8 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f3f5f8" },
-    { media: "(prefers-color-scheme: dark)", color: "#171b22" },
+    { media: "(prefers-color-scheme: light)", color: "#e7e8eb" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e0f11" },
   ],
 };
 
@@ -24,8 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
-        <Nav />
-        <main className="wrap">{children}</main>
+        <div className="shell">
+          <Nav />
+          <main className="wrap">{children}</main>
+        </div>
       </body>
     </html>
   );

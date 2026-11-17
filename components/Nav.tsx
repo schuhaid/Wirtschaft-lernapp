@@ -2,55 +2,75 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { IconAuto, IconBook, IconCards, IconClipboard, IconHome, IconList, IconMoon, IconSun, IconTarget } from "./Icons";
 
 const LINKS = [
-  ["/", "Übersicht"],
-  ["/stoff", "Stoff"],
-  ["/zusammenfassung", "Zusammenfassung"],
-  ["/karten", "Lernkarten"],
-  ["/quiz", "Quiz"],
-  ["/test", "Probetest"],
+  { href: "/", label: "Übersicht", Icon: IconHome },
+  { href: "/stoff", label: "Stoff", Icon: IconBook },
+  { href: "/zusammenfassung", label: "Zusammenfassung", Icon: IconList },
+  { href: "/karten", label: "Lernkarten", Icon: IconCards },
+  { href: "/quiz", label: "Quiz", Icon: IconTarget },
+  { href: "/test", label: "Probetest", Icon: IconClipboard },
 ];
 
 type Theme = "auto" | "light" | "dark";
 const NEXT: Record<Theme, Theme> = { auto: "light", light: "dark", dark: "auto" };
-const LABEL: Record<Theme, string> = { auto: "Design: automatisch (wie System)", light: "Design: hell", dark: "Design: dunkel" };
+const NAME: Record<Theme, string> = { auto: "Automatisch", light: "Hell", dark: "Dunkel" };
 
-function applyTheme(t: Theme) {
-  const el = document.documentElement;
-  if (t === "auto") el.removeAttribute("data-theme");
-  else el.setAttribute("data-theme", t);
-  try { localStorage.setItem("theme", t); } catch {}
+// Beim Umschalten alle Übergänge kurz abschalten, damit die Farben nicht verschmieren
+function withoutTransitions(change: () => void) {
+  const style = document.createElement("style");
+  style.append(document.createTextNode("*,*::before,*::after{transition:none !important}"));
+  document.head.append(style);
+  change();
+  void document.body.offsetHeight;
+  requestAnimationFrame(() => requestAnimationFrame(() => style.remove()));
 }
 
-function Icon({ t }: { t: Theme }) {
-  if (t === "light")
-    return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>);
-  if (t === "dark")
-    return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>);
-  return (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="9" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" /></svg>);
+function applyTheme(t: Theme) {
+  withoutTransitions(() => {
+    const el = document.documentElement;
+    if (t === "auto") el.removeAttribute("data-theme");
+    else el.setAttribute("data-theme", t);
+  });
+  try { localStorage.setItem("theme", t); } catch {}
 }
 
 export default function Nav() {
   const path = usePathname();
   const [theme, setTheme] = useState<Theme>("auto");
+
   useEffect(() => {
     try { setTheme((localStorage.getItem("theme") as Theme) || "auto"); } catch {}
+    // Systemwechsel (hell/dunkel) ebenfalls ohne Übergänge
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = () => withoutTransitions(() => {});
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
   }, []);
 
+  const ThemeIcon = theme === "light" ? IconSun : theme === "dark" ? IconMoon : IconAuto;
+
   return (
-    <nav className="nav">
+    <nav className="nav" aria-label="Hauptnavigation">
       <div className="nav-inner">
+        <div className="brand-row">
+          <Link href="/" className="brand" aria-label="Zur Übersicht">§</Link>
+          <div className="brand-text">Wirtschaft &amp; Recht<span>Lernapp</span></div>
+        </div>
         <div className="nav-links">
-          <Link href="/" className="brand" aria-label="Zur Übersicht"><span className="brand-mark">§</span></Link>
-          {LINKS.map(([href, label]) => (
-            <Link key={href} href={href} className={path === href ? "active" : ""}>{label}</Link>
+          {LINKS.map(({ href, label, Icon }) => (
+            <Link key={href} href={href} className={"nav-link" + (path === href ? " active" : "")} aria-current={path === href ? "page" : undefined}>
+              <Icon /><span>{label}</span>
+            </Link>
           ))}
         </div>
-        <button className="theme-btn" title={LABEL[theme]} aria-label={LABEL[theme]}
-          onClick={() => { const n = NEXT[theme]; setTheme(n); applyTheme(n); }}>
-          <Icon t={theme} />
-        </button>
+        <div className="nav-foot">
+          <button className="theme-btn" aria-label={`Design: ${NAME[theme]}. Klicken zum Wechseln.`}
+            onClick={() => { const n = NEXT[theme]; setTheme(n); applyTheme(n); }}>
+            <ThemeIcon /><span className="theme-name">{NAME[theme]}</span>
+          </button>
+        </div>
       </div>
     </nav>
   );
