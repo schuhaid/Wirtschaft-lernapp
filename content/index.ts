@@ -1,8 +1,21 @@
 import type { Chapter } from "@/lib/types";
-import marketing from "./demo-marketing";
-import kosten from "./demo-kosten";
+import grundstrukturen from "./01-grundstrukturen";
+import personenrecht from "./02-personenrecht";
+import familienrecht from "./03-familienrecht";
+import sachenrecht from "./04-sachenrecht";
+import vertragsrecht from "./05-vertragsrecht";
+import leistungsstoerungen from "./06-leistungsstoerungen";
+import schadenersatz from "./07-schadenersatz";
 
-export const COURSE_TITLE = "Wirtschaft – Lernapp";
+export const COURSE_TITLE = "Wirtschaft & Recht – Lernapp";
 
-// Neue Kapitel hier importieren und eintragen.
-export const chapters: Chapter[] = [marketing, kosten];
+// Stoff: „Wirtschaft und Recht für Techniker/innen IV HTL“, S. 10–54 (in eigenen Worten zusammengefasst)
+export const chapters: Chapter[] = [
+  grundstrukturen,
+  personenrecht,
+  familienrecht,
+  sachenrecht,
+  vertragsrecht,
+  leistungsstoerungen,
+  schadenersatz,
+];
