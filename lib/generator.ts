@@ -65,7 +65,7 @@ export function buildTemplates(chapters: Chapter[]): Template[] {
           make: () => {
             const opts = shuffle([c.definition, ...distractors(c, p, "definition", 3)]);
             return { ...base(`mc-def:${c.id}`, c.id, ch.id, "mc"), kind: "mc", prompt: pick(MC_TERM_PROMPTS)(c.term),
-              options: opts, correct: [opts.indexOf(c.definition)], explanation: c.example ? `Beispiel: ${c.example}` : undefined };
+              options: opts, correct: [opts.indexOf(c.definition)], explanation: [c.explain, c.example ? `*Beispiel:* ${c.example}` : ""].filter(Boolean).join("\n\n") || undefined };
           },
         });
         T.push({

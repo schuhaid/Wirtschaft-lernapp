@@ -4,28 +4,42 @@ import type { Chapter } from "@/lib/types";
 import { useChapters } from "@/components/Subject";
 import ChapterPicker from "@/components/ChapterPicker";
 import Md from "@/components/Md";
-import { newCard, previewLabel, review, type Rating } from "@/lib/srs";
+import { newCard, nextLabel, review, type Rating } from "@/lib/srs";
 import { load, setCard, type CardState } from "@/lib/storage";
 import { shuffle } from "@/lib/rng";
 
 type Kind = "begriff" | "fakt" | "frage";
-type Card = { id: string; chapterId: string; front: string; back: string; reverse: boolean; kind: Kind; prompt: string };
+type Section = { label: string; text: string; tone?: "good" | "bad" };
+type Card = { id: string; chapterId: string; front: string; back: Section[]; reverse: boolean; kind: Kind; prompt: string };
+
+/** Aufzählungen wie „1. … 2. … 3. …“ im Fließtext auf eigene Zeilen setzen */
+const listify = (t: string) => /(^|\s)1\. .+\s2\. /.test(t) ? t.replace(/\s+(\d{1,2})\. (?=\S)/g, "\n$1. ") : t;
 
 function allCards(chapters: Chapter[]): Card[] {
   return chapters.flatMap((ch) => {
     const out: Card[] = [];
     for (const c of ch.concepts) {
-      const back = c.definition + (c.example ? `\n\n*Beispiel:* ${c.example}` : "");
-      out.push({ id: `card:${c.id}`, chapterId: ch.id, front: c.term, back, reverse: false, kind: "begriff", prompt: "Was bedeutet …?" });
-      out.push({ id: `card-r:${c.id}`, chapterId: ch.id, front: c.definition, back: `**${c.term}**`, reverse: true, kind: "begriff", prompt: "Welcher Begriff?" });
+      const extra: Section[] = [
+        ...(c.explain ? [{ label: "Einfach erklärt", text: c.explain }] : []),
+        ...(c.example ? [{ label: "Beispiel", text: c.example }] : []),
+      ];
+      out.push({ id: `card:${c.id}`, chapterId: ch.id, front: c.term, reverse: false, kind: "begriff", prompt: "Was bedeutet …?",
+        back: [{ label: "Bedeutung", text: c.definition }, ...extra] });
+      out.push({ id: `card-r:${c.id}`, chapterId: ch.id, front: c.definition, reverse: true, kind: "begriff", prompt: "Welcher Begriff ist gemeint?",
+        back: [{ label: "Begriff", text: `**${c.term}**` }, ...extra] });
     }
     for (const f of ch.facts) {
-      out.push({ id: `card-f:${f.id}`, chapterId: ch.id, front: f.statement, back: `**${f.isTrue ? "Richtig" : "Falsch"}.**` + (f.correction ? `\n\n${f.correction}` : ""), reverse: true, kind: "fakt", prompt: "Richtig oder falsch?" });
+      out.push({ id: `card-f:${f.id}`, chapterId: ch.id, front: f.statement, reverse: true, kind: "fakt", prompt: "Richtig oder falsch?",
+        back: [{ label: "Lösung", text: f.isTrue ? "✓ **Richtig**" : "✕ **Falsch**", tone: f.isTrue ? "good" : "bad" },
+          ...(f.correction ? [{ label: f.isTrue ? "Warum?" : "Richtig ist", text: f.correction }] : [])] });
     }
     for (const q of ch.questions) {
-      if (q.type === "open") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, back: q.answer, reverse: true, kind: "frage", prompt: "Beantworte die Frage" });
-      else if (q.type === "order") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, back: q.items.map((x, i) => `${i + 1}. ${x}`).join("\n"), reverse: true, kind: "frage", prompt: "Nenne die Reihenfolge" });
-      else if (q.type === "mc") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question.replace(/\n\n\*\(Mehrere Antworten richtig\)\*/, ""), back: q.correct.map((i) => `- ${q.options[i]}`).join("\n") + (q.explanation ? `\n\n${q.explanation}` : ""), reverse: true, kind: "frage", prompt: "Was ist richtig?" });
+      if (q.type === "open") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, reverse: true, kind: "frage", prompt: "Beantworte die Frage",
+        back: [{ label: "Musterantwort", text: listify(q.answer) }, ...(q.keywords.length ? [{ label: "Darauf kommt's an", text: q.keywords.map((k) => `**${k}**`).join(" · ") }] : [])] });
+      else if (q.type === "order") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question, reverse: true, kind: "frage", prompt: "Nenne die Reihenfolge",
+        back: [{ label: "Reihenfolge", text: q.items.map((x, i) => `${i + 1}. ${x}`).join("\n") }, ...(q.explanation ? [{ label: "Erklärung", text: q.explanation }] : [])] });
+      else if (q.type === "mc") out.push({ id: `card-q:${q.id}`, chapterId: ch.id, front: q.question.replace(/\n\n\*\(Mehrere Antworten richtig\)\*/, ""), reverse: true, kind: "frage", prompt: "Was ist richtig?",
+        back: [{ label: q.correct.length > 1 ? "Richtige Antworten" : "Richtige Antwort", text: q.correct.map((i) => `- ${q.options[i]}`).join("\n") }, ...(q.explanation ? [{ label: "Erklärung", text: q.explanation }] : [])] });
     }
     return out;
   });
@@ -69,7 +83,7 @@ export default function KartenPage() {
     const ns = review(states[card.id] ?? newCard(), r);
     if (!cram) { setCard(card.id, ns); setStates((s) => ({ ...s, [card.id]: ns })); }
     const rest = queue.slice(1);
-    if (r === 0) rest.splice(Math.min(rest.length, 3 + Math.floor(Math.random() * 3)), 0, card); // gleich nochmal
+    if (r === 0) rest.splice(Math.min(rest.length, 3 + Math.floor(Math.random() * 3)), 0, card); // kommt in ein paar Karten nochmal
     setQueue(rest); setFlipped(false); setDone((d) => d + 1);
   }, [card, queue, states, cram]);
 
@@ -77,7 +91,9 @@ export default function KartenPage() {
     const h = (e: KeyboardEvent) => {
       if (!card) return;
       if (e.key === " ") { e.preventDefault(); setFlipped((f) => !f); }
-      if (flipped && ["1", "2", "3", "4"].includes(e.key)) rate((+e.key - 1) as Rating);
+      if (!flipped) return;
+      if (e.key === "1" || e.key === "ArrowLeft") rate(0);
+      if (e.key === "2" || e.key === "ArrowRight") rate(1);
     };
     window.addEventListener("keydown", h);
     return () => window.removeEventListener("keydown", h);
@@ -87,7 +103,7 @@ export default function KartenPage() {
     return (
       <div className="stack">
         <h1>Lernkarten</h1>
-        <p className="muted">Spaced Repetition wie bei Anki: Karten, die du gut kannst, kommen erst in ein paar Tagen wieder, schwierige gleich nochmal.</p>
+        <p className="muted">Antwort aufdecken, dann ehrlich sagen: <b>Kann ich</b> oder <b>Kann ich nicht</b>. Was du nicht kannst, kommt in derselben Runde gleich nochmal. Was du kannst, kommt erst in 2–3 Stunden wieder, dann morgen, dann in 3 Tagen.</p>
         <div className="grid">
           <div className="card"><div className="big">{due.length}</div><div className="muted small">fällig zur Wiederholung</div></div>
           <div className="card"><div className="big">{fresh.length}</div><div className="muted small">neue Karten</div></div>
@@ -120,7 +136,7 @@ export default function KartenPage() {
     return (
       <div className="stack">
         <h1>Geschafft! 🎉</h1>
-        <div className="card">{done} Karten wiederholt. {cram ? "" : "Die nächsten Wiederholungen sind schon eingeplant."}</div>
+        <div className="card">{done} Karten durchgegangen. {cram ? "" : "Die Karten, die du konntest, kommen in 2–3 Stunden wieder – dann siehst du sie unter „fällig“."}</div>
         <div className="row"><button className="btn primary" onClick={() => setQueue(null)}>Zurück</button></div>
       </div>
     );
@@ -132,20 +148,25 @@ export default function KartenPage() {
       <div className="row between small muted"><span>{ch?.title}</span><span>noch {queue.length} · erledigt {done}</span></div>
       <div className="card flash" onClick={() => setFlipped(!flipped)}>
         <div className="small muted" style={{ marginBottom: 10 }}>{card.prompt}</div>
-        <div className={card.kind === "begriff" && !card.reverse ? "front" : ""}><Md>{card.front}</Md></div>
-        {flipped ? <div style={{ borderTop: "1px solid var(--line)", marginTop: 18, paddingTop: 18 }}><Md>{card.back}</Md></div>
-          : <div className="small muted" style={{ marginTop: 20 }}>Tippen oder Leertaste zum Umdrehen</div>}
+        <div className={card.kind === "begriff" && !card.reverse ? "front" : "front-text"}><Md>{card.front}</Md></div>
+        {flipped ? (
+          <div className="card-back">
+            {card.back.map((sec, i) => (
+              <div key={i} className={"back-sec" + (sec.tone ? " " + sec.tone : "") + (i === 0 ? " main" : "")}>
+                <div className="back-label">{sec.label}</div>
+                <Md>{sec.text}</Md>
+              </div>
+            ))}
+          </div>
+        ) : <div className="small muted" style={{ marginTop: 20 }}>Tippen oder Leertaste zum Aufdecken</div>}
       </div>
       <div className="sticky-bottom">
         {flipped ? (
           <div className="rate">
-            {(["Nochmal", "Schwer", "Gut", "Leicht"] as const).map((l, r) => (
-              <button key={l} className={"btn" + (r === 0 ? " bad" : r === 2 ? " primary" : r === 3 ? " good" : "")} onClick={() => rate(r as Rating)}>
-                {l}<small>{cram ? r + 1 : previewLabel(st, r as Rating)}</small>
-              </button>
-            ))}
+            <button className="btn rate-no" onClick={() => rate(0)}>✕ Kann ich nicht<small>kommt gleich nochmal</small></button>
+            <button className="btn rate-yes" onClick={() => rate(1)}>✓ Kann ich<small>{cram ? "weiter" : nextLabel(st)}</small></button>
           </div>
-        ) : <button className="btn primary block" onClick={() => setFlipped(true)}>Umdrehen</button>}
+        ) : <button className="btn primary block" onClick={() => setFlipped(true)}>Antwort aufdecken</button>}
       </div>
     </div>
   );

@@ -273,8 +273,8 @@ input::placeholder, textarea::placeholder { color: var(--muted); opacity: 1; }
 .flash { min-height: 290px; display: flex; flex-direction: column; justify-content: center; text-align: center; cursor: pointer; user-select: none; padding: 1.8rem 1.5rem; }
 .flash .front { font-size: 1.65rem; font-weight: 760; letter-spacing: -0.02em; line-height: 1.25; hyphens: auto; }
 .flash .md { max-width: 52ch; margin-inline: auto; }
-.rate { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4rem; }
-.rate .btn { flex-direction: column; gap: 0; padding: 0.6rem 0.3rem; font-size: 0.92rem; border-radius: var(--r-inner); }
+.rate { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.rate .btn { flex-direction: column; gap: 0.1rem; padding: 0.85rem 0.5rem; font-size: 1.02rem; font-weight: 720; border-radius: var(--r-inner); }
 .rate .btn small { font-weight: 500; opacity: 0.8; font-size: 0.75rem; }
 
 /* ===== Lesetext ===== */
@@ -367,3 +367,18 @@ details.card[open] > summary::after { content: "−"; }
 .subject-switch a { flex: 1; text-align: center; text-decoration: none; color: var(--muted); font-weight: 650; font-size: 0.85rem; padding: 0.45rem 0.5rem; border-radius: calc(var(--r-control) - 0.25rem); }
 .subject-switch a.on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-border); }
 @media (max-width: 959px) { .subject-switch { display: none; } }
+
+/* ===== Lernkarten: Rückseite & Bewertung ===== */
+.flash .front-text { font-size: 1.15rem; font-weight: 600; line-height: 1.5; }
+.card-back { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); display: grid; gap: 0.75rem; text-align: left; max-width: 60ch; width: 100%; margin-inline: auto; cursor: auto; }
+.back-sec { padding: 0.8rem 1rem; border-radius: var(--r-inner); background: oklch(0.5 0 0 / 0.06); }
+.back-sec .md { max-width: none; margin: 0; }
+.back-sec .md > :first-child { margin-top: 0; }
+.back-sec .md > :last-child { margin-bottom: 0; }
+.back-sec.main { background: transparent; padding: 0 0.2rem; font-size: 1.08rem; }
+.back-sec.good, .back-sec.main.good { color: var(--good); background: var(--good-soft); padding: 0.8rem 1rem; }
+.back-sec.bad, .back-sec.main.bad { color: var(--bad); background: var(--bad-soft); padding: 0.8rem 1rem; }
+.back-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 0.3rem; }
+.back-sec.good .back-label, .back-sec.bad .back-label { color: inherit; opacity: 0.8; }
+.rate .rate-no { background: var(--bad-soft); color: var(--bad); box-shadow: none; }
+.rate .rate-yes { background: var(--good-soft); color: var(--good); box-shadow: none; }

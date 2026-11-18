@@ -6,6 +6,7 @@ export type Concept = {
   definition: string; // Erklärung in 1–3 Sätzen
   keywords?: string[]; // Schlüsselwörter aus der Definition (für Lückentext & offene Fragen)
   example?: string; // Praxisbeispiel
+  explain?: string; // „Einfach erklärt“ – Erklärung in Alltagssprache
   group?: string; // Gruppe für bessere Falschantworten (z. B. "Rechtsform", "4P")
 };
 
@@ -13,7 +14,7 @@ export type Fact = {
   id: string;
   statement: string;
   isTrue: boolean;
-  correction?: string; // Erklärung / richtige Version, wenn falsch
+  correction?: string; // Erklärung: bei falschen Aussagen die richtige Version, bei richtigen die Begründung
 };
 
 export type CustomQuestion =
