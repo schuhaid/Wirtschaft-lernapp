@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { chapters } from "@/content";
+import type { Chapter } from "@/lib/types";
+import { useChapters } from "@/components/Subject";
 import ChapterPicker from "@/components/ChapterPicker";
 import Md from "@/components/Md";
 import { newCard, previewLabel, review, type Rating } from "@/lib/srs";
@@ -10,7 +11,7 @@ import { shuffle } from "@/lib/rng";
 type Kind = "begriff" | "fakt" | "frage";
 type Card = { id: string; chapterId: string; front: string; back: string; reverse: boolean; kind: Kind; prompt: string };
 
-function allCards(): Card[] {
+function allCards(chapters: Chapter[]): Card[] {
   return chapters.flatMap((ch) => {
     const out: Card[] = [];
     for (const c of ch.concepts) {
@@ -35,7 +36,8 @@ const KIND_LABEL: Record<Kind, string> = { begriff: "Begriffe", fakt: "Richtig/F
 const NEW_PER_SESSION = 25;
 
 export default function KartenPage() {
-  const cards = useMemo(allCards, []);
+  const chapters = useChapters();
+  const cards = useMemo(() => allCards(chapters), [chapters]);
   const [chs, setChs] = useState<string[]>([]);
   const [withReverse, setWithReverse] = useState(true);
   const [kinds, setKinds] = useState<Kind[]>(["begriff", "fakt", "frage"]);

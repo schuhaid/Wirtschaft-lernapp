@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Md from "./Md";
 import type { Question } from "@/lib/types";
 import { KIND_LABEL } from "@/lib/types";
-import { chapters } from "@/content";
+import { useChapters } from "@/components/Subject";
 import type { Response } from "@/lib/generator";
 import { correctAnswerText } from "@/lib/generator";
 import { keywordHits } from "@/lib/text";
@@ -34,6 +34,7 @@ export function isAnswered(r: Response): boolean {
 }
 
 export function QuestionHeader({ q, index, total }: { q: Question; index?: number; total?: number }) {
+  const chapters = useChapters();
   const ch = chapters.find((c) => c.id === q.chapterId);
   return (
     <div className="row between small muted">

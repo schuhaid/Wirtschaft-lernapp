@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { chapters } from "@/content";
+import { useChapters } from "@/components/Subject";
 import ChapterPicker from "@/components/ChapterPicker";
 import Md from "@/components/Md";
 import { Feedback, OpenReveal, QuestionHeader, QuestionInput, emptyResponse, isAnswered } from "@/components/QuestionView";
@@ -11,7 +11,8 @@ import { KIND_LABEL, type Question, type QuestionKind } from "@/lib/types";
 const KINDS = Object.keys(KIND_LABEL) as QuestionKind[];
 
 export default function QuizPage() {
-  const templates = useMemo(() => buildTemplates(chapters), []);
+  const chapters = useChapters();
+  const templates = useMemo(() => buildTemplates(chapters), [chapters]);
   const [chs, setChs] = useState<string[]>([]);
   const [kinds, setKinds] = useState<QuestionKind[]>([]);
   const [mode, setMode] = useState<SelectMode>("mixed");

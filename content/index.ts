@@ -1,21 +1,29 @@
-import type { Chapter } from "@/lib/types";
-import grundstrukturen from "./01-grundstrukturen";
-import personenrecht from "./02-personenrecht";
-import familienrecht from "./03-familienrecht";
-import sachenrecht from "./04-sachenrecht";
-import vertragsrecht from "./05-vertragsrecht";
-import leistungsstoerungen from "./06-leistungsstoerungen";
-import schadenersatz from "./07-schadenersatz";
+import type { Subject } from "@/lib/types";
+import { chapters as wirtschaft } from "./wirtschaft";
+import { chapters as medientechnik } from "./medientechnik";
 
-export const COURSE_TITLE = "Wirtschaft & Recht – Lernapp";
-
-// Stoff: „Wirtschaft und Recht für Techniker/innen IV HTL“, S. 10–54 (in eigenen Worten zusammengefasst)
-export const chapters: Chapter[] = [
-  grundstrukturen,
-  personenrecht,
-  familienrecht,
-  sachenrecht,
-  vertragsrecht,
-  leistungsstoerungen,
-  schadenersatz,
+export const subjects: Subject[] = [
+  {
+    id: "wirtschaft",
+    title: "Wirtschaft & Recht",
+    short: "Wirtschaft",
+    titleLines: ["Wirtschaft", "& Recht"],
+    mark: "§",
+    source: "Buch S. 10–54",
+    chapters: wirtschaft,
+  },
+  {
+    id: "medientechnik",
+    title: "Medientechnik",
+    short: "Medien",
+    titleLines: ["Medien", "technik"],
+    mark: "CI",
+    source: "Corporate Identity – Zusammenfassung",
+    defaultTestDate: "2026-11-20",
+    chapters: medientechnik,
+  },
 ];
+
+export function getSubject(id: string): Subject | undefined {
+  return subjects.find((s) => s.id === id);
+}

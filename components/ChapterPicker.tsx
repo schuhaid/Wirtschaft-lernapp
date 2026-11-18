@@ -1,7 +1,8 @@
 "use client";
-import { chapters } from "@/content";
+import { useChapters } from "@/components/Subject";
 
 export default function ChapterPicker({ value, onChange }: { value: string[]; onChange: (v: string[]) => void }) {
+  const chapters = useChapters();
   const all = value.length === 0;
   return (
     <div className="row">

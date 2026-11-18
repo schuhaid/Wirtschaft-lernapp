@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
-import { chapters } from "@/content";
+import { useChapters } from "@/components/Subject";
 import Md from "./Md";
 
 /** Leseansicht für Stoff bzw. Zusammenfassung, mit Kapitelwahl und Suche */
 export default function Reader({ field, title, intro }: { field: "stoff" | "summary"; title: string; intro: string }) {
+  const chapters = useChapters();
   const [active, setActive] = useState<string>("alle");
   const [q, setQ] = useState("");
   const needle = q.trim().toLowerCase();

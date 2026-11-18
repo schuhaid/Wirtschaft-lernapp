@@ -96,3 +96,16 @@ export const KIND_LABEL: Record<QuestionKind, string> = {
   order: "Reihenfolge",
   number: "Rechenaufgabe",
 };
+
+// ===== Fächer =====
+
+export type Subject = {
+  id: string; // URL-Teil, z. B. "medientechnik"
+  title: string;
+  short: string; // kurzer Name für den Fachwechsel
+  titleLines: [string, string]; // Überschrift auf der Übersicht, zweizeilig
+  mark: string; // kurzes Zeichen fürs Logo-Feld
+  source: string; // woher der Stoff stammt
+  defaultTestDate?: string; // ISO-Datum, bis man selbst eines einträgt
+  chapters: Chapter[];
+};

@@ -349,3 +349,21 @@ details.card[open] > summary::after { content: "−"; }
 .timer { font-variant-numeric: tabular-nums; font-weight: 760; }
 .timer.low { color: var(--bad); }
 .grid.stats { grid-template-columns: repeat(3, 1fr); }
+
+/* ===== Fächerauswahl ===== */
+.subject-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.subject-card { display: flex; flex-direction: column; gap: 1.1rem; text-decoration: none; color: inherit; min-height: 210px; transition: transform 160ms cubic-bezier(0.2, 0, 0, 1), box-shadow 160ms cubic-bezier(0.2, 0, 0, 1); }
+.subject-card h2 { margin: 0; font-size: 1.45rem; }
+.subject-card p { margin: 0.3rem 0 0; }
+.subject-card:active { transform: scale(0.98); }
+.subject-foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; }
+.chip-static { font-size: 0.85rem; font-weight: 600; padding: 0.35rem 0.75rem; border-radius: 999px; background: oklch(0.5 0 0 / 0.08); }
+.subject-card .arrow { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 999px; background: var(--ink); color: var(--ink-inverse); }
+.subject-card .arrow svg { width: 1.1rem; height: 1.1rem; }
+@media (hover: hover) { .subject-card:hover { box-shadow: var(--shadow-border-hover); } }
+
+/* Fachwechsel in der Navigation */
+.subject-switch { display: flex; gap: 0.25rem; padding: 0.25rem; border-radius: var(--r-control); background: oklch(0.5 0 0 / 0.08); margin-bottom: 1rem; }
+.subject-switch a { flex: 1; text-align: center; text-decoration: none; color: var(--muted); font-weight: 650; font-size: 0.85rem; padding: 0.45rem 0.5rem; border-radius: calc(var(--r-control) - 0.25rem); }
+.subject-switch a.on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-border); }
+@media (max-width: 959px) { .subject-switch { display: none; } }

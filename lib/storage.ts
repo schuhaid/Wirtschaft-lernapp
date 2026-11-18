@@ -21,15 +21,23 @@ type Store = {
   streakDays: string[]; // Tage, an denen gelernt wurde
 };
 
-const KEY = "wirtschaft-lernapp-v1";
+// Jedes Fach hat seinen eigenen Speicher. Wirtschaft behält den alten Schlüssel,
+// damit bisheriger Fortschritt erhalten bleibt.
+let KEY = "wirtschaft-lernapp-v1";
+let DEFAULT_TEST_DATE: string | undefined;
+
+export function setActiveSubject(id: string, defaultTestDate?: string) {
+  KEY = id === "wirtschaft" ? "wirtschaft-lernapp-v1" : `lernapp-${id}-v1`;
+  DEFAULT_TEST_DATE = defaultTestDate;
+}
 
 const empty = (): Store => ({ stats: {}, cards: {}, tests: [], streakDays: [] });
 
 export function load(): Store {
-  if (typeof window === "undefined") return empty();
+  if (typeof window === "undefined") return { ...empty(), testDate: DEFAULT_TEST_DATE };
   try {
     const raw = localStorage.getItem(KEY);
-    return raw ? { ...empty(), ...JSON.parse(raw) } : empty();
+    return { ...empty(), testDate: DEFAULT_TEST_DATE, ...(raw ? JSON.parse(raw) : {}) };
   } catch {
     return empty();
   }
@@ -108,4 +116,19 @@ export function streak(days: string[]): number {
     d.setDate(d.getDate() - 1);
   }
   return n;
+}
+
+/** Tage bis zum Test, gerechnet in lokaler Zeit (ISO-Datum würde sonst als UTC gelesen) */
+export function daysUntil(iso: string | undefined): number | null {
+  if (!iso) return null;
+  const [y, m, d] = iso.split("-").map(Number);
+  const today = new Date();
+  const a = Date.UTC(y, m - 1, d);
+  const b = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+  return Math.round((a - b) / 86400000);
+}
+
+export function localDate(iso: string): Date {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(y, m - 1, d);
 }

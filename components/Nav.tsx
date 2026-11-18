@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { getSubject, subjects } from "@/content";
 import { IconAuto, IconBook, IconCards, IconClipboard, IconHome, IconList, IconMoon, IconSun, IconTarget } from "./Icons";
 
 const LINKS = [
-  { href: "/", label: "Übersicht", Icon: IconHome },
+  { href: "", label: "Übersicht", Icon: IconHome },
   { href: "/stoff", label: "Stoff", Icon: IconBook },
   { href: "/zusammenfassung", label: "Zusammenfassung", Icon: IconList },
   { href: "/karten", label: "Lernkarten", Icon: IconCards },
@@ -38,6 +39,8 @@ function applyTheme(t: Theme) {
 
 export default function Nav() {
   const path = usePathname();
+  const subject = getSubject(path.split("/")[1] ?? "");
+  const base = subject ? `/${subject.id}` : "";
   const [theme, setTheme] = useState<Theme>("auto");
 
   useEffect(() => {
@@ -55,14 +58,26 @@ export default function Nav() {
     <nav className="nav" aria-label="Hauptnavigation">
       <div className="nav-inner">
         <div className="brand-row">
-          <Link href="/" className="brand" aria-label="Zur Übersicht">§</Link>
-          <div className="brand-text">Wirtschaft &amp; Recht<span>Lernapp</span></div>
+          <Link href="/" className="brand" aria-label="Fach wechseln">{subject?.mark ?? "L"}</Link>
+          <div className="brand-text">{subject?.title ?? "Lernapp"}<span>{subject ? "Lernapp" : "Fach auswählen"}</span></div>
         </div>
+        {subject && (
+          <div className="subject-switch" aria-label="Fach">
+            {subjects.map((s) => (
+              <Link key={s.id} href={`/${s.id}`} className={s.id === subject.id ? "on" : ""} aria-current={s.id === subject.id ? "true" : undefined}>{s.short}</Link>
+            ))}
+          </div>
+        )}
         <div className="nav-links">
-          {LINKS.map(({ href, label, Icon }) => (
-            <Link key={href} href={href} className={"nav-link" + (path === href ? " active" : "")} aria-current={path === href ? "page" : undefined}>
-              <Icon /><span>{label}</span>
-            </Link>
+          {subject ? LINKS.map(({ href, label, Icon }) => {
+            const to = base + href;
+            return (
+              <Link key={href} href={to} className={"nav-link" + (path === to ? " active" : "")} aria-current={path === to ? "page" : undefined}>
+                <Icon /><span>{label}</span>
+              </Link>
+            );
+          }) : subjects.map((s) => (
+            <Link key={s.id} href={`/${s.id}`} className="nav-link"><IconBook /><span>{s.title}</span></Link>
           ))}
         </div>
         <div className="nav-foot">

@@ -2,9 +2,8 @@ import "@fontsource-variable/atkinson-hyperlegible-next/wght.css";
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import Nav from "@/components/Nav";
-import { COURSE_TITLE } from "@/content";
 
-export const metadata: Metadata = { title: COURSE_TITLE, description: "Lernapp für den Test in Wirtschaft und Recht" };
+export const metadata: Metadata = { title: "Lernapp", description: "Lernapp mit Stoff, Zusammenfassung, Lernkarten, Quiz und Probetests" };
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,

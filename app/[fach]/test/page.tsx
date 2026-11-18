@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { chapters } from "@/content";
+import { useChapters } from "@/components/Subject";
 import ChapterPicker from "@/components/ChapterPicker";
 import Md from "@/components/Md";
 import { Feedback, OpenReveal, QuestionHeader, QuestionInput, emptyResponse, isAnswered, suggestedSelf } from "@/components/QuestionView";
@@ -11,7 +11,8 @@ import type { Question } from "@/lib/types";
 type Phase = "setup" | "running" | "review";
 
 export default function TestPage() {
-  const templates = useMemo(() => buildTemplates(chapters), []);
+  const chapters = useChapters();
+  const templates = useMemo(() => buildTemplates(chapters), [chapters]);
   const [chs, setChs] = useState<string[]>([]);
   const [count, setCount] = useState(20);
   const [minutes, setMinutes] = useState(30);
