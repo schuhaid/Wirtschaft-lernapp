@@ -73,6 +73,17 @@ export function recordAnswer(statKey: string, correct: boolean) {
   save(s);
 }
 
+/** Eine gerade als falsch gezählte Antwort doch als richtig werten (z. B. Synonym im Lückentext) */
+export function fixAnswer(statKey: string) {
+  const s = load();
+  const st = s.stats[statKey];
+  if (!st || st.wrong === 0) return;
+  st.wrong--;
+  st.correct++;
+  st.streak = 1;
+  save(s);
+}
+
 export function setCard(id: string, state: CardState) {
   const s = load();
   s.cards[id] = state;

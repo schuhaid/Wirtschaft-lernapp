@@ -196,7 +196,7 @@ export function suggestedSelf(q: Extract<Question, { kind: "open" }>, text: stri
   return r >= 0.75 ? 1 : r >= 0.34 ? 0.5 : 0;
 }
 
-export function Feedback({ q, score }: { q: Question; score: number }) {
+export function Feedback({ q, score, onAccept }: { q: Question; score: number; onAccept?: () => void }) {
   const full = score >= q.points - 1e-9;
   const zero = score <= 0;
   const explanation = "explanation" in q ? q.explanation : undefined;
@@ -206,7 +206,13 @@ export function Feedback({ q, score }: { q: Question; score: number }) {
       {!full && q.kind !== "open" && q.kind !== "match" && (
         <div style={{ marginTop: 6 }}><span className="muted small">Richtige Antwort:</span><Md>{correctAnswerText(q)}</Md></div>
       )}
-      {explanation && <div style={{ marginTop: 6 }}><Md>{explanation}</Md></div>}
+      {q.kind === "cloze" && q.answers.length > 1 && (
+        <div className="small" style={{ marginTop: 6 }}><span className="muted">Auch richtig:</span> {q.answers.slice(1, 7).join(", ")}</div>
+      )}
+      {zero && q.kind === "cloze" && onAccept && (
+        <button className="btn sm" style={{ marginTop: 10 }} onClick={onAccept}>Meine Antwort bedeutet dasselbe – als richtig werten</button>
+      )}
+      {explanation && <div className="explain"><Md>{explanation}</Md></div>}
     </div>
   );
 }

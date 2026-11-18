@@ -155,7 +155,7 @@ export default function TestPage() {
               )}
             </>
           )}
-          <Feedback q={q} score={graded[k].score} />
+          <Feedback q={q} score={graded[k].score} onAccept={saved ? undefined : () => setResps((rs) => rs.map((x, j) => (j === k && x.kind === "cloze" ? { ...x, accepted: true } : x)))} />
         </div>
       ))}
       <div className="sticky-bottom row">

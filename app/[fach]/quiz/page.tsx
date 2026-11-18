@@ -1,11 +1,11 @@
 "use client";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useChapters } from "@/components/Subject";
 import ChapterPicker from "@/components/ChapterPicker";
 import Md from "@/components/Md";
 import { Feedback, OpenReveal, QuestionHeader, QuestionInput, emptyResponse, isAnswered } from "@/components/QuestionView";
 import { buildTemplates, grade, selectQuestions, type Response, type SelectMode } from "@/lib/generator";
-import { load, recordAnswer } from "@/lib/storage";
+import { fixAnswer, load, recordAnswer } from "@/lib/storage";
 import { KIND_LABEL, type Question, type QuestionKind } from "@/lib/types";
 
 const KINDS = Object.keys(KIND_LABEL) as QuestionKind[];
@@ -34,6 +34,7 @@ export default function QuizPage() {
   };
 
   const q = qs?.[i];
+  const checkedAt = useRef(0); // verhindert, dass dieselbe Enter-Taste prüft UND gleich weiterspringt
 
   const check = useCallback(() => {
     if (!q || !resp || checked) return;
@@ -43,6 +44,7 @@ export default function QuizPage() {
     recordAnswer(q.statKey, correct);
     setResults((r) => [...r, { q, score }]);
     setChecked(true);
+    checkedAt.current = Date.now();
   }, [q, resp, checked, revealed]);
 
   const rateOpen = (self: 0 | 0.5 | 1) => {
@@ -52,6 +54,14 @@ export default function QuizPage() {
     recordAnswer(q.statKey, correct);
     setResults((x) => [...x, { q, score }]);
     setResp(r); setChecked(true);
+  };
+
+  // Lückentext: eigene Antwort war gleichbedeutend → doch als richtig zählen
+  const accept = () => {
+    if (!q || !resp || resp.kind !== "cloze") return;
+    setResp({ ...resp, accepted: true });
+    setResults((x) => [...x.slice(0, -1), { q, score: q.points }]);
+    fixAnswer(q.statKey);
   };
 
   const next = useCallback(() => {
@@ -64,6 +74,7 @@ export default function QuizPage() {
   useEffect(() => {
     const h = (e: KeyboardEvent) => {
       if (e.key !== "Enter" || (e.target as HTMLElement).tagName === "TEXTAREA") return;
+      if (Date.now() - checkedAt.current < 400) return;
       if (checked) next(); else if (q && q.kind !== "open" && q.kind !== "cloze" && q.kind !== "number") check();
     };
     window.addEventListener("keydown", h);
@@ -138,7 +149,7 @@ export default function QuizPage() {
         <Md>{q.prompt}</Md>
         {resp && <QuestionInput q={q} value={resp} onChange={setResp} locked={checked || (q.kind === "open" && revealed)} onSubmit={check} />}
         {q.kind === "open" && revealed && resp?.kind === "open" && <OpenReveal q={q} text={resp.text} />}
-        {checked && <Feedback q={q} score={results[results.length - 1]?.score ?? 0} />}
+        {checked && <Feedback q={q} score={results[results.length - 1]?.score ?? 0} onAccept={accept} />}
       </div>
       <div className="sticky-bottom">
         {!checked && q.kind === "open" && revealed ? (

@@ -382,3 +382,7 @@ details.card[open] > summary::after { content: "−"; }
 .back-sec.good .back-label, .back-sec.bad .back-label { color: inherit; opacity: 0.8; }
 .rate .rate-no { background: var(--bad-soft); color: var(--bad); box-shadow: none; }
 .rate .rate-yes { background: var(--good-soft); color: var(--good); box-shadow: none; }
+
+/* Erklärung unter dem Feedback */
+.feedback .explain { margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px solid oklch(0.5 0 0 / 0.15); }
+.feedback .explain .md > :first-child { margin-top: 0; }

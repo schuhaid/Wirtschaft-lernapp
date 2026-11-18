@@ -1,6 +1,7 @@
 import type { Chapter, Concept, Question, QuestionKind } from "./types";
 import { pick, randInRange, sample, shuffle, uid, weightedSample } from "./rng";
-import { escapeRegExp, fmt, fuzzyEqual } from "./text";
+import { escapeRegExp, fmt, levenshtein } from "./text";
+import { canon, synonymsFor } from "./synonyms";
 import type { Stat } from "./storage";
 
 // Eine "Vorlage" erzeugt bei jedem Aufruf eine NEUE Variante (andere Falschantworten,
@@ -15,12 +16,28 @@ export type Template = {
 
 const POINTS: Record<QuestionKind, number> = { mc: 1, tf: 1, cloze: 1, match: 2, open: 2, order: 2, number: 2 };
 
-function distractors(c: Concept, all: Concept[], field: "term" | "definition", n: number): string[] {
-  const others = all.filter((o) => o.id !== c.id && o[field] !== c[field]);
+const core = (term: string) => canon(term.replace(/\(.*?\)/g, ""));
+const mentions = (text: string, term: string) => {
+  const t = core(term);
+  return t.length >= 4 && ` ${canon(text)} `.includes(` ${t} `);
+};
+/** Zwei Begriffe hängen so eng zusammen, dass einer als „falsche“ Antwort zum anderen unfair wäre
+ *  (z. B. Selbstbild ↔ Corporate Identity, Styleguide ↔ Brand Manual, Fremdbild ↔ Corporate Image). */
+export function related(a: Concept, b: Concept): boolean {
+  if (mentions(a.definition, b.term) || mentions(b.definition, a.term)) return true;
+  const sa = synonymsFor(a.term).map(canon), sb = synonymsFor(b.term).map(canon);
+  return sa.includes(core(b.term)) || sb.includes(core(a.term));
+}
+
+function distractorConcepts(c: Concept, all: Concept[], field: "term" | "definition", n: number, fallback: Concept[] = []): Concept[] {
+  const ok = (o: Concept) => o.id !== c.id && o[field] !== c[field] && canon(o[field]) !== canon(c[field]) && !related(c, o);
+  const others = all.filter(ok);
   const sameGroup = c.group ? others.filter((o) => o.group === c.group) : [];
   const rest = others.filter((o) => !sameGroup.includes(o));
-  const chosen = [...shuffle(sameGroup), ...shuffle(rest)].slice(0, n);
-  return chosen.map((o) => o[field]);
+  const out = [...shuffle(sameGroup), ...shuffle(rest)].slice(0, n);
+  // zu wenige passende Falschantworten im Kapitel → aus dem ganzen Fach auffüllen
+  if (out.length < n) out.push(...shuffle(fallback.filter((o) => ok(o) && !out.some((x) => x.id === o.id))).slice(0, n - out.length));
+  return out;
 }
 
 function maskTerm(def: string, term: string): string {
@@ -41,6 +58,24 @@ const OPEN_PROMPTS = [
   (t: string) => `Was bedeutet **${t}**? Nenne auch ein Beispiel, wenn möglich.`,
   (t: string) => `Definiere **${t}**.`,
 ];
+
+/** Zusatz-Erklärung eines Begriffs: „Einfach erklärt“ + Beispiel */
+function extra(c: Concept): string {
+  return [c.explain ? `💡 ${c.explain}` : "", c.example ? `*Beispiel:* ${c.example}` : ""].filter(Boolean).join("\n\n");
+}
+const join = (...parts: string[]) => parts.filter(Boolean).join("\n\n");
+
+/** Lückentext-Antwort vergleichen: Tippfehler, Endungen, Zahlwörter und kurze Zusätze sind ok */
+export function clozeMatch(input: string, target: string): boolean {
+  const a = canon(input), b = canon(target);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  if (levenshtein(a, b) <= Math.floor(b.length / 5)) return true;
+  const aw = a.split(" "), bw = b.split(" ");
+  // z. B. „mit Sorgfalt“ statt „Sorgfalt“
+  if (aw.length <= bw.length + 2 && ` ${a} `.includes(` ${b} `)) return true;
+  return false;
+}
 
 export function buildTemplates(chapters: Chapter[]): Template[] {
   const T: Template[] = [];
@@ -63,29 +98,34 @@ export function buildTemplates(chapters: Chapter[]): Template[] {
         T.push({
           statKey: `mc-def:${c.id}`, sourceId: c.id, chapterId: ch.id, kind: "mc",
           make: () => {
-            const opts = shuffle([c.definition, ...distractors(c, p, "definition", 3)]);
+            const wrong = distractorConcepts(c, p, "definition", 3, allConcepts);
+            const opts = shuffle([c.definition, ...wrong.map((o) => o.definition)]);
             return { ...base(`mc-def:${c.id}`, c.id, ch.id, "mc"), kind: "mc", prompt: pick(MC_TERM_PROMPTS)(c.term),
-              options: opts, correct: [opts.indexOf(c.definition)], explanation: [c.explain, c.example ? `*Beispiel:* ${c.example}` : ""].filter(Boolean).join("\n\n") || undefined };
+              options: opts, correct: [opts.indexOf(c.definition)],
+              explanation: join(extra(c), `Die anderen Antworten beschreiben: ${wrong.map((o) => `**${o.term}**`).join(", ")}.`) };
           },
         });
         T.push({
           statKey: `mc-term:${c.id}`, sourceId: c.id, chapterId: ch.id, kind: "mc",
           make: () => {
-            const opts = shuffle([c.term, ...distractors(c, p, "term", 3)]);
+            const wrong = distractorConcepts(c, p, "term", 3, allConcepts);
+            const opts = shuffle([c.term, ...wrong.map((o) => o.term)]);
             return { ...base(`mc-term:${c.id}`, c.id, ch.id, "mc"), kind: "mc",
               prompt: pick(MC_DEF_PROMPTS)(maskTerm(c.definition, c.term)), options: opts, correct: [opts.indexOf(c.term)],
-              explanation: `**${c.term}**: ${c.definition}` };
+              explanation: join(extra(c), `Zum Unterscheiden:\n${wrong.map((o) => `- **${o.term}** – ${o.definition}`).join("\n")}`) };
           },
         });
         T.push({
           statKey: `tf-pair:${c.id}`, sourceId: c.id, chapterId: ch.id, kind: "tf",
           make: () => {
-            const truth = Math.random() < 0.5;
-            const wrong = distractors(c, p, "definition", 1)[0];
-            const def = truth || !wrong ? c.definition : wrong;
+            const other = distractorConcepts(c, p, "definition", 1, allConcepts)[0];
+            const truth = Math.random() < 0.5 || !other;
+            const def = truth ? c.definition : other.definition;
             return { ...base(`tf-pair:${c.id}`, c.id, ch.id, "tf"), kind: "tf",
-              prompt: `Stimmt das?\n\n**${c.term}** – ${def}`, answer: truth || !wrong,
-              explanation: `**${c.term}**: ${c.definition}` };
+              prompt: `Stimmt das?\n\n**${c.term}** – ${def}`, answer: truth,
+              explanation: truth
+                ? join(`Ja, genau das ist **${c.term}**.`, extra(c))
+                : join(`Nein – diese Beschreibung passt zu **${other.term}**.`, `**${c.term}** bedeutet dagegen: ${c.definition}`, extra(c)) };
           },
         });
       }
@@ -96,16 +136,20 @@ export function buildTemplates(chapters: Chapter[]): Template[] {
           statKey: `cloze:${c.id}`, sourceId: c.id, chapterId: ch.id, kind: "cloze",
           make: () => {
             const k = pick(gapWords);
-            const text = c.definition.replace(new RegExp(escapeRegExp(k), "i"), "_____");
+            // „Kund:innen“ als Ganzes ausblenden, nicht nur „Kund“
+            const re = new RegExp(escapeRegExp(k) + "(:innen)?", "i");
+            const full = c.definition.match(re)?.[0] ?? k;
+            const text = c.definition.replace(re, "_____");
             return { ...base(`cloze:${c.id}`, c.id, ch.id, "cloze"), kind: "cloze",
-              prompt: `Ergänze die Lücke:\n\n**${c.term}**: ${text}`, answers: [k], explanation: `**${c.term}**: ${c.definition}` };
+              prompt: `Ergänze die Lücke:\n\n**${c.term}**: ${text}`, answers: [full, ...synonymsFor(k)],
+              explanation: join(`Ganzer Satz: ${c.definition.replace(re, `**${full}**`)}`, extra(c)) };
           },
         });
       }
       T.push({
         statKey: `open:${c.id}`, sourceId: c.id, chapterId: ch.id, kind: "open",
         make: () => ({ ...base(`open:${c.id}`, c.id, ch.id, "open"), kind: "open", prompt: pick(OPEN_PROMPTS)(c.term),
-          modelAnswer: c.definition + (c.example ? `\n\n*Beispiel:* ${c.example}` : ""), keywords: c.keywords ?? [] }),
+          modelAnswer: join(c.definition, extra(c)), keywords: c.keywords ?? [] }),
       });
     }
 
@@ -236,7 +280,7 @@ export function selectQuestions(
 export type Response =
   | { kind: "mc"; selected: number[] }
   | { kind: "tf"; value: boolean }
-  | { kind: "cloze"; text: string }
+  | { kind: "cloze"; text: string; accepted?: boolean } // accepted = selbst als gleichbedeutend gewertet
   | { kind: "match"; assign: number[] }
   | { kind: "open"; text: string; self: 0 | 0.5 | 1 }
   | { kind: "order"; items: string[] }
@@ -259,7 +303,7 @@ export function grade(q: Question, r: Response): { score: number; correct: boole
       frac = Math.max(0, (right - wrong) / q.correct.length);
     }
   } else if (q.kind === "tf" && r.kind === "tf") frac = r.value === q.answer ? 1 : 0;
-  else if (q.kind === "cloze" && r.kind === "cloze") frac = q.answers.some((a) => fuzzyEqual(r.text, a)) ? 1 : 0;
+  else if (q.kind === "cloze" && r.kind === "cloze") frac = r.accepted || q.answers.some((a) => clozeMatch(r.text, a)) ? 1 : 0;
   else if (q.kind === "match" && r.kind === "match") frac = q.solution.filter((s, i) => r.assign[i] === s).length / q.solution.length;
   else if (q.kind === "open" && r.kind === "open") frac = r.self;
   else if (q.kind === "order" && r.kind === "order") frac = q.items.filter((it, i) => r.items[i] === it).length / q.items.length;
