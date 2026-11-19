@@ -1,10 +1,12 @@
 import type { Chapter } from "@/lib/types";
 
-// Abgleich mit dem Teststoff-Blatt „Teststoff WIRE · 5. Jahrgang“ (laut Lehrkraft Grundlage des echten Tests).
-// Alles hier Aufgeführte steht im Buch, kommt aber laut Blatt NICHT zum Test.
+// Abgleich mit dem Teststoff-Blatt „Teststoff WIRE · 5. Jahrgang“ (laut Lehrkraft Grundlage des echten Tests)
+// und der Unterrichts-Mitschrift (OneNote 5ahitm: „Erb- und Familienrecht“, „Sachrecht“).
+// Was in der Mitschrift vorkommt, bleibt drin, auch wenn es nicht wörtlich am Blatt steht.
+// Alles hier Aufgeführte steht im Buch, kommt aber weder am Blatt noch in der Mitschrift vor.
 
 /** Ganze Kapitel, die nicht zum Test kommen */
-const OFF_CHAPTERS = new Set(["leistungsstoerungen"]);
+const OFF_CHAPTERS = new Set<string>([]);
 
 /** Stoff-/Zusammenfassungs-Abschnitte (Überschrift-Anfang), die in „Nicht im Teststoff“ wandern */
 const OFF_SECTIONS: Record<string, { stoff: string[]; summary: string[] }> = {
@@ -17,20 +19,24 @@ const OFF_SECTIONS: Record<string, { stoff: string[]; summary: string[] }> = {
     summary: ["### Zivilrecht allgemein"],
   },
   familienrecht: {
-    stoff: ["### Verlobung", "### Eingetragene Partnerschaft", "### Abstammung", "### Name des Kindes"],
+    stoff: ["### Eingetragene Partnerschaft", "### Abstammung", "### Name des Kindes"],
     summary: [],
   },
   sachenrecht: {
-    stoff: ["## Definition des Sachbegriffs", "### Schutz des Eigentums"],
-    summary: ["### Sache"],
+    stoff: ["### Schutz des Eigentums"],
+    summary: [],
   },
   vertragsrecht: {
-    stoff: ["## Vertragserfüllung", "## Vertragstechnik"],
-    summary: ["### Erfüllung", "### Vertragstechnik und Vertragsarten"],
+    stoff: ["## Vertragstechnik"],
+    summary: ["### Vertragstechnik und Vertragsarten"],
+  },
+  leistungsstoerungen: {
+    stoff: ["## Verkürzung über die Hälfte", "## Spätere Unmöglichkeit"],
+    summary: [],
   },
   schadenersatz: {
-    stoff: ["## Haftung für eigenes schuldloses Handeln", "## Haftung für fremdes Verschulden", "### Haftung des Wohnungsinhabers"],
-    summary: ["### Ohne eigenes Verschulden", "### Fremdes Verschulden"],
+    stoff: ["## Haftung für eigenes schuldloses Handeln"],
+    summary: ["### Ohne eigenes Verschulden"],
   },
   erbrecht: {
     stoff: ["## Testament"],
@@ -49,28 +55,24 @@ const OFF_IDS = new Set<string>([
   // 2 Personenrecht: Allgemeines zum Zivilrecht, Details der Elternvertretung
   "pr-abgb", "pr-zivilrecht", "pr-bereiche", "pr-erste-handlung", "pr-geldsachen", "pr-vertreter-ersatz", "pr-pflegschaft", "pr-liquidation",
   "pr-f12",
-  // 3 Familienrecht: Verlobung, eingetragene Partnerschaft, Abstammung, Name des Kindes
-  "fr-verlobung", "fr-verlobung-rueck", "fr-epg", "fr-mutter", "fr-vater", "fr-anerkennung", "fr-feststellung", "fr-regenbogen",
+  // 3 Familienrecht: eingetragene Partnerschaft, Abstammung, Name des Kindes
+  "fr-epg", "fr-mutter", "fr-vater", "fr-anerkennung", "fr-feststellung", "fr-regenbogen",
   "fr-gleichstellung", "fr-kindname", "fr-name14",
-  "fr-f1", "fr-f7", "fr-f14",
-  "fr-q5", "fr-q6", "fr-q12",
-  // 4 Sachenrecht: Sachbegriff, Typenzwang, Klagen zum Schutz des Eigentums
-  "sr-sache", "sr-typenzwang", "sr-tiere", "sr-absolut", "sr-dinglich", "sr-eigentumsklage", "sr-freiheitsklage", "sr-einschraenkung", "sr-schlichtung",
-  "sr-f1", "sr-f2", "sr-f3", "sr-f12",
-  "sr-q6",
-  // 5 Schuldrecht: Vertragserfüllung, Vertragstechnik und Vertragsarten
-  "vr-erfuellungsort", "vr-erfuellungszeit", "vr-zugumzug", "vr-versendungskauf", "vr-b2b", "vr-b2c", "vr-bringschuld", "vr-hinterlegung",
-  "vr-erfuellung", "vr-annahmeverzug", "vr-registrierkasse", "vr-zahlungsverzug", "vr-inkasso",
-  "vr-uebergabe-koerper", "vr-uebergabe-symbol", "vr-uebergabe-elektro",
+  "fr-f7", "fr-f14",
+  "fr-q5", "fr-q6",
+  // 4 Sachenrecht: Tiere als Sachen, Klagen zum Schutz des Eigentums
+  "sr-tiere", "sr-eigentumsklage", "sr-freiheitsklage", "sr-schlichtung",
+  "sr-f1",
+  // 5 Schuldrecht: Vertragstechnik und Vertragsarten
   "vr-vertragsgegenstand", "vr-agb", "vr-mustervertrag", "vr-gewausschluss", "vr-atypisch",
   "vr-kauf", "vr-leihe", "vr-tausch", "vr-miete", "vr-dienst", "vr-lizenz", "vr-nutzung",
-  "vr-f9", "vr-f10", "vr-f11", "vr-f12", "vr-f17",
-  "vr-q9", "vr-q10", "vr-q13", "vr-q14", "vr-q16",
-  // 6 Schadenersatz: schuldlose Haftung, Gehilfenhaftung, Gefährdungshaftung außer Produkthaftung
-  "se-unmuendig", "se-geisteskrank", "se-notstand-haft", "se-erfuellungsgehilfe", "se-besorgungsgehilfe", "se-untuechtig", "se-gefaehrlich",
-  "se-wohnung", "se-bauwerk", "se-tierhalter",
-  "se-f8", "se-f9", "se-f13", "se-f14",
-  "se-q8", "se-q9", "se-q13", "se-q14",
+  "vr-f17",
+  "vr-q13", "vr-q14", "vr-q16",
+  // Leistungsstörungen: Verkürzung über die Hälfte, spätere Unmöglichkeit
+  "ls-laesio", "ls-liebhaberei", "ls-unmoeglich", "ls-unternehmer-laesio", "ls-differenz", "ls-zufall",
+  "ls-f10", "ls-f11", "ls-q6",
+  // 6 Schadenersatz: Haftung ohne eigenes Verschulden (Unmündige)
+  "se-unmuendig", "se-geisteskrank", "se-notstand-haft", "se-f13",
   // Erbrecht (Zusatz): Testamentsformen
   "er-eigenhaendig", "er-fremdhaendig", "er-t6", "er-t7", "er-t11", "er-q6",
 ]);

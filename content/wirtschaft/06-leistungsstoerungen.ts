@@ -94,6 +94,20 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
 - **Schuldnerverzug**: Der Schuldner erfüllt nicht (**Lieferverzug** oder **Zahlungsverzug**).
 - **Gläubigerverzug**: Der Gläubiger **nimmt die korrekt angebotene Leistung nicht an**.
 
+
+### Termin- und Fixgeschäft *(laut Mitschrift)*
+Die **Erfüllungszeit** ist frei vereinbar; ist nichts vereinbart, gilt das Gesetz → **sofort** (prompte Leistung).
+
+| | **Termingeschäft** | **Fixgeschäft** |
+|---|---|---|
+| Was ist vereinbart? | ungefährer Zeitraum, z. B. „Lieferung in **KW 37**“ | **fixer Zeitpunkt** – ausdrücklich („genau am 3. 5.“) oder aus der **Natur des Geschäfts** (Hochzeitstorte für die Hochzeit) |
+| Was, wenn nicht rechtzeitig geliefert wird? | Der Gläubiger kann weiter **auf Erfüllung bestehen** oder eine **angemessene Nachfrist** setzen (z. B. 1–2 Wochen, je nach Ware) und danach **zurücktreten** | Der Vertrag gilt **automatisch als aufgelöst** – außer der Gläubiger sagt **sofort**, dass er trotzdem auf der Leistung besteht |
+
+- **Schadenersatz bei Verschulden:** Muss der Käufer anderswo **teurer** kaufen (Deckungskauf), kann er die **Differenz** vom säumigen Verkäufer verlangen bzw. einklagen.
+- **Zug um Zug** = Ware gegen Geld: Ohne andere Vereinbarung muss niemand vorleisten.
+
+*Fall:* Die Konditorei liefert die Hochzeitstorte einen Tag nach der Hochzeit → **Fixgeschäft**, der Vertrag ist aufgelöst; das Brautpaar muss nichts zahlen und kann Mehrkosten für eine Ersatztorte verlangen, wenn die Konditorei schuld war.
+
 ## Fälle aus dem Buch – mit Lösung
 **Kaffeevollautomat (1.300 €):** Milch und Espresso kommen nicht wie beworben. → **Sachmangel**. Max verlangt zuerst **Verbesserung oder Austausch**; erst wenn das scheitert, Preisminderung oder Vertragsauflösung.
 
@@ -167,6 +181,10 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-lieferverzug", term: "Lieferverzug", definition: "Schuldnerverzug, bei dem der Verkäufer die Ware nicht rechtzeitig, am richtigen Ort oder wie vereinbart liefert.", keywords: ["rechtzeitig", "liefert"] },
     { id: "ls-zufall", term: "Zufall und höhere Gewalt", definition: "Für Schäden durch Zufall oder höhere Gewalt haftet niemand.", keywords: ["niemand", "haftet"], example: "Jahrhunderthochwasser zerstört das verkaufte Bild." },
     { id: "ls-mangel-vereinb", term: "Mangel durch Abweichung vom Vertrag", definition: "Eine Sache ist mangelhaft, wenn sie nicht hat, was vertraglich vereinbart wurde.", keywords: ["vertraglich", "vereinbart"], example: "Office-Demo statt zugesagter Vollversion" },
+    { id: "ls-termingeschaeft", group: "Verzugsart", term: "Termingeschäft", definition: "Für die Leistung ist ein ungefährer Zeitraum vereinbart (z. B. KW 37); bei Verzug kann der Gläubiger auf Erfüllung bestehen oder nach Setzen einer angemessenen Nachfrist zurücktreten.", keywords: ["Zeitraum", "Nachfrist"], explain: "„Irgendwann in dieser Woche“ – kommt's zu spät, gibt man noch eine zweite Chance (Nachfrist).", example: "Möbellieferung in KW 37" },
+    { id: "ls-fixgeschaeft", group: "Verzugsart", term: "Fixgeschäft", definition: "Die Leistung muss zu einem fixen Zeitpunkt erbracht werden, der vereinbart ist oder sich aus der Natur des Geschäfts ergibt; wird nicht rechtzeitig geleistet, gilt der Vertrag als aufgelöst, außer der Gläubiger besteht sofort auf Erfüllung.", keywords: ["fixen Zeitpunkt", "aufgelöst"], explain: "Zu spät ist wertlos – eine Hochzeitstorte nach der Hochzeit braucht niemand.", example: "Hochzeitstorte, Taxi zum Flughafen" },
+    { id: "ls-nachfrist", term: "Nachfrist", definition: "Angemessene zusätzliche Frist (z. B. 1–2 Wochen, je nach Ware), die der Gläubiger beim Termingeschäft setzt, bevor er vom Vertrag zurücktreten kann.", keywords: ["angemessene", "zurücktreten"], explain: "Die „letzte Chance“ für den Verkäufer, bevor man aussteigt." },
+    { id: "ls-deckungskauf", term: "Deckungskauf", definition: "Kauft der Gläubiger wegen des Verzugs anderswo teurer, kann er bei Verschulden des Säumigen die Differenz als Schadenersatz verlangen.", keywords: ["teurer", "Differenz"], explain: "Du musst woanders mehr zahlen, weil der Erste nicht geliefert hat – den Aufpreis zahlt der Schuldige." },
   ],
   facts: [
     { id: "ls-f1", statement: "Die Gewährleistung ist eine freiwillige Leistung des Herstellers.", isTrue: false, correction: "Gewährleistung ist **gesetzlich** (§§ 922 ff ABGB). Freiwillig/vertraglich ist die **Garantie**." },
@@ -185,6 +203,10 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-f12", statement: "Gläubigerverzug liegt vor, wenn der Käufer die korrekt gelieferte Ware nicht annimmt.", isTrue: true },
     { id: "ls-f13", statement: "Die Gewährleistungsfristen beginnen ab Vertragsabschluss.", isTrue: false, correction: "Sie beginnen grundsätzlich ab **Übergabe** der Ware." },
     { id: "ls-f14", statement: "Eine Ware, die nicht hält, was die Werbung verspricht, ist mangelhaft.", isTrue: true },
+    { id: "ls-t-fix1", statement: "Wird eine Hochzeitstorte erst nach der Hochzeit geliefert, ist der Vertrag automatisch aufgelöst.", isTrue: true, correction: "Das ist ein **Fixgeschäft** – der Zeitpunkt ergibt sich aus der Natur des Geschäfts." },
+    { id: "ls-t-fix2", statement: "Beim Termingeschäft kann man bei Verspätung sofort ohne Nachfrist zurücktreten.", isTrue: false, correction: "Beim **Termingeschäft** muss man zuerst eine **angemessene Nachfrist** setzen." },
+    { id: "ls-t-fix3", statement: "Ist keine Erfüllungszeit vereinbart, kann die Leistung sofort verlangt werden.", isTrue: true, correction: "Ohne Vereinbarung gilt **prompte Leistung** (sofort)." },
+    { id: "ls-t-fix4", statement: "Muss der Käufer wegen eines verschuldeten Lieferverzugs anderswo teurer kaufen, kann er die Differenz verlangen.", isTrue: true, correction: "Das ist Schadenersatz für den **Deckungskauf**." },
   ],
   questions: [
     { id: "ls-q1", type: "order", question: "Bring die **Gewährleistungsrechte** in die Reihenfolge, in der man sie geltend machen kann.", items: ["Verbesserung oder Austausch (primär)", "Preisminderung oder Wandlung (sekundär)"], explanation: "Zuerst hat der Verkäufer die Chance, den Mangel zu beheben (**Verbesserung oder Austausch**). Erst wenn das nicht geht oder er nicht will, gibt es **Preisminderung oder Wandlung**." },
@@ -198,6 +220,9 @@ Verzug entsteht, wenn ein Vertrag **nicht zur vereinbarten Zeit, am vereinbarten
     { id: "ls-q9", type: "mc", question: "Oma Schulz wurde eine Office-Vollversion zugesagt, installiert sind nur Demoversionen. Was liegt vor?", options: ["Ein Mangel – die Sache entspricht nicht der Vereinbarung", "Kein Mangel, Demoversionen sind üblich", "Ein Rechtsmangel", "Verkürzung über die Hälfte"], correct: [0], explanation: "Ein Mangel liegt vor, wenn die Sache **nicht dem entspricht, was vereinbart** wurde. Vereinbart war eine Vollversion – geliefert wurden Demos → **Sachmangel**." },
     { id: "ls-q10", type: "mc", question: "Welche sind **Leistungsstörungen**?", options: ["Gewährleistung", "Verkürzung über die Hälfte des wahren Wertes", "Spätere Unmöglichkeit der Leistung", "Verzug", "Eigentumsvorbehalt"], correct: [0, 1, 2, 3], explanation: "Leistungsstörung = ein Vertrag wird **nicht richtig erfüllt**: mangelhaft (Gewährleistung), zu teuer (Verkürzung über die Hälfte), gar nicht mehr möglich (Unmöglichkeit) oder zu spät (Verzug). Der **Eigentumsvorbehalt** ist eine Vereinbarung, keine Störung." },
     { id: "ls-q11", type: "open", question: "Wer muss beweisen, dass ein Mangel schon bei der Übergabe vorlag?", answer: "In der ersten Zeit nach der Übergabe (bei Verbrauchergeschäften nach dem VGG 1 Jahr, sonst nach ABGB 6 Monate) muss der Verkäufer beweisen, dass kein Mangel vorlag. Danach muss der Käufer beweisen, dass der Mangel schon bei der Übergabe bestand.", keywords: ["Verkäufer", "Käufer", "Jahr"] },
+    { id: "ls-q-fix1", type: "mc", question: "Fall: Eine Firma bestellt Bürosessel mit „Lieferung in KW 37“. In KW 37 kommt nichts. Was kann sie tun?", options: ["Auf Lieferung bestehen", "Eine angemessene Nachfrist setzen und danach zurücktreten", "Der Vertrag ist automatisch aufgelöst", "Sofort ohne Frist zurücktreten"], correct: [0, 1], explanation: "„KW 37“ = **Termingeschäft**: weiter auf Erfüllung bestehen **oder** Nachfrist setzen und dann zurücktreten. Automatisch aufgelöst ist nur ein **Fixgeschäft**." },
+    { id: "ls-q-fix2", type: "mc", question: "Fall: Für die Maturafeier am 20. Juni wird ein DJ gebucht. Er kommt nicht, sagt aber zu, am 22. Juni zu spielen. Was gilt?", options: ["Fixgeschäft – der Vertrag ist aufgelöst, die Schüler müssen nichts zahlen", "Termingeschäft – sie müssen eine Nachfrist setzen", "Der DJ darf am 22. Juni nachholen", "Die Schüler müssen trotzdem zahlen"], correct: [0], explanation: "Der Termin ergibt sich aus der **Natur des Geschäfts** (Feier an einem bestimmten Tag) → **Fixgeschäft**." },
+    { id: "ls-q-fix3", type: "open", question: "Fall: Max hat bei Händler A einen Laptop um 900 € gekauft, Lieferung fix bis zum Schulbeginn. A liefert schuldhaft nicht, Max kauft bei B um 1.050 €. Was kann Max von A verlangen? Begründe.", answer: "Da A schuldhaft nicht rechtzeitig geliefert hat, kann Max Schadenersatz verlangen: die Differenz aus dem Deckungskauf, also 1.050 € − 900 € = 150 €. Den ursprünglichen Kaufpreis muss er A nicht zahlen, weil der Vertrag (Fixgeschäft) aufgelöst ist.", keywords: ["Schadenersatz", "Differenz", "150", "Deckungskauf"] },
   ],
 };
 

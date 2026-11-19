@@ -123,7 +123,7 @@ Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, 
 **Beispiel ÖAMTC-KFZ-Kaufvertrag** (nur zwischen **Privatpersonen** – kauft man vom Händler, gilt das Konsumentenschutzgesetz): Angaben zu Verkäufer, Käufer und Fahrzeug, Preis, ob die **Gewährleistung ausgeschlossen** wird, Zusicherungen (z. B. **unbelastetes Eigentum**, garantierter Kilometerstand, keine Vorschäden), Übergabe (Schlüssel, „Pickerl“-Gutachten, Typenschein), Zahlungsbedingungen (Raten mit **Terminsverlust** = bei Verzug mit einer Rate wird alles sofort fällig), Zahlungssicherung (Typenschein bleibt bis zur Bezahlung beim Verkäufer), Rücktritt/Storno (Stornogebühr, empfohlen max. 10 %).
 
 
-### Haftungsrücklass, Deckungsrücklass und Bankgarantie *(Ergänzung laut Teststoff)*
+## Haftungsrücklass, Deckungsrücklass und Bankgarantie *(Ergänzung laut Teststoff)*
 Vor allem bei **Bau- und Werkverträgen** sichert sich der Auftraggeber ab, indem er einen Teil des Werklohns **zurückbehält**:
 
 | Begriff | Was ist das? | Wann? |

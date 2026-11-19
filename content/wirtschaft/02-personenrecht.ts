@@ -112,6 +112,13 @@ Ein Verein ist ein **freiwilliger, auf Dauer angelegter Zusammenschluss von mind
 
 *Fallbeispiel:* Der Fußballverein „FC Kicker“ kauft Dressen um 3.000 € und kann nicht zahlen. Der Lieferant kann **nur vom Verein** zahlen verlangen, nicht vom einzelnen Mitglied Max.
 
+
+### Verein in der Praxis *(laut Mitschrift)*
+- Anmeldung bei der **Vereinsbehörde**: **Bezirkshauptmannschaft, Magistrat** (Statutarstadt) oder **Landespolizeidirektion**.
+- **4 Wochen Stillschweigen** der Behörde → der Verein darf seine **Tätigkeit aufnehmen**.
+- **Keine Gewinne für die Mitglieder:** Alle Einnahmen müssen wieder für den **Vereinszweck** (z. B. Investitionen) verwendet werden.
+- Typische **Funktionen** im Verein: **Obmann/Obfrau** (vertritt nach außen), **Kassier** + Stellvertreter, **Schriftführer/in**, **2 Rechnungsprüfer**, dazu die **Mitglieder** in der Mitgliederversammlung.
+
 ## Fälle aus dem Buch – mit Lösung
 | Fall | Ergebnis | Warum |
 |---|---|---|
@@ -216,6 +223,9 @@ Eintrag im **ÖZVV**. Von 1 → 4: weniger Selbstbestimmung, mehr Gericht.
     { id: "pr-rechnungspruefer", group: "Vereinsorgan", term: "Rechnungsprüfer", definition: "Jeder Verein braucht mindestens zwei Rechnungsprüfer, die kontrollieren, ob mit dem Geld ordnungsgemäß und laut Statuten umgegangen wird.", keywords: ["zwei", "Geld"], explain: "Die Kontrolle: Schauen nach, ob die Vereinskasse stimmt." },
     { id: "pr-vereinshaftung", group: "Verein", term: "Haftung des Vereins", definition: "Für Verbindlichkeiten haftet nur der Verein mit seinem Vereinsvermögen; Organe haften dem Verein bei Pflichtverletzung, ehrenamtliche nur bei Vorsatz oder grober Fahrlässigkeit.", keywords: ["Vereinsvermögen", "Pflichtverletzung", "grober Fahrlässigkeit"], explain: "Die Mitglieder müssen nicht privat für Vereinsschulden zahlen. Nur wer im Vorstand Mist baut, kann dem Verein gegenüber haften." },
     { id: "pr-zvr", group: "Verein", term: "ZVR-Zahl", definition: "Die Nummer, unter der ein Verein im zentralen Vereinsregister eingetragen ist.", keywords: ["Vereinsregister"], explain: "Wie eine „Ausweisnummer“ des Vereins." },
+    { id: "pr-obmann", group: "Vereinsfunktion", term: "Obmann/Obfrau", definition: "Vorsitzende Person des Leitungsorgans eines Vereins; vertritt den Verein nach außen.", keywords: ["Leitungsorgans", "nach außen"], explain: "Der „Chef“ bzw. die „Chefin“ des Vereins." },
+    { id: "pr-kassier", group: "Vereinsfunktion", term: "Kassier/in", definition: "Mitglied des Vorstands, das die Finanzen des Vereins führt (Einnahmen, Ausgaben, Kassa).", keywords: ["Finanzen"], explain: "Kümmert sich ums Geld des Vereins." },
+    { id: "pr-schriftfuehrer", group: "Vereinsfunktion", term: "Schriftführer/in", definition: "Mitglied des Vorstands, das Protokolle führt und den Schriftverkehr des Vereins erledigt.", keywords: ["Protokolle"], explain: "Schreibt bei Sitzungen mit und erledigt die Post." },
   ],
   facts: [
     { id: "pr-f1", statement: "Tiere können Erben sein, wenn das im Testament steht.", isTrue: false, correction: "Tiere können **keine Rechte** erwerben und haben keine Pflichten – sie sind keine Personen." },
@@ -245,6 +255,8 @@ Eintrag im **ÖZVV**. Von 1 → 4: weniger Selbstbestimmung, mehr Gericht.
     { id: "pr-t-v6", statement: "Die Vereinsbehörde hat nach der Errichtungsanzeige vier Wochen Zeit, die Gründung zu prüfen.", isTrue: true, correction: "Die Frist kann auf **sechs Wochen** verlängert werden." },
     { id: "pr-t-v7", statement: "Ein ehrenamtlicher Kassier haftet dem Verein schon bei leichter Fahrlässigkeit.", isTrue: false, correction: "**Unentgeltlich** Tätige haften nur bei **Vorsatz oder grober Fahrlässigkeit** (außer anders vereinbart)." },
     { id: "pr-t-v8", statement: "Die Mitgliederversammlung muss mindestens alle fünf Jahre stattfinden.", isTrue: true, correction: "Das schreibt das Vereinsgesetz vor; meist sehen die Statuten kürzere Abstände vor." },
+    { id: "pr-t-v9", statement: "Reagiert die Vereinsbehörde 4 Wochen lang nicht, darf der Verein seine Tätigkeit aufnehmen.", isTrue: true, correction: "**Stillschweigen** der Behörde nach 4 Wochen = Verein entsteht." },
+    { id: "pr-t-v10", statement: "Ein Verein darf Überschüsse an seine Mitglieder ausschütten.", isTrue: false, correction: "Einnahmen müssen wieder für den **Vereinszweck** verwendet werden – keine Gewinne für Mitglieder." },
   ],
   questions: [
     { id: "pr-q1", type: "mc", question: "Der 6-jährige Tim kauft im Freibad mit seinem Taschengeld eine Packung Chips. Ist das Geschäft wirksam?", options: ["Ja – ein typisches Taschengeldgeschäft", "Nein – Kinder unter 7 dürfen gar nichts kaufen", "Schwebend unwirksam bis die Eltern zustimmen", "Nur wenn ein Erwachsener dabei ist"], correct: [0], explanation: "Kinder **unter 7** sind geschäftsunfähig – **Ausnahme: Taschengeldgeschäfte**, also kleine Alltagskäufe, die sofort mit dem Taschengeld bezahlt werden. Chips im Freibad sind genau so ein Fall." },

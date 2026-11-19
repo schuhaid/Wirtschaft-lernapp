@@ -103,6 +103,7 @@ Die Obsorge umfasst **Pflege, Erziehung, Bestimmung des Aufenthalts und Vermöge
 - **Mündige Minderjährige** (ab 14) können bei Meinungsverschiedenheiten über ihre **Ausbildung** das **Gericht anrufen**.
 - **Religion**: bestimmen die Eltern gemeinsam (Streit → Pflegschaftsgericht). **Ab 10** muss das Kind bei einer Änderung angehört werden, **ab 12** keine Änderung gegen seinen Willen, **ab 14 religionsmündig**.
 - **Vermögensverwaltung**: mit der Sorgfalt ordentlicher Eltern, sicher und möglichst fruchtbringend; Rechnungslegung gegenüber dem Gericht.
+  - *Laut Mitschrift:* Das Geld muss **mündelsicher** angelegt werden – Eltern, Vormünder oder Betreuer müssen es vor Verlusten schützen. Riskante Anlagen wie **Kryptowährungen** sind nicht erlaubt.
 
 ### Kontaktrecht
 Jeder Elternteil hat das Recht auf **persönlichen Kontakt** zum Kind (**Kontaktrecht**, früher Besuchsrecht). Ein Elternteil ohne Obsorge hat außerdem das Recht, über **wichtige Angelegenheiten** rechtzeitig informiert zu werden und sich dazu zu äußern (z. B. schwere Erkrankung, Drogenmissbrauch, Schulversagen, Schulabschluss, Sprachferien).
@@ -210,6 +211,7 @@ Gilt, wenn nichts anderes vereinbart ist. Einseitig ausziehen = **Eheverfehlung*
     { id: "fr-vermoegen", term: "Vermögensverwaltung für Kinder", definition: "Eltern verwalten das Vermögen des Kindes mit der Sorgfalt ordentlicher Eltern, sicher und möglichst fruchtbringend, und legen dem Gericht Rechnung.", keywords: ["Sorgfalt", "fruchtbringend"] },
     { id: "fr-wichtig", term: "Wichtige Angelegenheiten", definition: "Darüber muss ein Elternteil ohne Obsorge informiert werden, z. B. schwere Krankheit, Drogenmissbrauch, Straffälligkeit, Schulversagen oder Schulabschluss.", keywords: ["Krankheit", "Schulabschluss"] },
     { id: "fr-kindunterhalt", term: "Kindesunterhalt", definition: "Beide Eltern tragen nach ihren Kräften anteilig zum Unterhalt bei; wer den Haushalt führt, leistet dadurch seinen Beitrag.", keywords: ["anteilig", "Haushalt"] },
+    { id: "fr-muendelsicher", term: "Mündelsicher", definition: "Anlageform für das Geld von Kindern oder vertretenen Personen, die vor Verlusten schützt; Eltern, Vormünder und Betreuer sind dazu verpflichtet, riskante Anlagen wie Kryptowährungen sind nicht erlaubt.", keywords: ["Verlusten", "Kryptowährungen"], explain: "Das Geld des Kindes darf man nicht verzocken – nur sichere Anlagen wie Sparbuch oder mündelsichere Wertpapiere.", example: "Sparbuch ja, Bitcoin nein" },
   ],
   facts: [
     { id: "fr-f1", statement: "Nach einer Verlobung kann man die Heirat bei Gericht einklagen.", isTrue: false, correction: "Die Eheschließung ist **nicht einklagbar** – nur Schadenersatz bei grundloser Lösung." },
@@ -226,6 +228,7 @@ Gilt, wenn nichts anderes vereinbart ist. Einseitig ausziehen = **Eheverfehlung*
     { id: "fr-f12", statement: "Wer den Haushalt führt, leistet dadurch seinen Beitrag zum Kindesunterhalt.", isTrue: true },
     { id: "fr-f13", statement: "Getrennte Wohnungen sind immer eine Eheverfehlung.", isTrue: false, correction: "Nur wenn einer **gegen den Willen** des anderen auszieht. Einvernehmlich ist es kein ehewidriges Verhalten." },
     { id: "fr-f14", statement: "Mutter ist rechtlich immer die Frau, die das Kind geboren hat.", isTrue: true },
+    { id: "fr-t-m1", statement: "Eltern dürfen das Geld ihres minderjährigen Kindes in Kryptowährungen investieren, wenn sie sich gute Gewinne erwarten.", isTrue: false, correction: "Kindesvermögen muss **mündelsicher** (sicher und möglichst fruchtbringend) angelegt werden – Spekulation ist verboten." },
   ],
   questions: [
     { id: "fr-q1", type: "mc", question: "Welche Voraussetzungen gelten für die **Eheschließung**?", options: ["Vor einem/einer Standesbeamt/in", "Beide gleichzeitig anwesend", "Keine Eheverbote", "Zwei Trauzeugen", "Beide mindestens 18 Jahre alt"], correct: [0, 1, 2, 4], explanation: "Seit 1. August 2025 müssen **beide** volljährig sein (Buch noch: einer ab 16 mit Zustimmung). Trauzeugen sind freiwillig." },
