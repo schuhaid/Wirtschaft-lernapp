@@ -7,10 +7,11 @@ import vertragsrecht from "./05-vertragsrecht";
 import leistungsstoerungen from "./06-leistungsstoerungen";
 import schadenersatz from "./07-schadenersatz";
 import erbrecht from "./08-erbrecht";
+import { applyTeststoff } from "./teststoff";
 
 // Stoff: „Wirtschaft und Recht für Techniker/innen IV HTL“, S. 10–54 (in eigenen Worten zusammengefasst)
 // + Ergänzungen laut Teststoff-Blatt (Rechtsmittel, Erwachsenenschutz, Verein, Grundbuchprinzipien, Haftungsrücklass, Erbrecht)
-export const chapters: Chapter[] = [
+export const chapters: Chapter[] = applyTeststoff([
   grundstrukturen,
   personenrecht,
   familienrecht,
@@ -19,4 +20,4 @@ export const chapters: Chapter[] = [
   leistungsstoerungen,
   schadenersatz,
   erbrecht, // Zusatz laut Teststoff
-];
+]);

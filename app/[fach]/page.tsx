@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { useSubject } from "@/components/Subject";
+import { useChapters, useFocus, useSubject } from "@/components/Subject";
 import { buildTemplates } from "@/lib/generator";
 import { daysUntil, localDate, exportData, importData, load, resetAll, setTestDate, streak } from "@/lib/storage";
 import { IconArrow, IconCalendar } from "@/components/Icons";
@@ -30,7 +30,8 @@ function Spark({ values }: { values: number[] }) {
 
 export default function Home() {
   const subject = useSubject();
-  const { chapters } = subject;
+  const chapters = useChapters();
+  const { focus, setFocus, hasScope } = useFocus();
   const base = `/${subject.id}`;
   const templates = useMemo(() => buildTemplates(chapters), [chapters]);
   const [s, setS] = useState<S | null>(null);
@@ -63,6 +64,12 @@ export default function Home() {
         <div className="enter">
           <h1>{subject.titleLines[0]}<br />{subject.titleLines[1]}</h1>
           <p className="muted">{chapters.length} Kapitel, {chapters.reduce((n, c) => n + c.concepts.length, 0)} Begriffe, {subject.source}</p>
+          {hasScope && (
+            <label className="scope-toggle">
+              <input type="checkbox" checked={focus} onChange={(e) => setFocus(e.target.checked)} />
+              <span><b>Nur Teststoff</b> – {focus ? `alles, was laut ${subject.testScope} nicht kommt, ist ausgeblendet` : "zeigt den ganzen Buchstoff"}</span>
+            </label>
+          )}
         </div>
         <div className="countdown enter" role="status">
           <span className="dot"><IconCalendar /></span>

@@ -10,6 +10,7 @@ export const subjects: Subject[] = [
     titleLines: ["Wirtschaft", "& Recht"],
     mark: "§",
     source: "Buch S. 10–54 + Teststoff",
+    testScope: "Teststoff-Blatt WIRE · 5. Jahrgang",
     chapters: wirtschaft,
   },
   {

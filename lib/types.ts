@@ -8,6 +8,7 @@ export type Concept = {
   example?: string; // Praxisbeispiel
   explain?: string; // „Einfach erklärt“ – Erklärung in Alltagssprache
   group?: string; // Gruppe für bessere Falschantworten (z. B. "Rechtsform", "4P")
+  offTest?: boolean; // nicht im Teststoff
 };
 
 export type Fact = {
@@ -15,9 +16,10 @@ export type Fact = {
   statement: string;
   isTrue: boolean;
   correction?: string; // Erklärung: bei falschen Aussagen die richtige Version, bei richtigen die Begründung
+  offTest?: boolean;
 };
 
-export type CustomQuestion =
+export type CustomQuestion = ({ offTest?: boolean }) & (
   | {
       id: string;
       type: "mc";
@@ -39,7 +41,7 @@ export type CustomQuestion =
       question: string;
       items: string[]; // in RICHTIGER Reihenfolge
       explanation?: string;
-    };
+    });
 
 export type CalcTask = {
   id: string;
@@ -52,6 +54,7 @@ export type CalcTask = {
   tolerance?: number; // absolute Toleranz, Standard 0.01
   explanation: (v: Record<string, number>) => string;
   valid?: (v: Record<string, number>) => boolean; // z. B. Preis > variable Kosten
+  offTest?: boolean;
 };
 
 export type Chapter = {
@@ -63,6 +66,9 @@ export type Chapter = {
   facts: Fact[];
   questions: CustomQuestion[];
   calcs?: CalcTask[];
+  offTest?: boolean; // ganzes Kapitel nicht im Teststoff
+  stoffExtra?: string; // Stoff-Abschnitte, die nicht zum Test kommen
+  summaryExtra?: string;
 };
 
 // ===== Generierte Fragen (das, was die App abfragt) =====
@@ -108,5 +114,6 @@ export type Subject = {
   mark: string; // kurzes Zeichen fürs Logo-Feld
   source: string; // woher der Stoff stammt
   defaultTestDate?: string; // ISO-Datum, bis man selbst eines einträgt
+  testScope?: string; // Kurzbeschreibung, woher der Teststoff kommt (aktiviert „Nur Teststoff“)
   chapters: Chapter[];
 };
