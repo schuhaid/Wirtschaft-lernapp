@@ -73,6 +73,45 @@ Wer wegen einer geistigen Behinderung oder psychischen Erkrankung seine Angelege
 - **Beide Elternteile** müssen zustimmen bei: Änderung von **Name, Religion oder Staatsbürgerschaft**, **vorzeitiger Auflösung eines Lehr- oder Arbeitsvertrags**, Anerkennung der **Vaterschaft** eines unehelichen Kindes von unter 18-Jährigen.
 - Bei **außergewöhnlichen Geldangelegenheiten** braucht es die Einigkeit der Eltern **und** die Zustimmung des **Pflegschaftsgerichts** (z. B. 17-Jähriger will Schmerzengeld einklagen – Prozesskostenrisiko).
 
+
+## Erwachsenenschutz – die vier Säulen der Vertretung *(Ergänzung laut Teststoff)*
+Seit dem **2. Erwachsenenschutzgesetz (2018)** gibt es statt der früheren Sachwalterschaft **vier Säulen**. Grundsatz: **so viel Selbstbestimmung wie möglich** – je mehr Unterstützung nötig ist, desto „formeller“ die Vertretung.
+
+| Säule | Wer bestimmt den Vertreter? | Wann? | Dauer |
+|---|---|---|---|
+| **1. Vorsorgevollmacht** | die Person **selbst**, solange sie noch **voll entscheidungsfähig** ist | für den **Fall**, dass sie später nicht mehr entscheiden kann (Vorsorgefall) | unbefristet |
+| **2. Gewählte Erwachsenenvertretung** | die Person **selbst**, obwohl sie **schon eingeschränkt** ist (z. B. eine nahestehende Person) | wenn nicht rechtzeitig vorgesorgt wurde | unbefristet |
+| **3. Gesetzliche Erwachsenenvertretung** | **nächste Angehörige** (z. B. Eltern, Kinder, Ehepartner, Geschwister) | wenn die Person keinen Vertreter mehr selbst wählen kann/will | endet nach **3 Jahren** (erneuerbar) |
+| **4. Gerichtliche Erwachsenenvertretung** | das **Gericht** bestellt jemanden (z. B. Erwachsenenschutzverein) | nur als **letztes Mittel**, wenn nichts anderes möglich ist (z. B. Familie einigt sich nicht) | endet nach **3 Jahren** |
+
+- Die ersten drei Formen werden im **Österreichischen Zentralen Vertretungsverzeichnis (ÖZVV)** eingetragen (bei Notar, Rechtsanwalt oder Erwachsenenschutzverein).
+- *Merkhilfe:* Von 1 nach 4 wird es immer **weniger selbstbestimmt** und immer **mehr Gericht**.
+
+*Fallbeispiel:* Opa Franz (80) ist noch fit und will vorsorgen, falls er dement wird → **Vorsorgevollmacht**. Hätte er das versäumt und ist jetzt schon leicht dement, könnte er noch seine Tochter **wählen** (gewählte EV). Kann er gar nicht mehr entscheiden, vertritt ihn die Tochter als **gesetzliche** Erwachsenenvertreterin. Streiten die Kinder darüber, bestellt das **Gericht** jemanden.
+
+## Der Verein *(Ergänzung laut Teststoff)*
+Ein Verein ist ein **freiwilliger, auf Dauer angelegter Zusammenschluss von mindestens zwei Personen** zu einem **gemeinsamen, ideellen Zweck**. Er darf **nicht auf Gewinn gerichtet** sein. Rechtsgrundlage: **Vereinsgesetz 2002 (VerG)**. Der Verein ist eine **juristische Person**.
+
+### Gründung
+1. **Statuten** vereinbaren (u. a. Name, Sitz, Zweck, Mittel, Organe, Mitgliedschaft, Auflösung).
+2. **Errichtungsanzeige** an die **Vereinsbehörde** (Bezirkshauptmannschaft bzw. Landespolizeidirektion).
+3. Die Behörde prüft die Statuten **4 Wochen** lang (verlängerbar auf 6). Untersagt sie die Gründung nicht (oder lädt sie vorher ein, die Tätigkeit aufzunehmen), **entsteht der Verein als juristische Person**.
+4. Eintrag ins **Vereinsregister**; der Verein bekommt eine **ZVR-Zahl**.
+
+### Organe
+| Organ | Aufgabe |
+|---|---|
+| **Mitgliederversammlung** (Generalversammlung) | gemeinsame **Willensbildung** der Mitglieder; wählt Vorstand und Rechnungsprüfer; muss **mindestens alle 5 Jahre** stattfinden |
+| **Leitungsorgan** (Vorstand) | **mindestens 2 Personen**; führt die **Geschäfte** und **vertritt den Verein nach außen** |
+| **Rechnungsprüfer** | **mindestens 2**; prüfen die Finanzen (große Vereine: Abschlussprüfer) |
+
+### Haftung
+- Für Schulden des Vereins haftet **nur der Verein mit seinem Vereinsvermögen** – **nicht** die Mitglieder oder Organe persönlich.
+- **Ausnahme:** Verletzt ein **Organ** (z. B. Obfrau, Kassier) seine Pflichten, haftet es **dem Verein** für den Schaden.
+- Wer **unentgeltlich** (ehrenamtlich) tätig ist, haftet nur bei **Vorsatz oder grober Fahrlässigkeit**.
+
+*Fallbeispiel:* Der Fußballverein „FC Kicker“ kauft Dressen um 3.000 € und kann nicht zahlen. Der Lieferant kann **nur vom Verein** zahlen verlangen, nicht vom einzelnen Mitglied Max.
+
 ## Fälle aus dem Buch – mit Lösung
 | Fall | Ergebnis | Warum |
 |---|---|---|
@@ -117,6 +156,20 @@ Beispiel: 2-Jähriger erbt ein Sparbuch (rechtsfähig), Eltern verwalten es (er 
 - Meist reicht **ein Elternteil** – bei Widerspruch zählt die **erste Handlung**.
 - **Beide Eltern**: Name, Religion, Staatsbürgerschaft, Auflösung Lehr-/Arbeitsvertrag, Vaterschaftsanerkennung.
 - **Außergewöhnliche Geldsachen**: beide Eltern + **Pflegschaftsgericht**.
+
+### Erwachsenenschutz – 4 Säulen *(Teststoff)*
+1. **Vorsorgevollmacht** – selbst bestimmt, solange man **noch voll entscheidungsfähig** ist (unbefristet)
+2. **Gewählte EV** – selbst gewählt, obwohl **schon eingeschränkt** (unbefristet)
+3. **Gesetzliche EV** – **nächste Angehörige** (endet nach **3 Jahren**)
+4. **Gerichtliche EV** – vom **Gericht** bestellt, **letztes Mittel** (endet nach **3 Jahren**)
+
+Eintrag im **ÖZVV**. Von 1 → 4: weniger Selbstbestimmung, mehr Gericht.
+
+### Verein *(Teststoff)*
+- mind. **2 Personen**, **ideeller Zweck**, **nicht auf Gewinn** gerichtet, **juristische Person** (VerG 2002)
+- **Gründung:** Statuten → **Errichtungsanzeige** an Vereinsbehörde (BH/LPD) → **4 Wochen** Prüfung (bis 6) → Verein entsteht → Vereinsregister/**ZVR-Zahl**
+- **Organe:** **Mitgliederversammlung** (mind. alle 5 Jahre) · **Leitungsorgan** (mind. 2 Personen, vertritt nach außen) · **2 Rechnungsprüfer**
+- **Haftung:** nur **Vereinsvermögen**; Organe haften **dem Verein** bei Pflichtverletzung; **ehrenamtlich** nur bei **Vorsatz/grober Fahrlässigkeit**
 `,
   concepts: [
     { id: "pr-abgb", term: "ABGB", definition: "Das Allgemeine Bürgerliche Gesetzbuch, das die wesentlichsten Teile des Privatrechts regelt.", keywords: ["Privatrechts", "Bürgerliche"] },
@@ -149,6 +202,20 @@ Beispiel: 2-Jähriger erbt ein Sparbuch (rechtsfähig), Eltern verwalten es (er 
     { id: "pr-vertreter-ersatz", term: "Ersatz-Vertreter", definition: "Können die Eltern ein Kind nicht vertreten, übernehmen das z. B. Großeltern, das Jugendamt oder Pflegeeltern.", keywords: ["Großeltern", "Jugendamt"] },
     { id: "pr-liquidation", term: "Ende der juristischen Person", definition: "Die Rechtsfähigkeit einer juristischen Person endet mit ihrer Liquidation, also ihrer Auflösung.", keywords: ["Liquidation"] },
     { id: "pr-jur-haftung", term: "Haftung der juristischen Person", definition: "Eine juristische Person haftet für das Handeln ihrer Organe; sie ist dadurch deliktsfähig.", keywords: ["Organe", "haftet"] },
+    { id: "pr-vorsorgevollmacht", group: "Erwachsenenschutz", term: "Vorsorgevollmacht", definition: "Erste Säule des Erwachsenenschutzes: Eine noch voll entscheidungsfähige Person bestimmt selbst, wer sie vertreten soll, falls sie später nicht mehr entscheiden kann.", keywords: ["voll entscheidungsfähige", "selbst", "später"], explain: "Vorsorgen, solange man noch fit ist – wie ein „Notfallplan“ für den Kopf.", example: "Opa Franz bestimmt mit 75, dass seine Tochter ihn vertreten soll, falls er dement wird." },
+    { id: "pr-gewaehlte-ev", group: "Erwachsenenschutz", term: "Gewählte Erwachsenenvertretung", definition: "Zweite Säule: Eine Person, die schon eingeschränkt entscheidungsfähig ist, wählt selbst eine nahestehende Person als Vertreter; Eintrag im ÖZVV.", keywords: ["eingeschränkt", "wählt", "nahestehende"], explain: "Zu spät für die Vorsorgevollmacht – aber man kann noch selbst sagen, wer einem helfen soll." },
+    { id: "pr-gesetzliche-ev", group: "Erwachsenenschutz", term: "Gesetzliche Erwachsenenvertretung", definition: "Dritte Säule: Nächste Angehörige vertreten die Person, wenn sie keinen Vertreter mehr selbst wählen kann; sie endet nach drei Jahren, kann aber erneuert werden.", keywords: ["Angehörige", "drei Jahren"], explain: "Wenn man selbst nicht mehr wählen kann, springt automatisch die Familie ein – aber nur befristet." },
+    { id: "pr-gerichtliche-ev", group: "Erwachsenenschutz", term: "Gerichtliche Erwachsenenvertretung", definition: "Vierte Säule: Das Gericht bestellt einen Vertreter, wenn keine andere Form möglich ist; sie ist das letzte Mittel und endet nach drei Jahren.", keywords: ["Gericht", "letzte Mittel", "drei Jahren"], explain: "Die „Notlösung“, wenn es keine Vollmacht gibt und sich z. B. die Familie nicht einigt – dann entscheidet das Gericht.", example: "Ein Erwachsenenschutzverein wird bestellt." },
+    { id: "pr-oezvv", term: "ÖZVV", definition: "Österreichisches Zentrales Vertretungsverzeichnis, in das Vorsorgevollmacht, gewählte und gesetzliche Erwachsenenvertretung eingetragen werden.", keywords: ["Vertretungsverzeichnis", "eingetragen"], explain: "Ein zentrales Register, in dem man nachschauen kann, wer jemanden vertreten darf." },
+    { id: "pr-verein", group: "Person", term: "Verein", definition: "Freiwilliger, auf Dauer angelegter Zusammenschluss von mindestens zwei Personen zu einem gemeinsamen ideellen Zweck; er darf nicht auf Gewinn gerichtet sein und ist eine juristische Person.", keywords: ["mindestens zwei", "ideellen", "Gewinn"], explain: "Leute tun sich zusammen, um gemeinsam etwas zu machen, das ihnen wichtig ist – z. B. Sport oder Musik –, ohne damit reich werden zu wollen.", example: "Fußballverein, Musikverein, Tierschutzverein" },
+    { id: "pr-statuten", group: "Verein", term: "Statuten", definition: "Die Satzung eines Vereins mit Name, Sitz, Zweck, Mitteln, Organen und Regeln zu Mitgliedschaft und Auflösung; sie werden bei der Gründung vereinbart.", keywords: ["Name", "Zweck", "Organen"], explain: "Die „Hausordnung“ bzw. Verfassung des Vereins." },
+    { id: "pr-errichtungsanzeige", group: "Verein", term: "Errichtungsanzeige", definition: "Schriftliche Meldung der Vereinsgründung samt Statuten an die Vereinsbehörde; danach prüft die Behörde vier Wochen lang, ob die Gründung gesetzmäßig ist.", keywords: ["Vereinsbehörde", "vier Wochen"], explain: "Man „meldet“ den Verein beim Amt an. Wenn das Amt nichts dagegen hat, entsteht der Verein." },
+    { id: "pr-vereinsbehoerde", group: "Verein", term: "Vereinsbehörde", definition: "Für Vereine zuständige Behörde – die Bezirkshauptmannschaft bzw. in Städten mit eigener Landespolizeidirektion diese; sie führt das Vereinsregister.", keywords: ["Bezirkshauptmannschaft", "Landespolizeidirektion"], explain: "Das Amt, bei dem man einen Verein anmeldet." },
+    { id: "pr-mitgliederversammlung", group: "Vereinsorgan", term: "Mitgliederversammlung", definition: "Organ zur gemeinsamen Willensbildung aller Mitglieder; wählt Vorstand und Rechnungsprüfer und muss mindestens alle fünf Jahre stattfinden.", keywords: ["Willensbildung", "fünf Jahre"], explain: "Das Treffen aller Mitglieder – hier wird abgestimmt und gewählt." },
+    { id: "pr-leitungsorgan", group: "Vereinsorgan", term: "Leitungsorgan (Vorstand)", definition: "Organ, das die Geschäfte des Vereins führt und ihn nach außen vertritt; es muss aus mindestens zwei Personen bestehen.", keywords: ["Geschäfte", "nach außen", "zwei Personen"], explain: "Die „Chefs“ des Vereins, z. B. Obfrau und Kassier." },
+    { id: "pr-rechnungspruefer", group: "Vereinsorgan", term: "Rechnungsprüfer", definition: "Jeder Verein braucht mindestens zwei Rechnungsprüfer, die kontrollieren, ob mit dem Geld ordnungsgemäß und laut Statuten umgegangen wird.", keywords: ["zwei", "Geld"], explain: "Die Kontrolle: Schauen nach, ob die Vereinskasse stimmt." },
+    { id: "pr-vereinshaftung", group: "Verein", term: "Haftung des Vereins", definition: "Für Verbindlichkeiten haftet nur der Verein mit seinem Vereinsvermögen; Organe haften dem Verein bei Pflichtverletzung, ehrenamtliche nur bei Vorsatz oder grober Fahrlässigkeit.", keywords: ["Vereinsvermögen", "Pflichtverletzung", "grober Fahrlässigkeit"], explain: "Die Mitglieder müssen nicht privat für Vereinsschulden zahlen. Nur wer im Vorstand Mist baut, kann dem Verein gegenüber haften." },
+    { id: "pr-zvr", group: "Verein", term: "ZVR-Zahl", definition: "Die Nummer, unter der ein Verein im zentralen Vereinsregister eingetragen ist.", keywords: ["Vereinsregister"], explain: "Wie eine „Ausweisnummer“ des Vereins." },
   ],
   facts: [
     { id: "pr-f1", statement: "Tiere können Erben sein, wenn das im Testament steht.", isTrue: false, correction: "Tiere können **keine Rechte** erwerben und haben keine Pflichten – sie sind keine Personen." },
@@ -165,6 +232,19 @@ Beispiel: 2-Jähriger erbt ein Sparbuch (rechtsfähig), Eltern verwalten es (er 
     { id: "pr-f12", statement: "Genehmigt die Mutter den Fahrradkauf und widerspricht der Vater danach, ist der Vertrag ungültig.", isTrue: false, correction: "Bei widerstreitenden Erklärungen hat die **erste Handlung Vorrang** → Vertrag gültig." },
     { id: "pr-f13", statement: "Ein ungeborenes Kind kann bereits erben, wenn es später lebend geboren wird.", isTrue: true },
     { id: "pr-f14", statement: "Uneheliche Kinder werden grundsätzlich von der Mutter vertreten.", isTrue: true },
+    { id: "pr-t-ev1", statement: "Eine Vorsorgevollmacht kann man nur errichten, solange man noch voll entscheidungsfähig ist.", isTrue: true, correction: "Genau darin liegt der Unterschied zur **gewählten** Erwachsenenvertretung, die auch bei **eingeschränkter** Entscheidungsfähigkeit noch möglich ist." },
+    { id: "pr-t-ev2", statement: "Die gerichtliche Erwachsenenvertretung ist die erste Wahl und kommt vor allen anderen Formen.", isTrue: false, correction: "Sie ist das **letzte Mittel** – nur wenn keine andere Form möglich ist." },
+    { id: "pr-t-ev3", statement: "Die gesetzliche Erwachsenenvertretung endet automatisch nach drei Jahren, kann aber erneuert werden.", isTrue: true, correction: "Gesetzliche und gerichtliche EV sind auf **3 Jahre** befristet." },
+    { id: "pr-t-ev4", statement: "Bei der gesetzlichen Erwachsenenvertretung vertreten nächste Angehörige die betroffene Person.", isTrue: true, correction: "Z. B. Eltern, Kinder, Ehepartner oder Geschwister." },
+    { id: "pr-t-ev5", statement: "Das Erwachsenenschutzrecht kennt drei Säulen der Vertretung.", isTrue: false, correction: "Es sind **vier**: Vorsorgevollmacht, gewählte, gesetzliche und gerichtliche Erwachsenenvertretung." },
+    { id: "pr-t-v1", statement: "Ein Verein darf auf Gewinn ausgerichtet sein.", isTrue: false, correction: "Ein Verein verfolgt einen **ideellen Zweck** und darf **nicht auf Gewinn gerichtet** sein." },
+    { id: "pr-t-v2", statement: "Für einen Verein braucht man mindestens zwei Personen.", isTrue: true, correction: "Verein = Zusammenschluss von **mindestens zwei** Personen." },
+    { id: "pr-t-v3", statement: "Für Schulden des Vereins haftet jedes Mitglied mit seinem Privatvermögen.", isTrue: false, correction: "Es haftet **nur der Verein mit seinem Vereinsvermögen**." },
+    { id: "pr-t-v4", statement: "Das Leitungsorgan eines Vereins muss aus mindestens zwei Personen bestehen.", isTrue: true, correction: "Vorstand = **mindestens 2 Personen**; er führt die Geschäfte und vertritt nach außen." },
+    { id: "pr-t-v5", statement: "Ein Verein muss mindestens zwei Rechnungsprüfer haben.", isTrue: true, correction: "Sie kontrollieren die **Finanzgebarung** des Vereins." },
+    { id: "pr-t-v6", statement: "Die Vereinsbehörde hat nach der Errichtungsanzeige vier Wochen Zeit, die Gründung zu prüfen.", isTrue: true, correction: "Die Frist kann auf **sechs Wochen** verlängert werden." },
+    { id: "pr-t-v7", statement: "Ein ehrenamtlicher Kassier haftet dem Verein schon bei leichter Fahrlässigkeit.", isTrue: false, correction: "**Unentgeltlich** Tätige haften nur bei **Vorsatz oder grober Fahrlässigkeit** (außer anders vereinbart)." },
+    { id: "pr-t-v8", statement: "Die Mitgliederversammlung muss mindestens alle fünf Jahre stattfinden.", isTrue: true, correction: "Das schreibt das Vereinsgesetz vor; meist sehen die Statuten kürzere Abstände vor." },
   ],
   questions: [
     { id: "pr-q1", type: "mc", question: "Der 6-jährige Tim kauft im Freibad mit seinem Taschengeld eine Packung Chips. Ist das Geschäft wirksam?", options: ["Ja – ein typisches Taschengeldgeschäft", "Nein – Kinder unter 7 dürfen gar nichts kaufen", "Schwebend unwirksam bis die Eltern zustimmen", "Nur wenn ein Erwachsener dabei ist"], correct: [0], explanation: "Kinder **unter 7** sind geschäftsunfähig – **Ausnahme: Taschengeldgeschäfte**, also kleine Alltagskäufe, die sofort mit dem Taschengeld bezahlt werden. Chips im Freibad sind genau so ein Fall." },
@@ -177,6 +257,15 @@ Beispiel: 2-Jähriger erbt ein Sparbuch (rechtsfähig), Eltern verwalten es (er 
     { id: "pr-q8", type: "open", question: "Tante Gundi möchte im Testament ihrem Enkel Robert, dem Verein „Kinderlachen“ und ihrem Dackel etwas hinterlassen. Wer kann erben, wer nicht? Begründe.", answer: "Robert (natürliche Person) und der Verein (juristische Person) sind rechtsfähig und können erben. Der Dackel ist ein Tier, keine Person, und kann daher keine Rechte erwerben – er kann nicht erben.", keywords: ["natürliche", "juristische", "Tier", "rechtsfähig"] },
     { id: "pr-q9", type: "open", question: "Erkläre den Unterschied zwischen **Rechtsfähigkeit, Geschäftsfähigkeit und Deliktsfähigkeit**.", answer: "Rechtsfähigkeit = Rechte und Pflichten haben können (ab Geburt). Geschäftsfähigkeit = sich durch eigenes Handeln berechtigen und verpflichten (abhängig von Alter/geistigem Zustand). Deliktsfähigkeit = für schuldhaft verursachte Schäden Ersatz leisten müssen (ab 14).", keywords: ["Rechte", "Pflichten", "Handeln", "Schäden", "14"] },
     { id: "pr-q10", type: "mc", question: "Ab wann ist ein Mensch **rechtsfähig**?", options: ["Ab der Geburt", "Ab 7 Jahren", "Ab 14 Jahren", "Ab 18 Jahren"], correct: [0], explanation: "Rechtsfähigkeit = **Rechte und Pflichten haben können**. Die hat jeder Mensch **ab der Geburt** (bis zum Tod). Die Altersgrenzen 7, 14 und 18 betreffen die **Geschäftsfähigkeit**, nicht die Rechtsfähigkeit." },
+    { id: "pr-q-ev1", type: "order", question: "Ordne die **vier Säulen des Erwachsenenschutzes** von **am meisten selbstbestimmt** bis **am meisten fremdbestimmt**.", items: ["Vorsorgevollmacht", "Gewählte Erwachsenenvertretung", "Gesetzliche Erwachsenenvertretung", "Gerichtliche Erwachsenenvertretung"], explanation: "1–2: **selbst** bestimmt (fit bzw. schon eingeschränkt) · 3: **Angehörige** · 4: **Gericht** als letztes Mittel." },
+    { id: "pr-q-ev2", type: "mc", question: "Fall: Frau Berger (72) ist geistig fit, will aber vorsorgen, falls sie einmal dement wird. Was soll sie machen?", options: ["Eine Vorsorgevollmacht errichten", "Eine gerichtliche Erwachsenenvertretung beantragen", "Nichts – das geht erst, wenn sie krank ist", "Eine gesetzliche Erwachsenenvertretung eintragen lassen"], correct: [0], explanation: "Solange man **voll entscheidungsfähig** ist, bestimmt man mit der **Vorsorgevollmacht** selbst, wer einen später vertritt." },
+    { id: "pr-q-ev3", type: "mc", question: "Fall: Herr Novak hat einen schweren Schlaganfall und kann nichts mehr entscheiden. Es gibt keine Vollmacht. Seine Ehefrau will ihn vertreten, die Kinder sind einverstanden. Welche Form passt?", options: ["Gesetzliche Erwachsenenvertretung", "Vorsorgevollmacht", "Gewählte Erwachsenenvertretung", "Gerichtliche Erwachsenenvertretung"], correct: [0], explanation: "Er kann nicht mehr selbst wählen → die **nächsten Angehörigen** vertreten ihn (**gesetzliche** EV, 3 Jahre). Das Gericht braucht es nur, wenn das nicht klappt." },
+    { id: "pr-q-ev4", type: "mc", question: "Fall wie oben, aber die Kinder streiten heftig, wer den Vater vertreten soll. Was passiert?", options: ["Das Gericht bestellt einen Vertreter (gerichtliche EV)", "Das älteste Kind entscheidet allein", "Der Vater bleibt ohne Vertretung", "Die Ehefrau wird automatisch Vorsorgebevollmächtigte"], correct: [0], explanation: "Können sich die Angehörigen nicht einigen, kommt als **letztes Mittel** die **gerichtliche** Erwachsenenvertretung." },
+    { id: "pr-q-v1", type: "order", question: "Bring die Schritte der **Vereinsgründung** in die richtige Reihenfolge.", items: ["Statuten vereinbaren", "Errichtungsanzeige an die Vereinsbehörde", "Behörde prüft 4 Wochen (bis 6)", "Verein entsteht als juristische Person, ZVR-Zahl"], explanation: "Erst **Statuten**, dann **anzeigen**, dann **Prüffrist** – untersagt die Behörde nichts, **entsteht** der Verein." },
+    { id: "pr-q-v2", type: "mc", question: "Welche **Organe** muss jeder Verein haben?", options: ["Mitgliederversammlung", "Leitungsorgan (mind. 2 Personen)", "Mindestens 2 Rechnungsprüfer", "Aufsichtsrat", "Geschäftsführer mit Gewerbeschein"], correct: [0, 1, 2], explanation: "**Mitgliederversammlung**, **Leitungsorgan** und **2 Rechnungsprüfer**. Ein Aufsichtsrat gehört zu AG/GmbH." },
+    { id: "pr-q-v3", type: "mc", question: "Fall: Der Musikverein bestellt Notenständer um 1.500 € und zahlt nicht. Von wem kann der Händler das Geld verlangen?", options: ["Nur vom Verein (Vereinsvermögen)", "Von jedem Mitglied", "Von der Obfrau privat", "Von der Vereinsbehörde"], correct: [0], explanation: "Der Verein ist eine **juristische Person** – für seine Schulden haftet **nur das Vereinsvermögen**, nicht die Mitglieder." },
+    { id: "pr-q-v4", type: "open", question: "Fall: Der ehrenamtliche Kassier des Sportvereins vergisst eine Rechnung, dem Verein entstehen 80 € Mahnspesen (leichte Fahrlässigkeit). Muss er sie ersetzen? Begründe.", answer: "Nein. Organe haften dem Verein zwar bei Pflichtverletzung, wer aber unentgeltlich (ehrenamtlich) tätig ist, haftet nur bei Vorsatz oder grober Fahrlässigkeit – außer die Statuten oder eine Vereinbarung sehen etwas anderes vor. Eine einmal vergessene Rechnung ist leichte Fahrlässigkeit.", keywords: ["unentgeltlich", "Vorsatz", "grober Fahrlässigkeit", "leichte Fahrlässigkeit"] },
+    { id: "pr-q-v5", type: "mc", question: "Drei Freunde wollen einen Verein gründen, der mit dem Verkauf von Handyhüllen möglichst viel Gewinn für sie selbst erwirtschaftet. Geht das?", options: ["Nein – ein Verein darf nicht auf Gewinn gerichtet sein", "Ja, wenn mindestens zwei Personen dabei sind", "Ja, wenn sie die Statuten beim Notar unterschreiben", "Nur mit Zustimmung des Finanzamts"], correct: [0], explanation: "Ein Verein verfolgt einen **ideellen Zweck** und darf **nicht auf Gewinn** gerichtet sein. Dafür bräuchten sie ein Unternehmen (z. B. GmbH)." },
   ],
 };
 

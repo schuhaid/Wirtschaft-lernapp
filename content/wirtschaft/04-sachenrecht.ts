@@ -87,6 +87,19 @@ Erst wenn **beides** erfüllt ist, ist das Eigentum übergegangen. Wer einen Lap
 
 Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **lastenfrei** ist oder z. B. Dienstbarkeiten bestehen.
 
+
+### Grundbuchprinzipien *(Ergänzung laut Teststoff)*
+| Prinzip | Bedeutung | Beispiel |
+|---|---|---|
+| **Öffentlichkeitsgrundsatz** (Publizität) | **Jede/r** darf ins Grundbuch **einsehen** und Auszüge verlangen. | Vor dem Kauf schaut Lisa nach, ob eine Hypothek eingetragen ist. |
+| **Eintragungsgrundsatz** (Intabulationsprinzip) | Dingliche Rechte an Liegenschaften (Eigentum, Pfandrecht, Dienstbarkeit) entstehen, ändern sich und erlöschen **nur durch Eintragung**. | Max ist erst mit dem Grundbucheintrag Eigentümer. |
+| **Vertrauensgrundsatz** | Man darf auf die **Richtigkeit und Vollständigkeit** vertrauen: **Was eingetragen ist, gilt – was nicht eingetragen ist, gilt nicht** (für Gutgläubige). | Ein nicht eingetragenes (und nicht offensichtliches) Wegerecht muss der gutgläubige Käufer nicht dulden. |
+| **Rang- / Prioritätsprinzip** | **„Früher an Zeit, stärker an Recht“** – der **Rang** richtet sich nach dem **Zeitpunkt des Einlangens** des Antrags beim Grundbuchgericht. | Bei einer Versteigerung wird die ältere Hypothek zuerst bezahlt. |
+| **Antragsgrundsatz** | Eingetragen wird grundsätzlich **nur auf Antrag**, nicht von Amts wegen. | Der Notar beantragt die Eintragung. |
+| **Spezialitätsgrundsatz** | Rechte werden nur für **bestimmte Liegenschaften** und – bei Hypotheken – über einen **bestimmten Betrag** eingetragen. | Hypothek über 120.000 € auf EZ 123. |
+
+**Ausnahmen vom Eintragungsgrundsatz** (Eigentum auch ohne Eintragung): **Erbschaft** (Einantwortung), **Ersitzung**, **Enteignung**, **Zuschlag bei der Zwangsversteigerung**.
+
 ## Fälle aus dem Buch – mit Lösung
 **Max in der Bücherei:** Er leiht ein Buch (Inhaber), gibt es zurück und lässt es dann heimlich mitgehen (**Besitzer**, aber nie Eigentümer). Kathrins Bücher trägt er nur (**Inhaber**).
 
@@ -133,6 +146,13 @@ Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **laste
 - Rechte entstehen durch **Eintragung**; Vertrauen auf Richtigkeit.
 - **A-Blatt**: Grundstück (Nummer, Nutzung) · **B-Blatt**: **Eigentümer** · **C-Blatt**: **Lasten** (Hypothek, Dienstbarkeit).
 - **Dienstbarkeiten**: Geh-/Fahrrecht, Wasserleitung, fremde Quelle nutzen.
+
+### Grundbuchprinzipien *(Teststoff)*
+- **Öffentlichkeit:** jede/r darf einsehen
+- **Eintragung:** dingliche Rechte nur durch Eintragung (Ausnahmen: Erbschaft, Ersitzung, Enteignung, Zwangsversteigerung)
+- **Vertrauen:** was eingetragen ist, gilt – was nicht eingetragen ist, gilt nicht
+- **Rang/Priorität:** „Früher an Zeit, stärker an Recht“ (Zeitpunkt des Einlangens)
+- **Antrag:** nur auf Antrag · **Spezialität:** bestimmte Liegenschaft, bestimmter Betrag
 `,
   concepts: [
     { id: "sr-sache", term: "Sache", definition: "Nach § 285 ABGB alles, was von der Person unterschieden ist und zum Gebrauch der Menschen dient.", keywords: ["Person", "Gebrauch"], example: "Laptop, Strom, Rechte an einem Werk – nicht aber Luft oder Meer" },
@@ -168,6 +188,12 @@ Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **laste
     { id: "sr-hauptbuch", term: "Hauptbuch und Urkundensammlung", definition: "Die beiden Teile des Grundbuchs; dazu kommen Hilfseinrichtungen wie Grundbuchsmappe und Verzeichnisse.", keywords: ["Grundbuchs", "Hilfseinrichtungen"] },
     { id: "sr-gb-bedeutung", term: "Bedeutung des Grundbuchs", definition: "Dingliche Rechte werden durch die Eintragung erworben und jede/r darf auf Richtigkeit und Vollständigkeit des Grundbuchs vertrauen.", keywords: ["Eintragung", "vertrauen"] },
     { id: "sr-dinglich", term: "Dingliches Recht", definition: "Recht an einer Sache, das gegenüber jedermann wirkt und bei Grundstücken im Grundbuch eingetragen wird.", keywords: ["Sache", "Grundbuch"], example: "Eigentum, Pfandrecht, Dienstbarkeit" },
+    { id: "sr-oeffentlichkeit", group: "Grundbuchprinzip", term: "Öffentlichkeitsgrundsatz", definition: "Grundbuchprinzip: Das Grundbuch ist öffentlich, jede Person darf einsehen und Auszüge verlangen.", keywords: ["öffentlich", "jede Person"], explain: "Das Grundbuch ist kein Geheimnis – jeder darf nachschauen, wem ein Grundstück gehört und was darauf lastet." },
+    { id: "sr-eintragungsgrundsatz", group: "Grundbuchprinzip", term: "Eintragungsgrundsatz", definition: "Grundbuchprinzip: Dingliche Rechte an Liegenschaften werden nur durch die Eintragung im Grundbuch erworben, geändert oder aufgehoben.", keywords: ["nur durch", "Eintragung"], explain: "Ohne Eintrag kein Recht: Erst wenn's im Grundbuch steht, gehört dir das Haus.", example: "Ausnahmen: Erbschaft, Ersitzung, Enteignung, Zwangsversteigerung" },
+    { id: "sr-vertrauensgrundsatz", group: "Grundbuchprinzip", term: "Vertrauensgrundsatz", definition: "Grundbuchprinzip: Man darf auf die Richtigkeit und Vollständigkeit des Grundbuchs vertrauen – was eingetragen ist, gilt, was nicht eingetragen ist, gilt nicht.", keywords: ["Richtigkeit", "Vollständigkeit", "nicht eingetragen"], explain: "Wer gutgläubig ins Grundbuch schaut, wird geschützt – auch wenn es in Wirklichkeit anders ist." },
+    { id: "sr-rangprinzip", group: "Grundbuchprinzip", term: "Rang- oder Prioritätsprinzip", definition: "Grundbuchprinzip: Der Rang einer Eintragung richtet sich nach dem Zeitpunkt, zu dem der Antrag beim Grundbuchgericht eingelangt ist – früher an Zeit, stärker an Recht.", keywords: ["Rang", "Zeitpunkt", "früher an Zeit"], explain: "Wer zuerst kommt, ist zuerst dran – z. B. bekommt bei einer Versteigerung die ältere Hypothek zuerst Geld." },
+    { id: "sr-antragsgrundsatz", group: "Grundbuchprinzip", term: "Antragsgrundsatz", definition: "Grundbuchprinzip: Eintragungen erfolgen grundsätzlich nur auf Antrag, nicht von Amts wegen.", keywords: ["Antrag", "Amts wegen"], explain: "Das Grundbuchgericht wird nicht von selbst aktiv – jemand muss die Eintragung beantragen." },
+    { id: "sr-spezialitaet", group: "Grundbuchprinzip", term: "Spezialitätsgrundsatz", definition: "Grundbuchprinzip: Rechte werden nur an einer bestimmten Liegenschaft und bei Pfandrechten über einen bestimmten Geldbetrag eingetragen.", keywords: ["bestimmten Liegenschaft", "Geldbetrag"], explain: "Alles muss genau bestimmt sein: welches Grundstück und wie viel Geld." },
   ],
   facts: [
     { id: "sr-f1", statement: "Tiere sind nach dem ABGB Sachen.", isTrue: false, correction: "Tiere sind **keine Sachen**, werden im Zivilrecht aber meist wie Sachen behandelt." },
@@ -184,6 +210,11 @@ Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **laste
     { id: "sr-f12", statement: "Im Sachenrecht herrscht Gestaltungsfreiheit – man kann beliebige neue Sachenrechte erfinden.", isTrue: false, correction: "Im Sachenrecht herrscht **Typenzwang**; Gestaltungsfreiheit gibt es im Schuldrecht." },
     { id: "sr-f13", statement: "Niemand kann mehr Rechte übertragen, als er selbst hat.", isTrue: true },
     { id: "sr-f14", statement: "Bei einer Enteignung erhält der Eigentümer eine angemessene Entschädigung.", isTrue: true },
+    { id: "sr-t-gp1", statement: "Nach dem Rangprinzip gilt: Früher an Zeit, stärker an Recht.", isTrue: true, correction: "Entscheidend ist der **Zeitpunkt des Einlangens** beim Grundbuchgericht." },
+    { id: "sr-t-gp2", statement: "Nach dem Vertrauensgrundsatz darf man sich darauf verlassen, dass nicht Eingetragenes auch nicht gilt.", isTrue: true, correction: "„Was eingetragen ist, gilt – was nicht eingetragen ist, gilt nicht“ (für Gutgläubige)." },
+    { id: "sr-t-gp3", statement: "Wer erbt, wird erst mit der Eintragung im Grundbuch Eigentümer des geerbten Hauses.", isTrue: false, correction: "Die **Erbschaft (Einantwortung)** ist eine **Ausnahme** vom Eintragungsgrundsatz – der Erbe wird schon damit Eigentümer; die Eintragung ist dann nur Formsache." },
+    { id: "sr-t-gp4", statement: "Das Grundbuchgericht trägt Änderungen von sich aus ein, auch ohne Antrag.", isTrue: false, correction: "Es gilt der **Antragsgrundsatz**: Eintragungen nur **auf Antrag**." },
+    { id: "sr-t-gp5", statement: "Eine Hypothek wird über einen bestimmten Betrag auf eine bestimmte Liegenschaft eingetragen.", isTrue: true, correction: "Das ist der **Spezialitätsgrundsatz**." },
   ],
   questions: [
     { id: "sr-q1", type: "mc", question: "Max leiht sich von Egon eine DVD für einen Fernsehabend. Was ist Max **genau** – welche Stellung passt am besten?", options: ["Inhaber", "Besitzer", "Eigentümer", "Nichts davon"], correct: [0], explanation: "Max hat die DVD nur **geliehen** – er hält sie in der Hand, will sie aber **nicht als seine eigene** behalten → **Inhaber**. Besitzer wäre er nur mit dem Willen, sie als seine zu haben; Eigentümer bleibt Egon." },
@@ -196,6 +227,10 @@ Vor dem Kauf eines Grundstücks solltest du ins Grundbuch schauen, ob es **laste
     { id: "sr-q8", type: "open", question: "Erkläre **Titel und Modus** am Beispiel eines Autokaufs.", answer: "Titel = Rechtsgrund, hier der Kaufvertrag. Modus = Übertragungsakt, bei beweglichen Sachen die Übergabe (z. B. Schlüssel und Auto). Erst wenn beides erfüllt ist, ist der Käufer Eigentümer – also nicht schon mit der Unterschrift.", keywords: ["Rechtsgrund", "Kaufvertrag", "Übergabe", "Eigentümer"] },
     { id: "sr-q9", type: "open", question: "Beschreibe den Unterschied zwischen **Inhaber, Besitzer und Eigentümer**.", answer: "Inhaber hat die Sache tatsächlich, aber ohne Besitzwillen (keine Rechte). Besitzer hat die Sache mit Besitzwillen (will sie behalten; auch ein Dieb). Eigentümer hat das absolute, stärkste Recht an der Sache und darf nach Belieben mit ihr verfahren.", keywords: ["Besitzwillen", "absolute", "stärkste"] },
     { id: "sr-q10", type: "mc", question: "Was steht im **A-Blatt** des Grundbuchs?", options: ["Grundstücksnummer und Benützungsart", "Die Eigentümer", "Hypotheken", "Dienstbarkeiten"], correct: [0], explanation: "**A** = Gutsbestandsblatt: **was** ist das Grundstück (Nummer, Benützungsart, Fläche). **B** = **wem** gehört es. **C** = welche **Lasten** (Hypotheken, Dienstbarkeiten) liegen drauf." },
+    { id: "sr-q-gp1", type: "mc", question: "Fall: Auf Max' Haus sind zwei Hypotheken eingetragen – Bank A (2019) und Bank B (2023). Bei der Versteigerung reicht das Geld nicht für beide. Wer wird zuerst bezahlt?", options: ["Bank A – Rangprinzip", "Bank B – die neuere Forderung", "Beide je zur Hälfte", "Wer die höhere Forderung hat"], correct: [0], explanation: "**Rang- oder Prioritätsprinzip:** „Früher an Zeit, stärker an Recht“ – die **ältere** Eintragung hat den besseren Rang." },
+    { id: "sr-q-gp2", type: "mc", question: "Fall: Lisa kauft ein Grundstück. Im Grundbuch steht kein Wegerecht. Später behauptet der Nachbar, er dürfe seit Jahren über das Grundstück gehen (nicht eingetragen). Lisa wusste davon nichts, und am Grundstück war auch kein Weg zu sehen. Welches Prinzip schützt Lisa?", options: ["Vertrauensgrundsatz", "Antragsgrundsatz", "Spezialitätsgrundsatz", "Öffentlichkeitsgrundsatz"], correct: [0], explanation: "**Vertrauensgrundsatz:** Was nicht eingetragen ist, gilt gegenüber dem **gutgläubigen** Erwerber nicht." },
+    { id: "sr-q-gp3", type: "mc", question: "Wie wird man Eigentümer einer Liegenschaft **ohne** Eintragung im Grundbuch (Ausnahmen vom Eintragungsgrundsatz)?", options: ["Erbschaft (Einantwortung)", "Zuschlag bei der Zwangsversteigerung", "Ersitzung", "Enteignung", "Kaufvertrag mit Handschlag"], correct: [0, 1, 2, 3], explanation: "Beim **Kauf** braucht man immer die **Eintragung** (Modus). Erbschaft, Zwangsversteigerung, Ersitzung und Enteignung sind die Ausnahmen." },
+    { id: "sr-q-gp4", type: "open", question: "Nenne vier **Grundbuchprinzipien** und erkläre jeweils kurz.", answer: "Öffentlichkeitsgrundsatz: jede/r darf einsehen. Eintragungsgrundsatz: dingliche Rechte entstehen nur durch Eintragung. Vertrauensgrundsatz: was eingetragen ist, gilt, was nicht eingetragen ist, gilt nicht. Rang-/Prioritätsprinzip: früher an Zeit, stärker an Recht. (Außerdem: Antragsgrundsatz – nur auf Antrag; Spezialitätsgrundsatz – bestimmte Liegenschaft und bestimmter Betrag.)", keywords: ["Öffentlichkeit", "Eintragung", "Vertrauen", "Rang"] },
   ],
 };
 

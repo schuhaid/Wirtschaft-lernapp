@@ -122,6 +122,22 @@ Es gibt **keine vollständige Liste** – passt ein Vertrag in keine Kategorie, 
 
 **Beispiel ÖAMTC-KFZ-Kaufvertrag** (nur zwischen **Privatpersonen** – kauft man vom Händler, gilt das Konsumentenschutzgesetz): Angaben zu Verkäufer, Käufer und Fahrzeug, Preis, ob die **Gewährleistung ausgeschlossen** wird, Zusicherungen (z. B. **unbelastetes Eigentum**, garantierter Kilometerstand, keine Vorschäden), Übergabe (Schlüssel, „Pickerl“-Gutachten, Typenschein), Zahlungsbedingungen (Raten mit **Terminsverlust** = bei Verzug mit einer Rate wird alles sofort fällig), Zahlungssicherung (Typenschein bleibt bis zur Bezahlung beim Verkäufer), Rücktritt/Storno (Stornogebühr, empfohlen max. 10 %).
 
+
+### Haftungsrücklass, Deckungsrücklass und Bankgarantie *(Ergänzung laut Teststoff)*
+Vor allem bei **Bau- und Werkverträgen** sichert sich der Auftraggeber ab, indem er einen Teil des Werklohns **zurückbehält**:
+
+| Begriff | Was ist das? | Wann? |
+|---|---|---|
+| **Deckungsrücklass** | Einbehalt eines Prozentsatzes von **Teil- bzw. Abschlagsrechnungen** während der Bauzeit | **während** der Arbeiten – sichert ab, dass zu viel verrechnet wurde |
+| **Haftungsrücklass** (Haftrücklass) | Einbehalt eines **Prozentsatzes der Schlussrechnung** (oft ein paar Prozent, z. B. 2–5 %) | **nach** Fertigstellung bis zum **Ende der Gewährleistungsfrist** – sichert die **Gewährleistungsansprüche** |
+| **Bankgarantie** | Eine **Bank verpflichtet sich**, dem Auftraggeber bei Bedarf einen bestimmten Betrag zu **zahlen** | ersetzt meist den Haftungsrücklass: Der Unternehmer bekommt sein ganzes Geld, der Auftraggeber ist trotzdem abgesichert |
+
+- Muss **vertraglich vereinbart** werden (oft über die **ÖNORM B 2110** für Bauverträge).
+- Treten in der Gewährleistungsfrist **Mängel** auf und behebt der Unternehmer sie nicht, kann der Auftraggeber den Rücklass **behalten** bzw. die **Bankgarantie abrufen** und damit die Reparatur bezahlen.
+- Gibt es **keine Mängel**, wird der Rücklass nach Ablauf der Gewährleistungsfrist **ausbezahlt**.
+
+*Fallbeispiel:* Familie Huber lässt um 200.000 € ein Haus bauen und behält **3 % = 6.000 € als Haftungsrücklass**. Ein Jahr später ist das Dach undicht, die Baufirma reagiert nicht. Die Hubers lassen das Dach reparieren und **zahlen die Reparatur aus dem Rücklass**.
+
 ## Fälle aus dem Buch – mit Lösung
 **Max' Tag:** iPhone im Webshop bestellt (**Kaufvertrag**), Schokoschnecke beim Bäcker (**Kaufvertrag**, schlüssig), Mittagessen, zu dem ihn Patrick einlädt (**Schenkung**), Katze Minki zurückgebracht und die Belohnung abgelehnt (**Auslobung** – Max verzichtet auf die 50 €).
 
@@ -179,6 +195,12 @@ Bei Zahlungsverzug: **Mahnung → Inkasso → Klage → Exekution**.
 - Aufbau: **Titel + Parteien → Vertragsgegenstand → Rechte/Pflichten → Nebenbestimmungen**.
 - **Kauf** (gegen Geld) · **Leihe** (gratis) · **Tausch** (Sache gegen Sache) · **Miete** (gegen Geld) · **Dienstvertrag** (Arbeit gegen Lohn) · **Lizenz** (Patent/Marke gegen Gebühr) · **Nutzung** (Car-Sharing, Cloud).
 - Keine vollständige Liste – sonst ähnlichste Kategorie. Muster nur von ÖAMTC, AK, WKO.
+
+### Haftungsrücklass *(Teststoff)*
+- **Deckungsrücklass:** Einbehalt bei **Teilrechnungen** während der Bauzeit
+- **Haftungsrücklass:** Einbehalt eines Teils der **Schlussrechnung** bis zum **Ende der Gewährleistungsfrist** → sichert **Gewährleistung**
+- **Bankgarantie:** Bank zahlt bei Bedarf → **ersetzt** meist den Rücklass
+- muss **vereinbart** sein (oft ÖNORM B 2110); keine Mängel → Rücklass wird **ausbezahlt**
 `,
   concepts: [
     { id: "vr-schuldrecht", term: "Schuldrecht", definition: "Relatives Recht, das nicht gegenüber jedermann, sondern nur gegenüber dem Vertragspartner durchgesetzt werden kann.", keywords: ["relatives", "Vertragspartner"] },
@@ -246,6 +268,9 @@ Bei Zahlungsverzug: **Mahnung → Inkasso → Klage → Exekution**.
     { id: "vr-mustervertrag", term: "Mustervertrag", definition: "Vorlage für einen Vertrag; man sollte sie nur aus seriösen Quellen wie ÖAMTC, Arbeiterkammer oder Wirtschaftskammer nehmen.", keywords: ["Vorlage", "seriösen"], example: "ÖAMTC-KFZ-Kaufvertrag für Privatpersonen" },
     { id: "vr-gewausschluss", term: "Gewährleistungsausschluss", definition: "Beim Kauf zwischen Privatpersonen kann die Gewährleistung vertraglich ausgeschlossen werden, etwa im ÖAMTC-KFZ-Kaufvertrag.", keywords: ["Privatpersonen", "ausgeschlossen"] },
     { id: "vr-atypisch", term: "Atypischer Vertrag", definition: "Vertrag, der in keine gesetzliche Kategorie passt; man wendet die Regeln der ähnlichsten Vertragsart an.", keywords: ["Kategorie", "ähnlichsten"] },
+    { id: "vr-haftruecklass", group: "Sicherung", term: "Haftungsrücklass", definition: "Der Auftraggeber behält einen vereinbarten Prozentsatz der Schlussrechnung bis zum Ende der Gewährleistungsfrist ein, um Gewährleistungsansprüche abzusichern.", keywords: ["Schlussrechnung", "Gewährleistungsfrist"], explain: "Ein „Pfand“ in Geld: Ein kleiner Teil des Preises wird erst bezahlt, wenn klar ist, dass alles hält.", example: "3 % von 200.000 € = 6.000 € werden für 3 Jahre einbehalten" },
+    { id: "vr-deckungsruecklass", group: "Sicherung", term: "Deckungsrücklass", definition: "Einbehalt eines Prozentsatzes von Teil- bzw. Abschlagsrechnungen während der Bauzeit, um Überzahlungen abzusichern.", keywords: ["Abschlagsrechnungen", "Bauzeit"], explain: "Während gebaut wird, zahlt man die Zwischenrechnungen nicht ganz – falls zu viel verrechnet wurde." },
+    { id: "vr-bankgarantie", group: "Sicherung", term: "Bankgarantie", definition: "Eine Bank verpflichtet sich, dem Begünstigten bei Abruf einen bestimmten Betrag zu zahlen; sie ersetzt häufig den Haftungsrücklass.", keywords: ["Bank", "Abruf", "Haftungsrücklass"], explain: "Statt Geld zurückzuhalten, „bürgt“ eine Bank: Wenn's Probleme gibt, zahlt sie." },
   ],
   facts: [
     { id: "vr-f1", statement: "Das Schuldrecht ist – wie das Eigentum – ein absolutes Recht.", isTrue: false, correction: "Das Schuldrecht ist ein **relatives** Recht (nur gegenüber dem Vertragspartner)." },
@@ -266,6 +291,11 @@ Bei Zahlungsverzug: **Mahnung → Inkasso → Klage → Exekution**.
     { id: "vr-f16", statement: "Bei der Ausfallsbürgschaft haftet der Bürge bereits nach der ersten Mahnung.", isTrue: false, correction: "Das ist die **einfache** Bürgschaft. Ausfallsbürge haftet erst nach **erfolgloser Exekution**." },
     { id: "vr-f17", statement: "Beim Leihvertrag wird eine Sache unentgeltlich überlassen, beim Mietvertrag entgeltlich.", isTrue: true },
     { id: "vr-f18", statement: "Erfüllt der Empfänger eines Angelds den Vertrag schuldhaft nicht, kann der Geber das Doppelte des Angelds fordern.", isTrue: true },
+    { id: "vr-t-hr1", statement: "Der Haftungsrücklass sichert die Gewährleistungsansprüche des Auftraggebers ab.", isTrue: true, correction: "Er wird bis zum **Ende der Gewährleistungsfrist** einbehalten." },
+    { id: "vr-t-hr2", statement: "Der Haftungsrücklass gilt automatisch bei jedem Kaufvertrag, auch ohne Vereinbarung.", isTrue: false, correction: "Er muss **vertraglich vereinbart** werden (typisch bei **Bau- und Werkverträgen**, oft über die ÖNORM B 2110)." },
+    { id: "vr-t-hr3", statement: "Der Haftungsrücklass kann durch eine Bankgarantie ersetzt werden.", isTrue: true, correction: "Dann bekommt der Unternehmer sein **ganzes Geld**, der Auftraggeber ist über die **Bank** abgesichert." },
+    { id: "vr-t-hr4", statement: "Der Deckungsrücklass wird erst nach der Schlussrechnung einbehalten.", isTrue: false, correction: "Der **Deckungsrücklass** betrifft **Teilrechnungen während der Bauzeit**; nach der Schlussrechnung ist es der **Haftungsrücklass**." },
+    { id: "vr-t-hr5", statement: "Gibt es während der Gewährleistungsfrist keine Mängel, wird der Haftungsrücklass ausbezahlt.", isTrue: true, correction: "Er dient nur als **Sicherheit** – braucht man ihn nicht, bekommt ihn der Unternehmer." },
   ],
   questions: [
     { id: "vr-q1", type: "mc", question: "Welche Voraussetzungen braucht ein **gültiger Vertrag**?", options: ["Geschäftsfähigkeit", "Freie, ernstliche und bestimmte Willenserklärung", "Möglichkeit der Leistung", "Erlaubtheit", "Schriftform"], correct: [0, 1, 2, 3], explanation: "Schriftform ist grundsätzlich **nicht** nötig (Formfreiheit)." },
@@ -284,6 +314,9 @@ Bei Zahlungsverzug: **Mahnung → Inkasso → Klage → Exekution**.
     { id: "vr-q14", type: "mc", question: "Ein Softwarehersteller erlaubt einer Firma gegen Gebühr, sein patentiertes Verfahren zu nutzen. Welcher Vertrag?", options: ["Lizenzvertrag", "Kaufvertrag", "Dienstvertrag", "Leihvertrag"], correct: [0], explanation: "Man bekommt gegen **Gebühr** das Recht, ein **Patent, Know-how oder eine Marke zu nutzen** → **Lizenzvertrag**. Das Verfahren selbst wird nicht verkauft." },
     { id: "vr-q15", type: "mc", question: "Welche Ausnahmen von der **Vertragsfreiheit** gibt es?", options: ["Kontrahierungszwang", "Formvorschriften", "Gestaltungsfreiheit", "Abschlussfreiheit"], correct: [0, 1], explanation: "Grundsätzlich herrscht **Vertragsfreiheit**. Ausnahmen: **Kontrahierungszwang** (manche müssen mit jedem abschließen, z. B. Energieversorger) und **Formvorschriften** (manche Verträge brauchen eine bestimmte Form). Gestaltungs- und Abschlussfreiheit sind **Teile** der Vertragsfreiheit, keine Ausnahmen." },
     { id: "vr-q16", type: "order", question: "Bring die Teile eines schriftlichen Vertrags in die übliche Reihenfolge.", items: ["Titel und Vertragsparteien", "Vertragsgegenstand", "Rechte und Pflichten der Parteien", "Nebenbestimmungen"], explanation: "Zuerst **wer** schließt den Vertrag, dann **worum** es geht, dann **wer was tun muss**, am Ende **Nebenbestimmungen** (z. B. Gerichtsstand, Unterschriften)." },
+    { id: "vr-q-hr1", type: "mc", question: "Fall: Familie Huber lässt ein Haus bauen (Schlussrechnung 200.000 €) und hat einen Haftungsrücklass von 3 % vereinbart. Was gilt?", options: ["Sie dürfen 6.000 € bis zum Ende der Gewährleistungsfrist einbehalten", "Die Baufirma kann stattdessen eine Bankgarantie stellen, wenn das vereinbart ist", "Sie dürfen 6.000 € für immer behalten", "Die Baufirma muss 6.000 € zusätzlich zahlen"], correct: [0, 1], explanation: "3 % von 200.000 € = **6.000 €** werden bis zum **Ende der Gewährleistungsfrist** einbehalten; häufig kann der Rücklass durch eine **Bankgarantie** abgelöst werden. Ohne Mängel wird er dann ausbezahlt." },
+    { id: "vr-q-hr2", type: "open", question: "Fall: Zwei Jahre nach Fertigstellung ist das Dach der Hubers undicht. Die Baufirma reagiert nicht. Was können die Hubers tun?", answer: "Das Dach ist ein Gewährleistungsfall (Mangel innerhalb der Gewährleistungsfrist). Behebt die Firma den Mangel nicht, können die Hubers den Haftungsrücklass verwenden bzw. behalten (oder die Bankgarantie abrufen) und damit die Reparatur durch eine andere Firma bezahlen.", keywords: ["Gewährleistung", "Haftungsrücklass", "Bankgarantie", "Reparatur"] },
+    { id: "vr-q-hr3", type: "mc", question: "Wie unterscheiden sich **Deckungs-** und **Haftungsrücklass**?", options: ["Deckungsrücklass: während der Bauzeit bei Teilrechnungen; Haftungsrücklass: nach der Schlussrechnung bis Ende der Gewährleistung", "Beide sind dasselbe", "Haftungsrücklass gilt nur für Konsumenten", "Deckungsrücklass sichert die Gewährleistung, Haftungsrücklass die Teilrechnungen"], correct: [0], explanation: "**Deckung** = während des Baus (Teilrechnungen). **Haftung** = danach, für die **Gewährleistung**." },
   ],
 };
 

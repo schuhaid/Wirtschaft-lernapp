@@ -9,7 +9,7 @@ export const subjects: Subject[] = [
     short: "Wirtschaft",
     titleLines: ["Wirtschaft", "& Recht"],
     mark: "§",
-    source: "Buch S. 10–54",
+    source: "Buch S. 10–54 + Teststoff",
     chapters: wirtschaft,
   },
   {

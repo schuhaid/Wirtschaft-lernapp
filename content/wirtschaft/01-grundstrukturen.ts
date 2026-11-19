@@ -115,6 +115,28 @@ Fallbeispiel: Rauferei auf einem Waldfest, ein Bierkrug trifft den Kopf, Platzwu
 
 Nützliche Websites: ris.bka.gv.at, oesterreich.gv.at (Amtswege), justiz.gv.at, arbeiterkammer.at, wko.at, konsument.at (VKI), dsb.gv.at (Datenschutzbehörde), eur-lex.europa.eu (EU-Recht).
 
+
+## Rechtsmittel und Rechtskraft *(Ergänzung laut Teststoff)*
+Wer mit einer Entscheidung nicht einverstanden ist, kann sie mit einem **Rechtsmittel** von der **nächsthöheren Instanz** überprüfen lassen. Jede Entscheidung enthält eine **Rechtsmittelbelehrung** (welches Rechtsmittel, bis wann, wo einbringen).
+
+### Rechtsmittel im Zivilverfahren
+| Rechtsmittel | Wogegen? | Frist | Wer entscheidet? |
+|---|---|---|---|
+| **Berufung** | **Urteil der 1. Instanz** | **4 Wochen** ab Zustellung | 2. Instanz (z. B. Landesgericht über ein Urteil des Bezirksgerichts) |
+| **Revision** | **Urteil der 2. Instanz** | **4 Wochen** | **Oberster Gerichtshof (OGH)** – nur bei **Rechtsfragen von erheblicher Bedeutung** |
+| **Rekurs** | **Beschluss** (keine Urteile, z. B. Entscheidungen im Verfahren, Außerstreit, Exekution) | meist **14 Tage** | nächsthöheres Gericht |
+
+- Berufung und Revision muss ein **Rechtsanwalt** verfassen.
+- **Instanzenzug (Zivil):** Bezirksgericht → Landesgericht → OGH bzw. Landesgericht → Oberlandesgericht → OGH.
+- **Verwaltung:** Gegen einen **Bescheid** erhebt man **Beschwerde** beim **Verwaltungsgericht** (meist **4 Wochen**).
+
+### Rechtskraft
+- Eine Entscheidung wird **rechtskräftig**, wenn sie **nicht mehr mit einem ordentlichen Rechtsmittel bekämpft** werden kann – weil die **Frist abgelaufen** ist, man **verzichtet** hat oder die **letzte Instanz** entschieden hat.
+- **Folgen:** Die Entscheidung ist **endgültig und verbindlich**; **dieselbe Sache darf nicht noch einmal** vor Gericht gebracht werden. Ein rechtskräftiges (Leistungs-)Urteil ist ein **Exekutionstitel** – damit kann man **Exekution** beantragen.
+- Nur in Ausnahmefällen kann ein rechtskräftiges Verfahren nochmals aufgerollt werden (**Wiederaufnahms- oder Nichtigkeitsklage**, z. B. bei neuen Beweisen oder schweren Verfahrensfehlern).
+
+*Fallbeispiel:* Das Bezirksgericht verurteilt Lisa, 2.000 € zu zahlen. Das Urteil wird ihr am 3. März zugestellt. Lisa kann binnen **4 Wochen Berufung** ans **Landesgericht** erheben. Tut sie das nicht, wird das Urteil **rechtskräftig** und der Gläubiger kann **Exekution** führen.
+
 ## Fälle aus dem Buch – mit Lösung
 **Massen-SMS:** Ein Unternehmer verschickt Werbe-SMS ohne Zustimmung und wusste nicht, dass das verboten ist. → Er wird trotzdem bestraft: *Unwissenheit schützt vor Strafe nicht.*
 
@@ -161,6 +183,16 @@ Jede Entscheidung nennt die **Rechtsmittel**. § 24 Abs. 3 **lit.** d StVO = Par
 ### Information und Beratung
 - **Quellen**: Gesetzesblätter · Gesetzesausgaben (Kodex) · kommentierte Ausgaben · Lehrbücher/Zeitschriften · Entscheidungssammlungen (OGH, VwGH, VfGH).
 - **Kostenlos**: **Amtstag** am Bezirksgericht (dienstags), Verwaltungsbehörden, **Arbeiterkammer**. Nur für **Mitglieder**: WKO, Gewerkschaft, Vereine (VKI). **Kostet**: Anwalt, Notar, Steuerberater (oft gratis Erstauskunft).
+
+### Rechtsmittel und Rechtskraft *(Teststoff)*
+| Rechtsmittel | gegen | Frist |
+|---|---|---|
+| **Berufung** | Urteil 1. Instanz | 4 Wochen |
+| **Revision** | Urteil 2. Instanz → OGH | 4 Wochen |
+| **Rekurs** | Beschluss | meist 14 Tage |
+| **Beschwerde** | Bescheid → Verwaltungsgericht | meist 4 Wochen |
+
+**Rechtskraft** = kein ordentliches Rechtsmittel mehr möglich (Frist vorbei, Verzicht, letzte Instanz) → **endgültig**, **nicht nochmal verhandelbar**, **Exekutionstitel**.
 `,
   concepts: [
     { id: "gs-unwissenheit", term: "Unwissenheit schützt vor Strafe nicht", definition: "Grundsatz, dass sich jede Person selbst über das geltende Recht informieren muss und sich nicht darauf berufen kann, ein Verbot nicht gekannt zu haben.", keywords: ["informieren", "Verbot"] },
@@ -221,6 +253,14 @@ Jede Entscheidung nennt die **Rechtsmittel**. § 24 Abs. 3 **lit.** d StVO = Par
     { id: "gs-arbeitsrecht", group: "Sonderprivatrecht", term: "Arbeitsrecht", definition: "Sonderprivatrecht, das Rechte und Pflichten aus dem Arbeitsverhältnis regelt.", keywords: ["Arbeitsverhältnis"] },
     { id: "gs-mietrecht", group: "Sonderprivatrecht", term: "Mietrecht", definition: "Sonderprivatrecht mit besonderen Regeln für Mietverhältnisse.", keywords: ["Mietverhältnisse"] },
     { id: "gs-tkg", term: "Unerbetene Werbenachrichten (TKG)", definition: "Werbe-E-Mails und -SMS ohne vorherige Zustimmung sind nach dem Telekommunikationsgesetz verboten; nach dem TKG 2021 drohen bis zu 50.000 € Strafe.", keywords: ["Zustimmung", "50.000"] },
+    { id: "gs-berufung", group: "Rechtsmittel", term: "Berufung", definition: "Rechtsmittel gegen ein Urteil der ersten Instanz; muss binnen vier Wochen ab Zustellung erhoben werden und wird von der zweiten Instanz entschieden.", keywords: ["Urteil", "ersten Instanz", "vier Wochen"], explain: "Du bist mit dem ersten Urteil nicht einverstanden und lässt es vom nächsthöheren Gericht überprüfen.", example: "Urteil des Bezirksgerichts → Berufung ans Landesgericht" },
+    { id: "gs-revision", group: "Rechtsmittel", term: "Revision", definition: "Rechtsmittel gegen ein Urteil der zweiten Instanz an den Obersten Gerichtshof; nur bei Rechtsfragen von erheblicher Bedeutung zulässig.", keywords: ["zweiten Instanz", "Obersten Gerichtshof", "Rechtsfragen"], explain: "Die „letzte Chance“ nach der Berufung – aber nur, wenn es um eine wichtige Rechtsfrage geht, nicht um Tatsachen." },
+    { id: "gs-rekurs", group: "Rechtsmittel", term: "Rekurs", definition: "Rechtsmittel gegen einen gerichtlichen Beschluss (nicht gegen Urteile); die Frist beträgt meist 14 Tage.", keywords: ["Beschluss", "14 Tage"], explain: "Wie eine Berufung, aber gegen „kleinere“ Entscheidungen des Gerichts, die keine Urteile sind." },
+    { id: "gs-beschwerde", group: "Rechtsmittel", term: "Bescheidbeschwerde", definition: "Rechtsmittel gegen den Bescheid einer Verwaltungsbehörde; darüber entscheidet ein Verwaltungsgericht, die Frist beträgt meist vier Wochen.", keywords: ["Bescheid", "Verwaltungsgericht"], explain: "Wenn ein Amt (z. B. die Bezirkshauptmannschaft) etwas entscheidet, das dir nicht passt, wehrst du dich mit einer Beschwerde." },
+    { id: "gs-rechtskraft", term: "Rechtskraft", definition: "Eine Entscheidung ist rechtskräftig, wenn sie mit keinem ordentlichen Rechtsmittel mehr bekämpft werden kann; sie ist dann endgültig und dieselbe Sache darf nicht noch einmal verhandelt werden.", keywords: ["ordentlichen Rechtsmittel", "endgültig", "noch einmal"], explain: "Ab jetzt ist die Sache erledigt – Frist verpasst oder alle Instanzen durch. Niemand kann denselben Streit noch einmal vor Gericht bringen." },
+    { id: "gs-instanzenzug", term: "Instanzenzug", definition: "Der Weg einer Rechtssache durch die Gerichte, z. B. Bezirksgericht, Landesgericht, Oberster Gerichtshof; ein Rechtsmittel geht immer an die nächsthöhere Instanz.", keywords: ["nächsthöhere Instanz", "Oberster Gerichtshof"], explain: "Die „Leiter“ der Gerichte: von unten nach oben, jede Stufe kann die darunter überprüfen." },
+    { id: "gs-exekutionstitel", term: "Exekutionstitel", definition: "Eine rechtskräftige, vollstreckbare Entscheidung (z. B. ein Urteil), aufgrund derer der Gläubiger die Exekution beantragen kann.", keywords: ["rechtskräftige", "Exekution"], explain: "Das „Papier“, mit dem man zwangsweise zu seinem Geld kommt – etwa durch Lohnpfändung." },
+    { id: "gs-rmbelehrung", term: "Rechtsmittelbelehrung", definition: "Teil jeder Entscheidung, der angibt, welches Rechtsmittel möglich ist, in welcher Frist und wo es einzubringen ist.", keywords: ["Frist", "Rechtsmittel"], explain: "Der „Beipackzettel“ zum Urteil oder Bescheid: Wie kann ich mich wehren und bis wann?" },
   ],
   facts: [
     { id: "gs-f1", statement: "Wer ein Gesetz nicht kennt, kann dafür nicht bestraft werden.", isTrue: false, correction: "**Unwissenheit schützt vor Strafe nicht** – jede/r muss sich selbst informieren." },
@@ -238,6 +278,13 @@ Jede Entscheidung nennt die **Rechtsmittel**. § 24 Abs. 3 **lit.** d StVO = Par
     { id: "gs-f13", statement: "Eine Gesamtänderung der Bundesverfassung braucht eine Volksabstimmung.", isTrue: true },
     { id: "gs-f14", statement: "Subsumtion bedeutet, die Strafe festzulegen.", isTrue: false, correction: "Subsumtion = prüfen, ob der Sachverhalt unter den Tatbestand fällt. Die Strafe ist die **Rechtsfolge**." },
     { id: "gs-f15", statement: "Die Gurtanlegepflicht gilt seit 1990 für alle Sitze im Pkw.", isTrue: true, correction: "Seit 1976 Gurtpflicht (anfangs nur vorne), seit 1990 auf allen Sitzen." },
+    { id: "gs-t-rm1", statement: "Gegen ein Urteil der ersten Instanz erhebt man Berufung.", isTrue: true, correction: "Berufung = gegen **Urteile 1. Instanz**, binnen **4 Wochen**." },
+    { id: "gs-t-rm2", statement: "Gegen einen gerichtlichen Beschluss erhebt man Revision.", isTrue: false, correction: "Gegen **Beschlüsse** gibt es den **Rekurs**. Die Revision richtet sich gegen **Urteile der 2. Instanz**." },
+    { id: "gs-t-rm3", statement: "Die Berufungsfrist beträgt vier Wochen ab Zustellung des Urteils.", isTrue: true, correction: "Die Frist beginnt mit der **Zustellung der schriftlichen Urteilsausfertigung**." },
+    { id: "gs-t-rm4", statement: "Ist ein Urteil rechtskräftig, kann man denselben Streit später noch einmal bei einem anderen Gericht einklagen.", isTrue: false, correction: "Rechtskraft heißt: **endgültig** – **dieselbe Sache darf nicht noch einmal** verhandelt werden." },
+    { id: "gs-t-rm5", statement: "Ein Urteil wird rechtskräftig, wenn die Rechtsmittelfrist ungenützt verstreicht.", isTrue: true, correction: "Kein Rechtsmittel in der Frist → das Urteil kann nicht mehr bekämpft werden → **rechtskräftig**." },
+    { id: "gs-t-rm6", statement: "Über eine Revision entscheidet der Oberste Gerichtshof.", isTrue: true, correction: "Revision = gegen Urteile **2. Instanz** an den **OGH**, nur bei erheblichen Rechtsfragen." },
+    { id: "gs-t-rm7", statement: "Gegen einen Bescheid der Bezirkshauptmannschaft erhebt man Berufung beim Landesgericht.", isTrue: false, correction: "Gegen einen **Bescheid** erhebt man **Beschwerde** beim **Verwaltungsgericht**." },
   ],
   questions: [
     { id: "gs-q1", type: "order", question: "Bring den **Stufenbau der Rechtsordnung** in die richtige Reihenfolge (oben = ranghöchste Stufe).", items: ["Leitende Verfassungsprinzipien", "EU-Recht", "Bundes- und Landesverfassungsgesetze", "Einfache Gesetze", "Verordnungen", "Einzelfallentscheidungen (Urteile, Bescheide)"], explanation: "Ganz oben stehen die **leitenden Verfassungsprinzipien** (Grundordnung des Staates), dann **EU-Recht**, dann die **Verfassungsgesetze**, darunter die **einfachen Gesetze**, dann **Verordnungen** und ganz unten die Einzelentscheidungen (**Bescheide, Urteile**). Jede Stufe muss mit der darüberliegenden übereinstimmen." },
@@ -253,6 +300,11 @@ Jede Entscheidung nennt die **Rechtsmittel**. § 24 Abs. 3 **lit.** d StVO = Par
     { id: "gs-q11", type: "open", question: "Erkläre die Begriffe **Tatbestand, Subsumtion und Rechtsfolge** an einem Beispiel.", answer: "Tatbestand = Beschreibung des Verhaltens in der Norm (z. B. § 83 StGB: jemanden am Körper verletzen). Subsumtion = Prüfung, ob der Sachverhalt (Max schlägt Stefan mit dem Bierkrug) unter den Tatbestand fällt. Rechtsfolge = die festgelegte Sanktion (Freiheitsstrafe bis 1 Jahr oder Geldstrafe bis 720 Tagessätze).", keywords: ["Norm", "Sachverhalt", "Sanktion", "Strafe"] },
     { id: "gs-q12", type: "open", question: "Nenne die drei großen **Rechtsgebiete** und je ein Beispiel.", answer: "Öffentliches Recht (Gewerbeanmeldung bei der Behörde), Strafrecht (Räuber wird verurteilt), Privatrecht/Zivilrecht (Kaufvertrag, Klage auf Zahlung).", keywords: ["öffentliches", "Strafrecht", "Privatrecht"] },
     { id: "gs-q13", type: "mc", question: "Wie liest man **§ 24 Abs. 3 lit. d StVO**?", options: ["Paragraf 24, Absatz 3, litera d, Straßenverkehrsordnung", "Paragraf 24, Abschnitt 3, Linie d, Strafvollzugsordnung", "Paragraf 3, Absatz 24, Liste d, StVO", "Paragraf 24, Absatz 3, Literatur d, Straßenverkehrsordnung"], correct: [0], explanation: "litera = lateinisch „Buchstabe“." },
+    { id: "gs-q-rm1", type: "mc", question: "Fall: Das **Bezirksgericht** verurteilt Lisa, 2.000 € zu zahlen. Lisa hält das Urteil für falsch. Was kann sie tun?", options: ["Binnen 4 Wochen Berufung erheben", "Binnen 4 Wochen Revision an den OGH erheben", "Rekurs binnen 14 Tagen erheben", "Nichts – Urteile sind sofort endgültig"], correct: [0], explanation: "Gegen ein **Urteil der 1. Instanz** gibt es die **Berufung** (4 Wochen) an die 2. Instanz. Revision erst gegen das Urteil der **2.** Instanz, Rekurs nur gegen **Beschlüsse**." },
+    { id: "gs-q-rm2", type: "mc", question: "Fall: Lisa erhebt keine Berufung, die Frist läuft ab. Was folgt daraus?", options: ["Das Urteil wird rechtskräftig", "Der Gläubiger kann Exekution beantragen", "Lisa kann denselben Streit nicht neu aufrollen", "Lisa darf jederzeit noch Revision einlegen"], correct: [0, 1, 2], explanation: "Frist ungenützt → **Rechtskraft**: endgültig, nicht neu verhandelbar, und das Urteil ist ein **Exekutionstitel**." },
+    { id: "gs-q-rm3", type: "order", question: "Bring den **Instanzenzug** in die richtige Reihenfolge (Fall beginnt beim Bezirksgericht).", items: ["Bezirksgericht – Urteil", "Berufung ans Landesgericht", "Revision an den Obersten Gerichtshof", "Rechtskraft"], explanation: "Ein Rechtsmittel geht immer an die **nächsthöhere** Instanz. Nach der letzten Entscheidung ist die Sache **rechtskräftig**." },
+    { id: "gs-q-rm4", type: "open", question: "Erkläre, was **Rechtskraft** bedeutet und wann eine Entscheidung rechtskräftig wird.", answer: "Eine Entscheidung ist rechtskräftig, wenn sie mit keinem ordentlichen Rechtsmittel mehr bekämpft werden kann – weil die Rechtsmittelfrist abgelaufen ist, auf Rechtsmittel verzichtet wurde oder die letzte Instanz entschieden hat. Sie ist dann endgültig, dieselbe Sache darf nicht noch einmal verhandelt werden, und ein Urteil kann als Exekutionstitel vollstreckt werden.", keywords: ["Rechtsmittel", "Frist", "endgültig", "nicht noch einmal", "Exekution"] },
+    { id: "gs-q-rm5", type: "mc", question: "Die Bezirkshauptmannschaft entzieht Tom mit **Bescheid** den Führerschein. Wie wehrt er sich?", options: ["Beschwerde an das Verwaltungsgericht", "Berufung an das Landesgericht", "Revision an den OGH", "Klage beim Bezirksgericht"], correct: [0], explanation: "Gegen **Bescheide** von Verwaltungsbehörden gibt es die **Beschwerde** an das **Verwaltungsgericht** (meist 4 Wochen)." },
   ],
 };
 
